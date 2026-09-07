@@ -1,0 +1,21 @@
+# =============================================================================
+# _staging__sources.yml
+# Declares the RAW schema tables (created by snowflake/03_raw_variant_tables.sql)
+# as dbt sources, so staging models can reference them via source() instead
+# of hardcoding database/schema/table names.
+# =============================================================================
+
+version: 2
+
+sources:
+  # Logical source name used in source('sparkify_raw', 'raw_events') calls.
+  - name: sparkify_raw
+    # Physical database and schema the tables actually live in.
+    database: SPARKIFY_DB
+    schema: RAW
+    tables:
+      - name: raw_events
+        description: "Raw VARIANT landing table for Sparkify user activity log JSON."
+
+      - name: raw_songs
+        description: "Raw VARIANT landing table for Sparkify song metadata JSON."

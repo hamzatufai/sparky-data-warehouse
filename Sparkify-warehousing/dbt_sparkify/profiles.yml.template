@@ -1,0 +1,33 @@
+# =============================================================================
+# profiles.yml.template
+# Template for dbt's Snowflake connection profile.
+# COPY this file to ~/.dbt/profiles.yml (do NOT commit real credentials to
+# version control) and fill in the placeholder values below.
+# =============================================================================
+
+# Profile name must match `profile:` in dbt_project.yml ("sparkify_dw").
+sparkify_dw:
+  # dbt supports multiple targets (dev/prod); we default to "dev" locally.
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      # Your Snowflake account identifier, e.g. "xy12345.us-east-1".
+      account: "REPLACE_WITH_SNOWFLAKE_ACCOUNT"
+
+      # Credentials - prefer key-pair auth or SSO in production; username/
+      # password is shown here for simplicity in a learning environment.
+      user: "REPLACE_WITH_SNOWFLAKE_USER"
+      password: "REPLACE_WITH_SNOWFLAKE_PASSWORD"
+      role: "SPARKIFY_ROLE"
+
+      # Compute + storage targets created in snowflake/01_roles_and_permissions.sql.
+      database: "SPARKIFY_DB"
+      warehouse: "SPARKIFY_WH"
+      # dbt writes marts here by default; staging models land in a
+      # "staging" suffixed schema per the +schema config in dbt_project.yml.
+      schema: "ANALYTICS"
+
+      # Connection tuning - safe defaults for a small teaching project.
+      threads: 4
+      client_session_keep_alive: false

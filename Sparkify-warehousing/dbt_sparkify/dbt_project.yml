@@ -1,0 +1,43 @@
+# =============================================================================
+# dbt_project.yml
+# Core dbt project configuration: names the project, points dbt at the
+# Snowflake profile to use, and sets default materializations per folder.
+# =============================================================================
+
+# The project's name, referenced by `ref()` if this project is ever
+# consumed as a package by another dbt project.
+name: "sparkify_dw"
+version: "1.0.0"
+config-version: 2
+
+# Must match a profile name defined in profiles.yml (see profiles.yml.template).
+profile: "sparkify_dw"
+
+# Where dbt looks for source .sql model files.
+model-paths: ["models"]
+# Standard dbt directories - created empty here but conventionally expected.
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+# Directories dbt should remove when `dbt clean` is run.
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+# ---------------------------------------------------------------------------
+# Model configuration: controls how each folder's models are materialized.
+# ---------------------------------------------------------------------------
+models:
+  sparkify_dw:
+    # Staging models: lightweight VARIANT-parsing views, cheap to keep
+    # as VIEWs since they just re-expose RAW data with typed columns.
+    staging:
+      +materialized: view
+
+    # Marts (the star schema): materialize as TABLEs for query performance
+    # since these are what BI tools and analysts will query directly.
+    marts:
+      +materialized: table

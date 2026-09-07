@@ -1,0 +1,3161 @@
+==================== 2026-09-07T04:23:15.217357Z | 01a07a1b-2804-76b2-9ee1-ee12595a1dba ====================
+04:23:15.909425 [info ]: 
+==================== Execution Summary =====================
+Finished 'internal' successfully [692ms]
+[0m09:24:53.990089 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021846BB0C20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000218490BFED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000218490BFC50>]}
+
+
+============================== 09:24:54.006848 | 654cb4bf-8858-48dc-b160-79b6f1f08754 ==============================
+[0m09:24:54.006848 [info ] [MainThread]: Running with dbt=1.12.0
+[0m09:24:54.008949 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Noman Traders\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt ', 'log_path': 'c:\\Users\\Noman Traders\\Documents\\Sparkify-data-warehousing\\Sparkify-warehousing\\dbt_sparkify\\logs'}
+[0m09:24:54.089764 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B26124CC20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B26375FED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B26375FC50>]}
+
+
+============================== 09:24:54.097810 | 8eb18876-78c4-41b7-b296-acc0a044b306 ==============================
+[0m09:24:54.097810 [info ] [MainThread]: Running with dbt=1.12.0
+[0m09:24:54.099170 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Noman Traders\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt ', 'log_path': 'c:\\Users\\Noman Traders\\Documents\\Sparkify-data-warehousing\\Sparkify-warehousing\\dbt_sparkify\\logs'}
+[0m09:24:54.996178 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8eb18876-78c4-41b7-b296-acc0a044b306', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2616CAC40>]}
+[0m09:24:54.996252 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '654cb4bf-8858-48dc-b160-79b6f1f08754', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002184702AC40>]}
+[0m09:24:55.080266 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m09:24:55.082670 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m09:24:55.082792 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m09:24:55.086418 [debug] [MainThread]: Command `cli deps` succeeded at 09:24:55.086048 after 1.33 seconds
+[0m09:24:55.087448 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B260857790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B263A0FAC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2635BB750>]}
+[0m09:24:55.088535 [debug] [MainThread]: Flushing usage events
+[0m09:24:55.089371 [debug] [MainThread]: Command `cli deps` succeeded at 09:24:55.088984 after 1.46 seconds
+[0m09:24:55.090324 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000218461B3790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002184928FAC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021848F1B750>]}
+[0m09:24:55.091518 [debug] [MainThread]: Flushing usage events
+[0m09:24:56.429984 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:24:56.430348 [debug] [MainThread]: An error was encountered while trying to flush usage events
+==================== 2026-09-07T10:38:06.762979Z | 01a07b72-5970-7602-9b5a-203842aa3a62 ====================
+10:38:06.774066 [info ]: dbt-fusion 2.0.0-preview.218
+10:38:06.786039 [info ]: Started loading project
+10:38:06.869210 [info ]: Loading ~/.dbt/profiles.yml
+10:38:06.910007 [info ]: Finished loading project [  0.12s]
+10:38:06.919407 [info ]: Started debugging
+10:38:06.921557 [info ]: Debugging profile: dev
+10:38:06.922326 [info ]: Debugging dbt version: 2.0.0-preview.218
+10:38:06.923084 [info ]: Debugging platform: windows x86_64 (windows)
+10:38:06.925989 [info ]: Debugging adapter type: snowflake (remote)
+10:38:06.983730 [info ]: Debugging dependencies:
+  git: OK
+10:38:06.992983 [info ]: Debugging connection:
+  "client_session_keep_alive": false,
+  "account": "REPLACE_WITH_SNOWFLAKE_ACCOUNT",
+  "user": "REPLACE_WITH_SNOWFLAKE_USER",
+  "database": "SPARKIFY_DB",
+  "warehouse": "SPARKIFY_WH",
+  "schema": "ANALYTICS",
+  "role": "SPARKIFY_ROLE"
+10:38:07.013633 [debug]: Snowflake driver resolved: snowflake 0.21.0.dev+dbt0.21.17
+10:38:20.993850 [info ]: Debugging connection test: ERROR
+10:38:20.996892 [info ]: Finished debugging [ 14.08s]
+10:38:21.004116 [error]: [AuthenticationFailed (dbt1011)]: dbt was unable to connect to the database configured for the `snowflake` adapter.
+The following error was returned:
+
+[Snowflake] 261004 (08004): failed to auth for unknown reason. HTTP: 404, URL: https://REPLACE-WITH-SNOWFLAKE-ACCOUNT.snowflakecomputing.com:443/session/v1/login-request?databaseName=SPARKIFY_DB&requestId=73365183-9ead-4c2d-4a27-883c1a9ea245&request_guid=1db371b7-f783-4ec4-5898-68bcc1148855&roleName=SPARKIFY_ROLE&schemaName=ANALYTICS&warehouse=SPARKIFY_WH
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/core/connect-data-platform/connection-profiles
+10:38:22.271201 [info ]: 
+==================== Execution Summary =====================
+Finished 'debug' with 1 error for target 'dev' [15.5s]
+==================== 2026-09-07T10:45:41.239154Z | 01a07b79-48ef-7f01-a4be-a34890e63f4d ====================
+10:45:41.240112 [info ]: dbt-fusion 2.0.0-preview.218
+10:45:41.241956 [info ]: Started loading project
+10:45:41.251935 [info ]: Loading profiles.yml
+10:45:41.255332 [info ]: Finished loading project [  0.01s]
+10:45:41.258728 [error]: [IoError (dbt1001)]: Profile 'sparkify_dw' not found in profiles.yml
+  --> dbt_project.yml:14:10
+10:45:44.205782 [info ]: 
+==================== Execution Summary =====================
+Finished 'debug' with 1 error [3.0s]
+==================== 2026-09-07T10:52:34.523494Z | 01a07b7f-9754-7150-ab8c-6f9d62f54031 ====================
+10:52:34.524216 [info ]: dbt-fusion 2.0.0-preview.218
+10:52:34.525898 [info ]: Started loading project
+10:52:34.537085 [info ]: Loading profiles.yml
+10:52:34.538708 [info ]: Finished loading project [  0.01s]
+10:52:34.540034 [error]: [IoError (dbt1001)]: Profile 'sparkify_dw' not found in profiles.yml
+  --> dbt_project.yml:14:10
+10:52:35.989715 [info ]: 
+==================== Execution Summary =====================
+Finished 'debug' with 1 error [1.5s]
+==================== 2026-09-07T10:53:31.777675Z | 01a07b80-76fa-7f51-8de5-9b8f16db66a4 ====================
+10:53:31.778401 [info ]: dbt-fusion 2.0.0-preview.218
+10:53:31.780285 [info ]: Started loading project
+10:53:31.789406 [info ]: Loading profiles.yml
+10:53:31.792550 [info ]: Finished loading project [  0.01s]
+10:53:31.793299 [info ]: Started debugging
+10:53:31.793830 [info ]: Debugging profile: dev
+10:53:31.794599 [info ]: Debugging dbt version: 2.0.0-preview.218
+10:53:31.795300 [info ]: Debugging platform: windows x86_64 (windows)
+10:53:31.795924 [info ]: Debugging adapter type: snowflake (remote)
+10:53:31.858720 [info ]: Debugging dependencies:
+  git: OK
+10:53:31.859594 [info ]: Debugging connection:
+  "client_session_keep_alive": false,
+  "account": "JUMPDED-DTC83219",
+  "user": "TOMMASSHELBY",
+  "database": "SPARKIFY_DB",
+  "warehouse": "SPARKIFY_WH",
+  "schema": "ANALYTICS",
+  "role": "SPARKIFY_ROLE"
+10:53:31.860576 [debug]: Snowflake driver resolved: snowflake 0.21.0.dev+dbt0.21.17
+10:53:36.791671 [debug]: borrow_tlocal_connection() took 4.9309544s
+10:53:36.815384 [debug]: create_debug_span(...).entered() took 3.1808ms
+10:53:37.183274 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 364.5531ms
+10:53:37.185134 [debug]: reader.schema() took 1.7947ms
+10:53:37.189240 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 373.804ms
+10:53:37.191098 [debug]: concat_batches + normalize_result_column_names took 1.808ms
+10:53:37.191524 [debug]: record_current_span_status_from_attrs took 400.2µs
+10:53:37.192225 [debug]: Query executed on node unknown:
+select 1 as id
+10:53:37.192315 [debug]: drop(query_span_guard) (span exit/export) took 771.7µs
+10:53:37.202040 [debug]: adapter.execute() (full call, incl. adbc_execute_with_options) took 410.3094ms
+10:53:37.204380 [info ]: Debugging connection test: OK (5.3s)
+10:53:37.205572 [info ]: Debugged All checks passed!
+10:53:37.206690 [info ]: Finished debugging [  5.41s]
+10:53:38.910587 [info ]: 
+==================== Execution Summary =====================
+Finished 'debug' successfully for target 'dev' [7.1s]
+==================== 2026-09-07T10:54:24.604137Z | 01a07b81-4478-73e3-ab0f-6a272f758e43 ====================
+10:54:24.604887 [info ]: dbt-fusion 2.0.0-preview.218
+10:54:24.607120 [info ]: Started loading project
+10:54:24.617272 [info ]: Loading profiles.yml
+10:54:24.688276 [debug]:    Started loading packages
+10:54:24.758927 [debug]:     Loaded [  0.07s] packages
+10:54:24.785576 [info ]: Finished loading project [  0.18s]
+10:54:24.790981 [info ]: Started parsing
+10:54:25.030267 [debug]: Finished parsing models/staging/_staging__sources.yml [  0.04s]
+10:54:25.040226 [error]: [UnusedConfigKey (dbt1060)]: Ignored unexpected key `"loaded_at_field"`. YAML path: `loaded_at_field`.
+  --> models\staging\_staging__sources.yml:17:5
+10:54:25.042915 [error]: [UnusedConfigKey (dbt1060)]: Ignored unexpected key `"freshness"`. YAML path: `freshness`.
+  --> models\staging\_staging__sources.yml:21:9
+10:54:25.047718 [error]: [UnusedConfigKey (dbt1060)]: Ignored unexpected key `"loaded_at_field"`. YAML path: `loaded_at_field`.
+  --> models\staging\_staging__sources.yml:17:5
+10:54:25.048293 [error]: [UnusedConfigKey (dbt1060)]: Ignored unexpected key `"freshness"`. YAML path: `freshness`.
+  --> models\staging\_staging__sources.yml:26:9
+10:54:25.101183 [debug]: Finished parsing models/marts/dim_artists.sql [  0.05s]
+10:54:25.125703 [debug]: Finished parsing models/marts/dim_songs.sql [  0.02s]
+10:54:25.147255 [debug]: Finished parsing models/marts/dim_time.sql [  0.02s]
+10:54:25.164616 [debug]: Finished parsing models/marts/dim_users.sql [  0.02s]
+10:54:25.189679 [debug]: Finished parsing models/marts/fct_songplays.sql [  0.02s]
+10:54:25.224826 [debug]: Finished parsing models/staging/stg_events.sql [  0.04s]
+10:54:25.250202 [debug]: Finished parsing models/staging/stg_songs.sql [  0.03s]
+10:54:25.767647 [info ]: Finished parsing [  0.98s]
+10:54:26.181806 [info ]: suggestion: Run 'dbt deps' to see the latest fusion compatible packages. For compatibility errors, try the autofix script: https://github.com/dbt-labs/dbt-autofix
+10:54:26.181806 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' with 4 errors for target 'dev' [1.6s]
+==================== 2026-09-07T10:56:45.414220Z | 01a07b83-6ab0-73d3-8edb-fe0ee6578d73 ====================
+10:56:45.414801 [info ]: dbt-fusion 2.0.0-preview.218
+10:56:45.416004 [info ]: Started loading project
+10:56:45.422872 [info ]: Loading profiles.yml
+10:56:45.440028 [debug]:    Started loading packages
+10:56:45.447163 [debug]:     Loaded [  0.01s] packages
+10:56:45.450093 [info ]: Finished loading project [  0.03s]
+10:56:45.451707 [info ]: Started parsing
+10:56:45.583970 [debug]: Finished parsing models/staging/_staging__sources.yml [  0.02s]
+10:56:45.588586 [debug]: Finished parsing models/marts/dim_artists.sql [  0.00s]
+10:56:45.589850 [debug]: Finished parsing models/marts/dim_songs.sql [  0.00s]
+10:56:45.591072 [debug]: Finished parsing models/marts/dim_time.sql [  0.00s]
+10:56:45.592266 [debug]: Finished parsing models/marts/dim_users.sql [  0.00s]
+10:56:45.593903 [debug]: Finished parsing models/marts/fct_songplays.sql [  0.00s]
+10:56:45.595469 [debug]: Finished parsing models/staging/stg_events.sql [  0.00s]
+10:56:45.597089 [debug]: Finished parsing models/staging/stg_songs.sql [  0.00s]
+10:56:46.103174 [info ]: Finished parsing [  0.65s]
+10:56:46.178714 [info ]: Started scheduling
+10:56:46.188643 [info ]: Finished scheduling [  0.01s]
+10:56:46.207673 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SPARKIFY_DB", schema: "RAW", table: "RAW_SONGS" }) and interval: None
+10:56:46.208719 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SPARKIFY_DB", schema: "RAW", table: "RAW_EVENTS" }) and interval: None
+10:56:46.245559 [info ]: Started building task graph
+10:56:46.260250 [info ]: Finished building task graph [  0.01s]
+10:56:46.355106 [debug]: Snowflake driver resolved: snowflake 0.21.0.dev+dbt0.21.17
+10:56:49.417141 [debug]: create_debug_span(...).entered() took 51.4µs
+10:56:49.816484 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 399.0914ms
+10:56:49.816547 [debug]: reader.schema() took 6.8µs
+10:56:49.818641 [debug]: batch-consume loop (for res in reader) took 2.0487ms
+10:56:49.820584 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 403.3958ms
+10:56:49.820747 [debug]: concat_batches + normalize_result_column_names took 135.8µs
+10:56:49.820786 [debug]: record_current_span_status_from_attrs took 27.6µs
+10:56:49.820806 [debug]: Query executed on node unknown:
+show terse schemas in database SPARKIFY_DB
+    limit 10000
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "sparkify_dw", "target_name": "dev"} */
+10:56:49.820864 [debug]: drop(query_span_guard) (span exit/export) took 67.5µs
+10:56:49.828291 [debug]: create_debug_span(...).entered() took 19.2µs
+10:56:50.109753 [debug]: Query executed on node unknown:
+create schema if not exists SPARKIFY_DB.ANALYTICS_analytics
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "sparkify_dw", "target_name": "dev"} */
+10:56:51.112997 [debug]: create_debug_span(...).entered() took 25.8µs
+10:56:51.413422 [debug]: Query executed on node unknown:
+create schema if not exists SPARKIFY_DB.ANALYTICS_staging
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "sparkify_dw", "target_name": "dev"} */
+10:56:52.421444 [info ]: Started rendering (7 nodes)
+10:56:52.423551 [info ]: Started model ANALYTICS_staging.stg_events
+10:56:52.424401 [debug]: Started rendering model ANALYTICS_staging.stg_events
+10:56:52.426421 [info ]: Started model ANALYTICS_staging.stg_songs
+10:56:52.426462 [debug]: Started rendering model ANALYTICS_staging.stg_songs
+10:56:52.454777 [debug]: Compiled SQL for node model.sparkify_dw.stg_events at target\compiled\sparkify_dw\models\staging\stg_events.sql
+10:56:52.454984 [debug]: Compiled SQL for node model.sparkify_dw.stg_songs at target\compiled\sparkify_dw\models\staging\stg_songs.sql
+10:56:52.458762 [debug]: Finished rendering [  0.03s] model ANALYTICS_staging.stg_songs [success]
+10:56:52.461933 [info ]: Started analyzing (7 nodes)
+10:56:52.462552 [debug]: Started analyzing model ANALYTICS_staging.stg_songs
+10:56:52.462734 [debug]: Finished rendering [  0.04s] model ANALYTICS_staging.stg_events [success]
+10:56:52.463523 [debug]: Started analyzing model ANALYTICS_staging.stg_events
+10:56:52.565532 [debug]: Finished analyzing [  0.10s] model ANALYTICS_staging.stg_songs [success]
+10:56:52.567243 [info ]: Started running (7 nodes)
+10:56:52.567871 [info ]: Started running model ANALYTICS_staging.stg_songs
+10:56:52.567975 [debug]: Finished analyzing [  0.10s] model ANALYTICS_staging.stg_events [success]
+10:56:52.569530 [info ]: Started running model ANALYTICS_staging.stg_events
+10:56:52.628499 [debug]: create_debug_span(...).entered() took 76.5µs
+10:56:53.687827 [debug]: Query executed on node model.sparkify_dw.stg_songs:
+SHOW OBJECTS IN SCHEMA "SPARKIFY_DB"."ANALYTICS_STAGING" LIMIT 10000
+10:56:53.694130 [debug]: create_debug_span(...).entered() took 41.7µs
+10:56:54.918033 [debug]: Query executed on node model.sparkify_dw.stg_songs:
+show objects like 'STG_SONGS' in schema SPARKIFY_DB.ANALYTICS_staging
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.sparkify_dw.stg_songs", "profile_name": "sparkify_dw", "target_name": "dev"} */
+10:56:54.930930 [debug]: Writing runtime sql for node "model.sparkify_dw.stg_songs"
+10:56:54.938484 [debug]: create_debug_span(...).entered() took 32.6µs
+10:56:55.210768 [debug]: Query executed on node model.sparkify_dw.stg_songs:
+create or replace   view SPARKIFY_DB.ANALYTICS_staging.stg_songs
+  
+  
+  
+  
+  as (
+    -- =============================================================================
+-- stg_songs.sql
+-- Parses the raw VARIANT song-metadata payloads into typed columns.
+-- One row per song/artist combination, later split into dim_songs and
+-- dim_artists in the marts layer.
+-- =============================================================================
+
+-- source() resolves to SPARKIFY_DB.RAW.RAW_SONGS via _staging__sources.yml.
+with source as (
+
+    select * from SPARKIFY_DB.RAW.raw_songs
+
+),
+
+-- Extract and cast each field from the VARIANT payload.
+parsed as (
+
+    select
+        -- Song attributes.
+        raw_payload:song_id::string          as song_id,
+        raw_payload:title::string             as title,
+        raw_payload:duration::float           as duration_seconds,
+        -- year is stored as 0 for unknown release years in the source data;
+        -- normalize 0 to NULL so downstream aggregations aren't skewed.
+        nullif(raw_payload:year::int, 0)      as release_year,
+
+        -- Artist attributes, kept alongside song attributes in this staging
+        -- model since they arrive in the same JSON payload; dim_artists
+        -- deduplicates them at the marts layer.
+        raw_payload:artist_id::string         as artist_id,
+        raw_payload:artist_name::string        as artist_name,
+        raw_payload:artist_location::string    as artist_location,
+        raw_payload:artist_latitude::float     as artist_latitude,
+        raw_payload:artist_longitude::float    as artist_longitude,
+
+        -- Lineage columns carried through from the RAW table.
+        source_file_name,
+        loaded_at
+
+    from source
+
+)
+
+select * from parsed
+  )
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.sparkify_dw.stg_songs", "profile_name": "sparkify_dw", "target_name": "dev"} */
+10:56:55.424163 [debug]: create_debug_span(...).entered() took 51.6µs
+10:56:55.714515 [debug]: Query executed on node model.sparkify_dw.stg_events:
+SHOW OBJECTS IN SCHEMA "SPARKIFY_DB"."ANALYTICS_STAGING" LIMIT 10000
+10:56:55.716115 [debug]: create_debug_span(...).entered() took 25.1µs
+10:56:55.973373 [debug]: Query executed on node model.sparkify_dw.stg_events:
+show objects like 'STG_EVENTS' in schema SPARKIFY_DB.ANALYTICS_staging
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.sparkify_dw.stg_events", "profile_name": "sparkify_dw", "target_name": "dev"} */
+10:56:55.978025 [debug]: Writing runtime sql for node "model.sparkify_dw.stg_events"
+10:56:55.982270 [debug]: create_debug_span(...).entered() took 61.3µs
+10:56:56.217144 [error]: [DbDriverFailed (dbt1308)]: Database Error in model stg_songs (target\run\sparkify_dw\models\staging\stg_songs.sql)
+  [Snowflake] 002003 (02000): SQL compilation error:
+  Schema 'SPARKIFY_DB.ANALYTICS_STAGING' does not exist or not authorized.
+  (in run\sparkify_dw\models/staging\stg_songs.sql)
+10:56:56.218540 [info ]: Finished running [  3.65s] model ANALYTICS_staging.stg_songs [error]
+10:56:56.218961 [info ]:     Failed [  3.78s] model ANALYTICS_staging.stg_songs (view)
+10:56:56.221776 [info ]: Started model ANALYTICS_analytics.dim_artists
+10:56:56.221845 [debug]: Started rendering model ANALYTICS_analytics.dim_artists
+10:56:56.222258 [debug]: Finished rendering [  0.00s] model ANALYTICS_analytics.dim_artists [skipped]
+10:56:56.222579 [debug]: Started analyzing model ANALYTICS_analytics.dim_artists
+10:56:56.222631 [debug]: Finished analyzing [  0.00s] model ANALYTICS_analytics.dim_artists [skipped]
+10:56:56.223041 [info ]: Started running model ANALYTICS_analytics.dim_artists
+10:56:56.223098 [info ]: Finished running [  0.00s] model ANALYTICS_analytics.dim_artists [skipped]
+10:56:56.223409 [info ]:    Skipped [-------] model ANALYTICS_analytics.dim_artists (table)
+10:56:56.225307 [info ]: Started model ANALYTICS_analytics.dim_songs
+10:56:56.225359 [debug]: Started rendering model ANALYTICS_analytics.dim_songs
+10:56:56.225457 [debug]: Finished rendering [  0.00s] model ANALYTICS_analytics.dim_songs [skipped]
+10:56:56.225846 [debug]: Started analyzing model ANALYTICS_analytics.dim_songs
+10:56:56.225893 [debug]: Finished analyzing [  0.00s] model ANALYTICS_analytics.dim_songs [skipped]
+10:56:56.226129 [info ]: Started running model ANALYTICS_analytics.dim_songs
+10:56:56.226186 [info ]: Finished running [  0.00s] model ANALYTICS_analytics.dim_songs [skipped]
+10:56:56.226573 [info ]:    Skipped [-------] model ANALYTICS_analytics.dim_songs (table)
+10:56:56.431990 [debug]: Query executed on node model.sparkify_dw.stg_events:
+create or replace   view SPARKIFY_DB.ANALYTICS_staging.stg_events
+  
+  
+  
+  
+  as (
+    -- =============================================================================
+-- stg_events.sql
+-- Parses the raw VARIANT event payloads into typed columns and filters down
+-- to only "NextSong" events, since those are the only rows that represent
+-- an actual song play (other page values are things like "Login", "Home").
+-- Materialized as a VIEW (see dbt_project.yml) - cheap re-computation over
+-- the RAW table, no duplicated storage.
+-- =============================================================================
+
+-- source() resolves to SPARKIFY_DB.RAW.RAW_EVENTS via _staging__sources.yml,
+-- so this model never needs to hardcode the physical table location.
+with source as (
+
+    select * from SPARKIFY_DB.RAW.raw_events
+
+),
+
+-- Pull each field out of the VARIANT payload with the ':' path operator and
+-- cast it to its proper type, since VARIANT fields are untyped by default.
+parsed as (
+
+    select
+        -- User identifiers and profile attributes.
+        raw_payload:userId::int                        as user_id,
+        raw_payload:firstName::string                   as first_name,
+        raw_payload:lastName::string                     as last_name,
+        raw_payload:gender::string                       as gender,
+        raw_payload:level::string                        as level,
+
+        -- Session / event context.
+        raw_payload:sessionId::int                       as session_id,
+        raw_payload:itemInSession::int                    as item_in_session,
+        raw_payload:page::string                          as page,
+        raw_payload:auth::string                          as auth,
+        raw_payload:method::string                        as method,
+        raw_payload:status::int                           as status_code,
+        raw_payload:location::string                      as location,
+        raw_payload:userAgent::string                     as user_agent,
+
+        -- Song-play specific attributes.
+        raw_payload:song::string                          as song_title,
+        raw_payload:artist::string                        as artist_name,
+        raw_payload:length::float                         as duration_seconds,
+
+        -- Timestamps arrive as epoch milliseconds; convert to a proper
+        -- TIMESTAMP_NTZ so dbt_time / date functions work downstream.
+        raw_payload:ts::bigint                            as event_ts_epoch_ms,
+        to_timestamp_ntz(raw_payload:ts::bigint / 1000)   as event_timestamp,
+        raw_payload:registration::bigint                  as registration_epoch_ms,
+
+        -- Lineage columns carried through from the RAW table.
+        source_file_name,
+        loaded_at
+
+    from source
+
+)
+
+-- Keep only actual song-play events. Every other `page` value (e.g.
+-- "Home", "Login", "Logout", "Help") is navigation, not a play, and would
+-- pollute fct_songplays if left in.
+select *
+from parsed
+where page = 'NextSong'
+  )
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.sparkify_dw.stg_events", "profile_name": "sparkify_dw", "target_name": "dev"} */
+10:56:57.433102 [error]: [DbDriverFailed (dbt1308)]: Database Error in model stg_events (target\run\sparkify_dw\models\staging\stg_events.sql)
+  [Snowflake] 002003 (02000): SQL compilation error:
+  Schema 'SPARKIFY_DB.ANALYTICS_STAGING' does not exist or not authorized.
+  (in run\sparkify_dw\models/staging\stg_events.sql)
+10:56:57.433343 [info ]: Finished running [  4.86s] model ANALYTICS_staging.stg_events [error]
+10:56:57.433834 [info ]:     Failed [  5.00s] model ANALYTICS_staging.stg_events (view)
+10:56:57.436025 [info ]: Started model ANALYTICS_analytics.fct_songplays
+10:56:57.436076 [debug]: Started rendering model ANALYTICS_analytics.fct_songplays
+10:56:57.436130 [debug]: Finished rendering [  0.00s] model ANALYTICS_analytics.fct_songplays [skipped]
+10:56:57.437555 [debug]: Started analyzing model ANALYTICS_analytics.fct_songplays
+10:56:57.437604 [debug]: Finished analyzing [  0.00s] model ANALYTICS_analytics.fct_songplays [skipped]
+10:56:57.437914 [info ]: Started running model ANALYTICS_analytics.fct_songplays
+10:56:57.437996 [info ]: Finished running [  0.00s] model ANALYTICS_analytics.fct_songplays [skipped]
+10:56:57.438256 [info ]:    Skipped [-------] model ANALYTICS_analytics.fct_songplays (table)
+10:56:57.440162 [info ]: Started model ANALYTICS_analytics.dim_users
+10:56:57.440225 [debug]: Started rendering model ANALYTICS_analytics.dim_users
+10:56:57.440367 [debug]: Finished rendering [  0.00s] model ANALYTICS_analytics.dim_users [skipped]
+10:56:57.440967 [debug]: Started analyzing model ANALYTICS_analytics.dim_users
+10:56:57.441067 [debug]: Finished analyzing [  0.00s] model ANALYTICS_analytics.dim_users [skipped]
+10:56:57.441300 [info ]: Started running model ANALYTICS_analytics.dim_users
+10:56:57.441379 [info ]: Finished running [  0.00s] model ANALYTICS_analytics.dim_users [skipped]
+10:56:57.441598 [info ]:    Skipped [-------] model ANALYTICS_analytics.dim_users (table)
+10:56:57.443715 [info ]: Started model ANALYTICS_analytics.dim_time
+10:56:57.443778 [debug]: Started rendering model ANALYTICS_analytics.dim_time
+10:56:57.443844 [debug]: Finished rendering [  0.00s] model ANALYTICS_analytics.dim_time [skipped]
+10:56:57.444108 [info ]: Finished rendering [  5.02s] (7 nodes, 5 skipped, 0 errors)
+10:56:57.445981 [debug]: Started analyzing model ANALYTICS_analytics.dim_time
+10:56:57.446059 [debug]: Finished analyzing [  0.00s] model ANALYTICS_analytics.dim_time [skipped]
+10:56:57.446996 [info ]: Finished analyzing [  4.99s] (7 nodes, 5 skipped, 0 errors)
+10:56:57.448432 [info ]: Started running model ANALYTICS_analytics.dim_time
+10:56:57.448557 [info ]: Finished running [  0.00s] model ANALYTICS_analytics.dim_time [skipped]
+10:56:57.448864 [info ]: Finished running [  4.88s] (7 nodes, 5 skipped, 2 errors)
+10:56:57.450142 [info ]:    Skipped [-------] model ANALYTICS_analytics.dim_time (table)
+10:56:58.068724 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' with 2 errors for target 'dev' [12.7s]
+Processed: 7 models
+Summary: 7 total | 2 error | 5 skipped
+==================== 2026-09-07T11:00:31.234288Z | 01a07b86-dcf9-75b0-bbbc-dbd872992a0f ====================
+11:00:31.235175 [info ]: dbt-fusion 2.0.0-preview.218
+11:00:31.237584 [info ]: Started loading project
+11:00:31.248999 [info ]: Loading profiles.yml
+11:00:31.284768 [debug]:    Started loading packages
+11:00:31.296458 [debug]:     Loaded [  0.01s] packages
+11:00:31.301898 [info ]: Finished loading project [  0.06s]
+11:00:31.304959 [info ]: Started parsing
+11:00:31.472183 [debug]: Finished parsing models/staging/_staging__sources.yml [  0.00s]
+11:00:31.479409 [debug]: Finished parsing models/marts/dim_artists.sql [  0.00s]
+11:00:31.480932 [debug]: Finished parsing models/marts/dim_songs.sql [  0.00s]
+11:00:31.483084 [debug]: Finished parsing models/marts/dim_time.sql [  0.00s]
+11:00:31.484770 [debug]: Finished parsing models/marts/dim_users.sql [  0.00s]
+11:00:31.486635 [debug]: Finished parsing models/marts/fct_songplays.sql [  0.00s]
+11:00:31.488557 [debug]: Finished parsing models/staging/stg_events.sql [  0.00s]
+11:00:31.490402 [debug]: Finished parsing models/staging/stg_songs.sql [  0.00s]
+11:00:31.980496 [info ]: Finished parsing [  0.68s]
+11:00:32.051482 [info ]: Started scheduling
+11:00:32.052333 [info ]: Finished scheduling [  0.00s]
+11:00:32.061652 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SPARKIFY_DB", schema: "RAW", table: "RAW_EVENTS" }) and interval: None
+11:00:32.061719 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SPARKIFY_DB", schema: "RAW", table: "RAW_SONGS" }) and interval: None
+11:00:32.068810 [info ]: Started building task graph
+11:00:32.070063 [info ]: Finished building task graph [  0.00s]
+11:00:32.078727 [debug]: Snowflake driver resolved: snowflake 0.21.0.dev+dbt0.21.17
+11:00:36.497367 [debug]: create_debug_span(...).entered() took 83.2µs
+11:00:37.102713 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 604.6237ms
+11:00:37.102809 [debug]: reader.schema() took 10.5µs
+11:00:37.107469 [debug]: batch-consume loop (for res in reader) took 4.5867ms
+11:00:37.112730 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 615.2565ms
+11:00:37.113325 [debug]: concat_batches + normalize_result_column_names took 481.2µs
+11:00:37.113448 [debug]: record_current_span_status_from_attrs took 33.1µs
+11:00:37.113527 [debug]: Query executed on node unknown:
+show terse schemas in database SPARKIFY_DB
+    limit 10000
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "sparkify_dw", "target_name": "dev"} */
+11:00:37.113654 [debug]: drop(query_span_guard) (span exit/export) took 159.7µs
+11:00:37.117467 [debug]: create_debug_span(...).entered() took 54.1µs
+11:00:39.982073 [debug]: Query executed on node unknown:
+create schema if not exists SPARKIFY_DB.ANALYTICS_STAGING
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "sparkify_dw", "target_name": "dev"} */
+11:00:40.984611 [debug]: create_debug_span(...).entered() took 56.7µs
+11:00:41.308174 [debug]: Query executed on node unknown:
+create schema if not exists SPARKIFY_DB.ANALYTICS_analytics
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "sparkify_dw", "target_name": "dev"} */
+11:00:42.309648 [info ]: Started rendering (7 nodes)
+11:00:42.331522 [info ]: Started model ANALYTICS_STAGING.stg_events
+11:00:42.331678 [debug]: Started rendering model ANALYTICS_STAGING.stg_events
+11:00:42.332023 [info ]: Started model ANALYTICS_STAGING.stg_songs
+11:00:42.332099 [debug]: Started rendering model ANALYTICS_STAGING.stg_songs
+11:00:42.342344 [debug]: Compiled SQL for node model.sparkify_dw.stg_events at target\compiled\sparkify_dw\models\staging\stg_events.sql
+11:00:42.347765 [debug]: Compiled SQL for node model.sparkify_dw.stg_songs at target\compiled\sparkify_dw\models\staging\stg_songs.sql
+11:00:42.347058 [debug]: Finished rendering [  0.02s] model ANALYTICS_STAGING.stg_events [success]
+11:00:42.348996 [info ]: Started analyzing (7 nodes)
+11:00:42.349878 [debug]: Started analyzing model ANALYTICS_STAGING.stg_events
+11:00:42.350121 [debug]: Finished rendering [  0.02s] model ANALYTICS_STAGING.stg_songs [success]
+11:00:42.351705 [debug]: Started analyzing model ANALYTICS_STAGING.stg_songs
+11:00:42.443421 [debug]: Finished analyzing [  0.09s] model ANALYTICS_STAGING.stg_songs [success]
+11:00:42.445526 [info ]: Started running (7 nodes)
+11:00:42.446479 [info ]: Started running model ANALYTICS_STAGING.stg_songs
+11:00:42.446621 [debug]: Finished analyzing [  0.10s] model ANALYTICS_STAGING.stg_events [success]
+11:00:42.448884 [info ]: Started running model ANALYTICS_STAGING.stg_events
+11:00:42.460216 [debug]: create_debug_span(...).entered() took 130.3µs
+11:00:42.865568 [debug]: Query executed on node model.sparkify_dw.stg_events:
+SHOW OBJECTS IN SCHEMA "SPARKIFY_DB"."ANALYTICS_STAGING" LIMIT 10000
+11:00:42.868514 [debug]: create_debug_span(...).entered() took 51.8µs
+11:00:43.248797 [debug]: Query executed on node model.sparkify_dw.stg_events:
+show objects like 'STG_EVENTS' in schema SPARKIFY_DB.ANALYTICS_STAGING
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.sparkify_dw.stg_events", "profile_name": "sparkify_dw", "target_name": "dev"} */
+11:00:43.259448 [debug]: Writing runtime sql for node "model.sparkify_dw.stg_events"
+11:00:43.265941 [debug]: create_debug_span(...).entered() took 77.9µs
+11:00:43.968231 [debug]: Query executed on node model.sparkify_dw.stg_events:
+create or replace   view SPARKIFY_DB.ANALYTICS_STAGING.stg_events
+  
+  
+  
+  
+  as (
+    -- =============================================================================
+-- stg_events.sql
+-- Parses the raw VARIANT event payloads into typed columns and filters down
+-- to only "NextSong" events, since those are the only rows that represent
+-- an actual song play (other page values are things like "Login", "Home").
+-- Materialized as a VIEW (see dbt_project.yml) - cheap re-computation over
+-- the RAW table, no duplicated storage.
+-- =============================================================================
+
+-- source() resolves to SPARKIFY_DB.RAW.RAW_EVENTS via _staging__sources.yml,
+-- so this model never needs to hardcode the physical table location.
+with source as (
+
+    select * from SPARKIFY_DB.RAW.raw_events
+
+),
+
+-- Pull each field out of the VARIANT payload with the ':' path operator and
+-- cast it to its proper type, since VARIANT fields are untyped by default.
+parsed as (
+
+    select
+        -- User identifiers and profile attributes.
+        raw_payload:userId::int                        as user_id,
+        raw_payload:firstName::string                   as first_name,
+        raw_payload:lastName::string                     as last_name,
+        raw_payload:gender::string                       as gender,
+        raw_payload:level::string                        as level,
+
+        -- Session / event context.
+        raw_payload:sessionId::int                       as session_id,
+        raw_payload:itemInSession::int                    as item_in_session,
+        raw_payload:page::string                          as page,
+        raw_payload:auth::string                          as auth,
+        raw_payload:method::string                        as method,
+        raw_payload:status::int                           as status_code,
+        raw_payload:location::string                      as location,
+        raw_payload:userAgent::string                     as user_agent,
+
+        -- Song-play specific attributes.
+        raw_payload:song::string                          as song_title,
+        raw_payload:artist::string                        as artist_name,
+        raw_payload:length::float                         as duration_seconds,
+
+        -- Timestamps arrive as epoch milliseconds; convert to a proper
+        -- TIMESTAMP_NTZ so dbt_time / date functions work downstream.
+        raw_payload:ts::bigint                            as event_ts_epoch_ms,
+        to_timestamp_ntz(raw_payload:ts::bigint / 1000)   as event_timestamp,
+        raw_payload:registration::bigint                  as registration_epoch_ms,
+
+        -- Lineage columns carried through from the RAW table.
+        source_file_name,
+        loaded_at
+
+    from source
+
+)
+
+-- Keep only actual song-play events. Every other `page` value (e.g.
+-- "Home", "Login", "Logout", "Help") is navigation, not a play, and would
+-- pollute fct_songplays if left in.
+select *
+from parsed
+where page = 'NextSong'
+  )
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.sparkify_dw.stg_events", "profile_name": "sparkify_dw", "target_name": "dev"} */
+11:00:44.969885 [error]: [DbDriverFailed (dbt1308)]: Database Error in model stg_events (target\run\sparkify_dw\models\staging\stg_events.sql)
+  [Snowflake] 002003 (02000): SQL compilation error:
+  Schema 'SPARKIFY_DB.ANALYTICS_STAGING' does not exist or not authorized.
+  (in run\sparkify_dw\models/staging\stg_events.sql)
+11:00:44.970454 [info ]: Finished running [  2.52s] model ANALYTICS_STAGING.stg_events [error]
+11:00:44.973389 [info ]:     Failed [  2.63s] model ANALYTICS_STAGING.stg_events (view)
+11:00:44.977612 [info ]: Started model ANALYTICS_analytics.dim_time
+11:00:44.977724 [debug]: Started rendering model ANALYTICS_analytics.dim_time
+11:00:44.977835 [debug]: Finished rendering [  0.00s] model ANALYTICS_analytics.dim_time [skipped]
+11:00:44.978451 [debug]: Started analyzing model ANALYTICS_analytics.dim_time
+11:00:44.978515 [debug]: Finished analyzing [  0.00s] model ANALYTICS_analytics.dim_time [skipped]
+11:00:44.979105 [info ]: Started running model ANALYTICS_analytics.dim_time
+11:00:44.979191 [info ]: Finished running [  0.00s] model ANALYTICS_analytics.dim_time [skipped]
+11:00:44.979789 [info ]:    Skipped [-------] model ANALYTICS_analytics.dim_time (table)
+11:00:44.983350 [info ]: Started model ANALYTICS_analytics.dim_users
+11:00:44.983443 [debug]: Started rendering model ANALYTICS_analytics.dim_users
+11:00:44.983591 [debug]: Finished rendering [  0.00s] model ANALYTICS_analytics.dim_users [skipped]
+11:00:44.984179 [debug]: Started analyzing model ANALYTICS_analytics.dim_users
+11:00:44.984315 [debug]: Finished analyzing [  0.00s] model ANALYTICS_analytics.dim_users [skipped]
+11:00:44.985134 [info ]: Started running model ANALYTICS_analytics.dim_users
+11:00:44.985272 [info ]: Finished running [  0.00s] model ANALYTICS_analytics.dim_users [skipped]
+11:00:44.985826 [info ]:    Skipped [-------] model ANALYTICS_analytics.dim_users (table)
+11:00:45.192573 [debug]: create_debug_span(...).entered() took 61.3µs
+11:00:45.547590 [debug]: Query executed on node model.sparkify_dw.stg_songs:
+SHOW OBJECTS IN SCHEMA "SPARKIFY_DB"."ANALYTICS_STAGING" LIMIT 10000
+11:00:45.550722 [debug]: create_debug_span(...).entered() took 43.1µs
+11:00:45.947254 [debug]: Query executed on node model.sparkify_dw.stg_songs:
+show objects like 'STG_SONGS' in schema SPARKIFY_DB.ANALYTICS_STAGING
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.sparkify_dw.stg_songs", "profile_name": "sparkify_dw", "target_name": "dev"} */
+11:00:45.959345 [debug]: Writing runtime sql for node "model.sparkify_dw.stg_songs"
+11:00:45.966834 [debug]: create_debug_span(...).entered() took 77.4µs
+11:00:46.321297 [debug]: Query executed on node model.sparkify_dw.stg_songs:
+create or replace   view SPARKIFY_DB.ANALYTICS_STAGING.stg_songs
+  
+  
+  
+  
+  as (
+    -- =============================================================================
+-- stg_songs.sql
+-- Parses the raw VARIANT song-metadata payloads into typed columns.
+-- One row per song/artist combination, later split into dim_songs and
+-- dim_artists in the marts layer.
+-- =============================================================================
+
+-- source() resolves to SPARKIFY_DB.RAW.RAW_SONGS via _staging__sources.yml.
+with source as (
+
+    select * from SPARKIFY_DB.RAW.raw_songs
+
+),
+
+-- Extract and cast each field from the VARIANT payload.
+parsed as (
+
+    select
+        -- Song attributes.
+        raw_payload:song_id::string          as song_id,
+        raw_payload:title::string             as title,
+        raw_payload:duration::float           as duration_seconds,
+        -- year is stored as 0 for unknown release years in the source data;
+        -- normalize 0 to NULL so downstream aggregations aren't skewed.
+        nullif(raw_payload:year::int, 0)      as release_year,
+
+        -- Artist attributes, kept alongside song attributes in this staging
+        -- model since they arrive in the same JSON payload; dim_artists
+        -- deduplicates them at the marts layer.
+        raw_payload:artist_id::string         as artist_id,
+        raw_payload:artist_name::string        as artist_name,
+        raw_payload:artist_location::string    as artist_location,
+        raw_payload:artist_latitude::float     as artist_latitude,
+        raw_payload:artist_longitude::float    as artist_longitude,
+
+        -- Lineage columns carried through from the RAW table.
+        source_file_name,
+        loaded_at
+
+    from source
+
+)
+
+select * from parsed
+  )
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.sparkify_dw.stg_songs", "profile_name": "sparkify_dw", "target_name": "dev"} */
+11:00:47.323170 [error]: [DbDriverFailed (dbt1308)]: Database Error in model stg_songs (target\run\sparkify_dw\models\staging\stg_songs.sql)
+  [Snowflake] 002003 (02000): SQL compilation error:
+  Schema 'SPARKIFY_DB.ANALYTICS_STAGING' does not exist or not authorized.
+  (in run\sparkify_dw\models/staging\stg_songs.sql)
+11:00:47.323678 [info ]: Finished running [  4.88s] model ANALYTICS_STAGING.stg_songs [error]
+11:00:47.326806 [info ]:     Failed [  4.99s] model ANALYTICS_STAGING.stg_songs (view)
+11:00:47.331651 [info ]: Started model ANALYTICS_analytics.dim_songs
+11:00:47.331738 [debug]: Started rendering model ANALYTICS_analytics.dim_songs
+11:00:47.331832 [debug]: Finished rendering [  0.00s] model ANALYTICS_analytics.dim_songs [skipped]
+11:00:47.332441 [debug]: Started analyzing model ANALYTICS_analytics.dim_songs
+11:00:47.332534 [debug]: Finished analyzing [  0.00s] model ANALYTICS_analytics.dim_songs [skipped]
+11:00:47.333355 [info ]: Started running model ANALYTICS_analytics.dim_songs
+11:00:47.333545 [info ]: Finished running [  0.00s] model ANALYTICS_analytics.dim_songs [skipped]
+11:00:47.334176 [info ]:    Skipped [-------] model ANALYTICS_analytics.dim_songs (table)
+11:00:47.339284 [info ]: Started model ANALYTICS_analytics.dim_artists
+11:00:47.339407 [debug]: Started rendering model ANALYTICS_analytics.dim_artists
+11:00:47.339517 [debug]: Finished rendering [  0.00s] model ANALYTICS_analytics.dim_artists [skipped]
+11:00:47.340221 [debug]: Started analyzing model ANALYTICS_analytics.dim_artists
+11:00:47.340386 [debug]: Finished analyzing [  0.00s] model ANALYTICS_analytics.dim_artists [skipped]
+11:00:47.341116 [info ]: Started running model ANALYTICS_analytics.dim_artists
+11:00:47.341282 [info ]: Finished running [  0.00s] model ANALYTICS_analytics.dim_artists [skipped]
+11:00:47.341839 [info ]:    Skipped [-------] model ANALYTICS_analytics.dim_artists (table)
+11:00:47.345604 [info ]: Started model ANALYTICS_analytics.fct_songplays
+11:00:47.345743 [debug]: Started rendering model ANALYTICS_analytics.fct_songplays
+11:00:47.345892 [debug]: Finished rendering [  0.00s] model ANALYTICS_analytics.fct_songplays [skipped]
+11:00:47.346510 [info ]: Finished rendering [  5.04s] (7 nodes, 5 skipped, 0 errors)
+11:00:47.350788 [debug]: Started analyzing model ANALYTICS_analytics.fct_songplays
+11:00:47.350963 [debug]: Finished analyzing [  0.00s] model ANALYTICS_analytics.fct_songplays [skipped]
+11:00:47.353632 [info ]: Finished analyzing [  5.00s] (7 nodes, 5 skipped, 0 errors)
+11:00:47.357368 [info ]: Started running model ANALYTICS_analytics.fct_songplays
+11:00:47.357562 [info ]: Finished running [  0.00s] model ANALYTICS_analytics.fct_songplays [skipped]
+11:00:47.358124 [info ]: Finished running [  4.91s] (7 nodes, 5 skipped, 2 errors)
+11:00:47.361117 [info ]:    Skipped [-------] model ANALYTICS_analytics.fct_songplays (table)
+11:00:47.954495 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' with 2 errors for target 'dev' [16.7s]
+Processed: 7 models
+Summary: 7 total | 2 error | 5 skipped
+==================== 2026-09-07T11:08:10.109585Z | 01a07b8d-ddf7-76d2-a84e-72de85bcd5b6 ====================
+11:08:10.113780 [info ]: dbt-fusion 2.0.0-preview.218
+11:08:10.114981 [info ]: Started cleaning
+11:08:10.116095 [info ]: Started loading project
+11:08:10.125560 [info ]: Loading profiles.yml
+11:08:10.129103 [info ]: Finished loading project [  0.01s]
+11:08:10.142815 [info ]: Removing dbt_packages
+11:08:10.144396 [info ]: Removing target
+11:08:10.190099 [info ]: Finished cleaning [  0.08s]
+11:08:12.405481 [info ]: 
+==================== Execution Summary =====================
+Finished 'clean' successfully [2.3s]
+==================== 2026-09-07T11:08:13.142276Z | 01a07b8d-e963-7d81-953e-ae63f0e0a802 ====================
+11:08:13.143162 [info ]: dbt-fusion 2.0.0-preview.218
+11:08:13.145108 [info ]: Started loading project
+11:08:13.155763 [info ]: Loading profiles.yml
+11:08:13.183480 [debug]:    Started loading packages
+11:08:13.192622 [debug]:     Loaded [  0.01s] packages
+11:08:13.196265 [info ]: Finished loading project [  0.05s]
+11:08:13.198892 [info ]: Started parsing
+11:08:13.338091 [debug]: Finished parsing models/staging/_staging__sources.yml [  0.00s]
+11:08:13.342740 [debug]: Finished parsing models/marts/dim_artists.sql [  0.00s]
+11:08:13.343977 [debug]: Finished parsing models/marts/dim_songs.sql [  0.00s]
+11:08:13.345179 [debug]: Finished parsing models/marts/dim_time.sql [  0.00s]
+11:08:13.346844 [debug]: Finished parsing models/marts/dim_users.sql [  0.00s]
+11:08:13.348434 [debug]: Finished parsing models/marts/fct_songplays.sql [  0.00s]
+11:08:13.350079 [debug]: Finished parsing models/staging/stg_events.sql [  0.00s]
+11:08:13.351387 [debug]: Finished parsing models/staging/stg_songs.sql [  0.00s]
+11:08:13.764481 [info ]: Finished parsing [  0.57s]
+11:08:13.843079 [info ]: Started scheduling
+11:08:13.844147 [info ]: Finished scheduling [  0.00s]
+11:08:13.855667 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SPARKIFY_DB", schema: "RAW", table: "RAW_EVENTS" }) and interval: None
+11:08:13.855728 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SPARKIFY_DB", schema: "RAW", table: "RAW_SONGS" }) and interval: None
+11:08:13.860909 [info ]: Started building task graph
+11:08:13.862109 [info ]: Finished building task graph [  0.00s]
+11:08:13.871032 [debug]: Snowflake driver resolved: snowflake 0.21.0.dev+dbt0.21.17
+11:08:19.174738 [debug]: create_debug_span(...).entered() took 72.8µs
+11:08:19.540065 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 364.929ms
+11:08:19.540171 [debug]: reader.schema() took 10.4µs
+11:08:19.544117 [debug]: batch-consume loop (for res in reader) took 3.9054ms
+11:08:19.547456 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 372.6046ms
+11:08:19.547851 [debug]: concat_batches + normalize_result_column_names took 312.8µs
+11:08:19.547981 [debug]: record_current_span_status_from_attrs took 45.7µs
+11:08:19.548143 [debug]: Query executed on node unknown:
+show terse schemas in database SPARKIFY_DB
+    limit 10000
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "sparkify_dw", "target_name": "dev"} */
+11:08:19.548326 [debug]: drop(query_span_guard) (span exit/export) took 230.6µs
+11:08:19.551323 [debug]: create_debug_span(...).entered() took 64.4µs
+11:08:19.869164 [debug]: Query executed on node unknown:
+create schema if not exists SPARKIFY_DB.ANALYTICS_STAGING
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "sparkify_dw", "target_name": "dev"} */
+11:08:20.872262 [debug]: create_debug_span(...).entered() took 63.4µs
+11:08:21.185525 [debug]: Query executed on node unknown:
+create schema if not exists SPARKIFY_DB.ANALYTICS_analytics
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "sparkify_dw", "target_name": "dev"} */
+11:08:22.186609 [info ]: Started rendering (7 nodes)
+11:08:22.187993 [info ]: Started model ANALYTICS_STAGING.stg_events
+11:08:22.188109 [debug]: Started rendering model ANALYTICS_STAGING.stg_events
+11:08:22.188337 [info ]: Started model ANALYTICS_STAGING.stg_songs
+11:08:22.188395 [debug]: Started rendering model ANALYTICS_STAGING.stg_songs
+11:08:22.206780 [debug]: Compiled SQL for node model.sparkify_dw.stg_songs at target\compiled\sparkify_dw\models\staging\stg_songs.sql
+11:08:22.208081 [debug]: Compiled SQL for node model.sparkify_dw.stg_events at target\compiled\sparkify_dw\models\staging\stg_events.sql
+11:08:22.208760 [debug]: Finished rendering [  0.02s] model ANALYTICS_STAGING.stg_songs [success]
+11:08:22.210563 [info ]: Started analyzing (7 nodes)
+11:08:22.211471 [debug]: Started analyzing model ANALYTICS_STAGING.stg_songs
+11:08:22.211661 [debug]: Finished rendering [  0.02s] model ANALYTICS_STAGING.stg_events [success]
+11:08:22.213581 [debug]: Started analyzing model ANALYTICS_STAGING.stg_events
+11:08:22.304541 [debug]: Finished analyzing [  0.09s] model ANALYTICS_STAGING.stg_songs [success]
+11:08:22.306699 [info ]: Started running (7 nodes)
+11:08:22.307575 [info ]: Started running model ANALYTICS_STAGING.stg_songs
+11:08:22.307840 [debug]: Finished analyzing [  0.09s] model ANALYTICS_STAGING.stg_events [success]
+11:08:22.309910 [info ]: Started running model ANALYTICS_STAGING.stg_events
+11:08:22.320798 [debug]: create_debug_span(...).entered() took 85.9µs
+11:08:22.622693 [debug]: Query executed on node model.sparkify_dw.stg_songs:
+SHOW OBJECTS IN SCHEMA "SPARKIFY_DB"."ANALYTICS_STAGING" LIMIT 10000
+11:08:22.625715 [debug]: create_debug_span(...).entered() took 51.9µs
+11:08:23.013113 [debug]: Query executed on node model.sparkify_dw.stg_songs:
+show objects like 'STG_SONGS' in schema SPARKIFY_DB.ANALYTICS_STAGING
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.sparkify_dw.stg_songs", "profile_name": "sparkify_dw", "target_name": "dev"} */
+11:08:23.016784 [debug]: Writing runtime sql for node "model.sparkify_dw.stg_songs"
+11:08:23.023698 [debug]: create_debug_span(...).entered() took 36.8µs
+11:08:23.302914 [debug]: Query executed on node model.sparkify_dw.stg_songs:
+create or replace   view SPARKIFY_DB.ANALYTICS_STAGING.stg_songs
+  
+  
+  
+  
+  as (
+    -- =============================================================================
+-- stg_songs.sql
+-- Parses the raw VARIANT song-metadata payloads into typed columns.
+-- One row per song/artist combination, later split into dim_songs and
+-- dim_artists in the marts layer.
+-- =============================================================================
+
+-- source() resolves to SPARKIFY_DB.RAW.RAW_SONGS via _staging__sources.yml.
+with source as (
+
+    select * from SPARKIFY_DB.RAW.raw_songs
+
+),
+
+-- Extract and cast each field from the VARIANT payload.
+parsed as (
+
+    select
+        -- Song attributes.
+        raw_payload:song_id::string          as song_id,
+        raw_payload:title::string             as title,
+        raw_payload:duration::float           as duration_seconds,
+        -- year is stored as 0 for unknown release years in the source data;
+        -- normalize 0 to NULL so downstream aggregations aren't skewed.
+        nullif(raw_payload:year::int, 0)      as release_year,
+
+        -- Artist attributes, kept alongside song attributes in this staging
+        -- model since they arrive in the same JSON payload; dim_artists
+        -- deduplicates them at the marts layer.
+        raw_payload:artist_id::string         as artist_id,
+        raw_payload:artist_name::string        as artist_name,
+        raw_payload:artist_location::string    as artist_location,
+        raw_payload:artist_latitude::float     as artist_latitude,
+        raw_payload:artist_longitude::float    as artist_longitude,
+
+        -- Lineage columns carried through from the RAW table.
+        source_file_name,
+        loaded_at
+
+    from source
+
+)
+
+select * from parsed
+  )
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.sparkify_dw.stg_songs", "profile_name": "sparkify_dw", "target_name": "dev"} */
+11:08:24.304731 [error]: [DbDriverFailed (dbt1308)]: Database Error in model stg_songs (target\run\sparkify_dw\models\staging\stg_songs.sql)
+  [Snowflake] 002003 (02000): SQL compilation error:
+  Schema 'SPARKIFY_DB.ANALYTICS_STAGING' does not exist or not authorized.
+  (in run\sparkify_dw\models/staging\stg_songs.sql)
+11:08:24.305418 [info ]: Finished running [  2.00s] model ANALYTICS_STAGING.stg_songs [error]
+11:08:24.309266 [info ]:     Failed [  2.11s] model ANALYTICS_STAGING.stg_songs (view)
+11:08:24.317149 [info ]: Started model ANALYTICS_analytics.dim_artists
+11:08:24.317319 [debug]: Started rendering model ANALYTICS_analytics.dim_artists
+11:08:24.317634 [debug]: Finished rendering [  0.00s] model ANALYTICS_analytics.dim_artists [skipped]
+11:08:24.318238 [debug]: Started analyzing model ANALYTICS_analytics.dim_artists
+11:08:24.318444 [debug]: Finished analyzing [  0.00s] model ANALYTICS_analytics.dim_artists [skipped]
+11:08:24.318932 [info ]: Started running model ANALYTICS_analytics.dim_artists
+11:08:24.319026 [info ]: Finished running [  0.00s] model ANALYTICS_analytics.dim_artists [skipped]
+11:08:24.319478 [info ]:    Skipped [-------] model ANALYTICS_analytics.dim_artists (table)
+11:08:24.323516 [info ]: Started model ANALYTICS_analytics.dim_songs
+11:08:24.323620 [debug]: Started rendering model ANALYTICS_analytics.dim_songs
+11:08:24.323741 [debug]: Finished rendering [  0.00s] model ANALYTICS_analytics.dim_songs [skipped]
+11:08:24.324300 [debug]: Started analyzing model ANALYTICS_analytics.dim_songs
+11:08:24.324394 [debug]: Finished analyzing [  0.00s] model ANALYTICS_analytics.dim_songs [skipped]
+11:08:24.324803 [info ]: Started running model ANALYTICS_analytics.dim_songs
+11:08:24.324891 [info ]: Finished running [  0.00s] model ANALYTICS_analytics.dim_songs [skipped]
+11:08:24.325212 [info ]:    Skipped [-------] model ANALYTICS_analytics.dim_songs (table)
+11:08:24.902325 [debug]: create_debug_span(...).entered() took 100.1µs
+11:08:25.268953 [debug]: Query executed on node model.sparkify_dw.stg_events:
+SHOW OBJECTS IN SCHEMA "SPARKIFY_DB"."ANALYTICS_STAGING" LIMIT 10000
+11:08:25.270626 [debug]: create_debug_span(...).entered() took 29.2µs
+11:08:25.547704 [debug]: Query executed on node model.sparkify_dw.stg_events:
+show objects like 'STG_EVENTS' in schema SPARKIFY_DB.ANALYTICS_STAGING
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.sparkify_dw.stg_events", "profile_name": "sparkify_dw", "target_name": "dev"} */
+11:08:25.554692 [debug]: Writing runtime sql for node "model.sparkify_dw.stg_events"
+11:08:25.561570 [debug]: create_debug_span(...).entered() took 79µs
+11:08:25.879807 [debug]: Query executed on node model.sparkify_dw.stg_events:
+create or replace   view SPARKIFY_DB.ANALYTICS_STAGING.stg_events
+  
+  
+  
+  
+  as (
+    -- =============================================================================
+-- stg_events.sql
+-- Parses the raw VARIANT event payloads into typed columns and filters down
+-- to only "NextSong" events, since those are the only rows that represent
+-- an actual song play (other page values are things like "Login", "Home").
+-- Materialized as a VIEW (see dbt_project.yml) - cheap re-computation over
+-- the RAW table, no duplicated storage.
+-- =============================================================================
+
+-- source() resolves to SPARKIFY_DB.RAW.RAW_EVENTS via _staging__sources.yml,
+-- so this model never needs to hardcode the physical table location.
+with source as (
+
+    select * from SPARKIFY_DB.RAW.raw_events
+
+),
+
+-- Pull each field out of the VARIANT payload with the ':' path operator and
+-- cast it to its proper type, since VARIANT fields are untyped by default.
+parsed as (
+
+    select
+        -- User identifiers and profile attributes.
+        raw_payload:userId::int                        as user_id,
+        raw_payload:firstName::string                   as first_name,
+        raw_payload:lastName::string                     as last_name,
+        raw_payload:gender::string                       as gender,
+        raw_payload:level::string                        as level,
+
+        -- Session / event context.
+        raw_payload:sessionId::int                       as session_id,
+        raw_payload:itemInSession::int                    as item_in_session,
+        raw_payload:page::string                          as page,
+        raw_payload:auth::string                          as auth,
+        raw_payload:method::string                        as method,
+        raw_payload:status::int                           as status_code,
+        raw_payload:location::string                      as location,
+        raw_payload:userAgent::string                     as user_agent,
+
+        -- Song-play specific attributes.
+        raw_payload:song::string                          as song_title,
+        raw_payload:artist::string                        as artist_name,
+        raw_payload:length::float                         as duration_seconds,
+
+        -- Timestamps arrive as epoch milliseconds; convert to a proper
+        -- TIMESTAMP_NTZ so dbt_time / date functions work downstream.
+        raw_payload:ts::bigint                            as event_ts_epoch_ms,
+        to_timestamp_ntz(raw_payload:ts::bigint / 1000)   as event_timestamp,
+        raw_payload:registration::bigint                  as registration_epoch_ms,
+
+        -- Lineage columns carried through from the RAW table.
+        source_file_name,
+        loaded_at
+
+    from source
+
+)
+
+-- Keep only actual song-play events. Every other `page` value (e.g.
+-- "Home", "Login", "Logout", "Help") is navigation, not a play, and would
+-- pollute fct_songplays if left in.
+select *
+from parsed
+where page = 'NextSong'
+  )
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.sparkify_dw.stg_events", "profile_name": "sparkify_dw", "target_name": "dev"} */
+11:08:26.881460 [error]: [DbDriverFailed (dbt1308)]: Database Error in model stg_events (target\run\sparkify_dw\models\staging\stg_events.sql)
+  [Snowflake] 002003 (02000): SQL compilation error:
+  Schema 'SPARKIFY_DB.ANALYTICS_STAGING' does not exist or not authorized.
+  (in run\sparkify_dw\models/staging\stg_events.sql)
+11:08:26.881881 [info ]: Finished running [  4.57s] model ANALYTICS_STAGING.stg_events [error]
+11:08:26.884803 [info ]:     Failed [  4.69s] model ANALYTICS_STAGING.stg_events (view)
+11:08:26.889855 [info ]: Started model ANALYTICS_analytics.dim_time
+11:08:26.889999 [debug]: Started rendering model ANALYTICS_analytics.dim_time
+11:08:26.890088 [debug]: Finished rendering [  0.00s] model ANALYTICS_analytics.dim_time [skipped]
+11:08:26.892505 [debug]: Started analyzing model ANALYTICS_analytics.dim_time
+11:08:26.892637 [debug]: Finished analyzing [  0.00s] model ANALYTICS_analytics.dim_time [skipped]
+11:08:26.893456 [info ]: Started running model ANALYTICS_analytics.dim_time
+11:08:26.893724 [info ]: Finished running [  0.00s] model ANALYTICS_analytics.dim_time [skipped]
+11:08:26.896015 [info ]:    Skipped [-------] model ANALYTICS_analytics.dim_time (table)
+11:08:26.900870 [info ]: Started model ANALYTICS_analytics.dim_users
+11:08:26.900981 [debug]: Started rendering model ANALYTICS_analytics.dim_users
+11:08:26.901097 [debug]: Finished rendering [  0.00s] model ANALYTICS_analytics.dim_users [skipped]
+11:08:26.901830 [debug]: Started analyzing model ANALYTICS_analytics.dim_users
+11:08:26.901975 [debug]: Finished analyzing [  0.00s] model ANALYTICS_analytics.dim_users [skipped]
+11:08:26.902909 [info ]: Started running model ANALYTICS_analytics.dim_users
+11:08:26.903068 [info ]: Finished running [  0.00s] model ANALYTICS_analytics.dim_users [skipped]
+11:08:26.903873 [info ]:    Skipped [-------] model ANALYTICS_analytics.dim_users (table)
+11:08:26.908220 [info ]: Started model ANALYTICS_analytics.fct_songplays
+11:08:26.908335 [debug]: Started rendering model ANALYTICS_analytics.fct_songplays
+11:08:26.908461 [debug]: Finished rendering [  0.00s] model ANALYTICS_analytics.fct_songplays [skipped]
+11:08:26.909115 [info ]: Finished rendering [  4.72s] (7 nodes, 5 skipped, 0 errors)
+11:08:26.913403 [debug]: Started analyzing model ANALYTICS_analytics.fct_songplays
+11:08:26.913640 [debug]: Finished analyzing [  0.00s] model ANALYTICS_analytics.fct_songplays [skipped]
+11:08:26.914249 [info ]: Finished analyzing [  4.70s] (7 nodes, 5 skipped, 0 errors)
+11:08:26.918358 [info ]: Started running model ANALYTICS_analytics.fct_songplays
+11:08:26.918503 [info ]: Finished running [  0.00s] model ANALYTICS_analytics.fct_songplays [skipped]
+11:08:26.919091 [info ]: Finished running [  4.61s] (7 nodes, 5 skipped, 2 errors)
+11:08:26.921606 [info ]:    Skipped [-------] model ANALYTICS_analytics.fct_songplays (table)
+11:08:27.526700 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' with 2 errors for target 'dev' [14.4s]
+Processed: 7 models
+Summary: 7 total | 2 error | 5 skipped
+==================== 2026-09-07T11:10:26.849585Z | 01a07b8f-f418-7671-9192-8027c105a5d7 ====================
+11:10:26.850591 [info ]: dbt-fusion 2.0.0-preview.218
+11:10:26.852123 [info ]: Started cleaning
+11:10:26.853176 [info ]: Started loading project
+11:10:26.865573 [info ]: Loading profiles.yml
+11:10:26.869659 [info ]: Finished loading project [  0.02s]
+11:10:26.880043 [info ]: Removing target
+11:10:26.934202 [info ]: Finished cleaning [  0.08s]
+11:10:27.752755 [info ]: 
+==================== Execution Summary =====================
+Finished 'clean' successfully [903ms]
+==================== 2026-09-07T11:10:28.550820Z | 01a07b8f-fa66-7981-bb64-58d7262a606e ====================
+11:10:28.551519 [info ]: dbt-fusion 2.0.0-preview.218
+11:10:28.553289 [info ]: Started loading project
+11:10:28.563157 [info ]: Loading profiles.yml
+11:10:28.586777 [debug]:    Started loading packages
+11:10:28.596629 [debug]:     Loaded [  0.01s] packages
+11:10:28.599803 [info ]: Finished loading project [  0.05s]
+11:10:28.601560 [info ]: Started parsing
+11:10:28.728359 [debug]: Finished parsing models/staging/_staging__sources.yml [  0.00s]
+11:10:28.733817 [debug]: Finished parsing models/marts/dim_artists.sql [  0.00s]
+11:10:28.735250 [debug]: Finished parsing models/marts/dim_songs.sql [  0.00s]
+11:10:28.736539 [debug]: Finished parsing models/marts/dim_time.sql [  0.00s]
+11:10:28.738452 [debug]: Finished parsing models/marts/dim_users.sql [  0.00s]
+11:10:28.740035 [debug]: Finished parsing models/marts/fct_songplays.sql [  0.00s]
+11:10:28.741697 [debug]: Finished parsing models/staging/stg_events.sql [  0.00s]
+11:10:28.743111 [debug]: Finished parsing models/staging/stg_songs.sql [  0.00s]
+11:10:29.193562 [info ]: Finished parsing [  0.59s]
+11:10:29.264127 [info ]: Started scheduling
+11:10:29.264955 [info ]: Finished scheduling [  0.00s]
+11:10:29.272992 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SPARKIFY_DB", schema: "RAW", table: "RAW_EVENTS" }) and interval: None
+11:10:29.273045 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SPARKIFY_DB", schema: "RAW", table: "RAW_SONGS" }) and interval: None
+11:10:29.278015 [info ]: Started building task graph
+11:10:29.279180 [info ]: Finished building task graph [  0.00s]
+11:10:29.285424 [debug]: Snowflake driver resolved: snowflake 0.21.0.dev+dbt0.21.17
+11:10:31.969135 [debug]: create_debug_span(...).entered() took 100.7µs
+11:10:32.282609 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 312.9069ms
+11:10:32.282704 [debug]: reader.schema() took 10.2µs
+11:10:32.286888 [debug]: batch-consume loop (for res in reader) took 4.1434ms
+11:10:32.290000 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 320.7525ms
+11:10:32.290322 [debug]: concat_batches + normalize_result_column_names took 256.4µs
+11:10:32.290380 [debug]: record_current_span_status_from_attrs took 23.7µs
+11:10:32.290430 [debug]: Query executed on node unknown:
+show terse schemas in database SPARKIFY_DB
+    limit 10000
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "sparkify_dw", "target_name": "dev"} */
+11:10:32.290516 [debug]: drop(query_span_guard) (span exit/export) took 109.7µs
+11:10:32.293158 [info ]: Started rendering (7 nodes)
+11:10:32.294098 [info ]: Started model ANALYTICS.stg_events
+11:10:32.294204 [debug]: Started rendering model ANALYTICS.stg_events
+11:10:32.294431 [info ]: Started model ANALYTICS.stg_songs
+11:10:32.294482 [debug]: Started rendering model ANALYTICS.stg_songs
+11:10:32.314764 [debug]: Compiled SQL for node model.sparkify_dw.stg_events at target\compiled\sparkify_dw\models\staging\stg_events.sql
+11:10:32.315875 [debug]: Compiled SQL for node model.sparkify_dw.stg_songs at target\compiled\sparkify_dw\models\staging\stg_songs.sql
+11:10:32.315656 [debug]: Finished rendering [  0.02s] model ANALYTICS.stg_events [success]
+11:10:32.317652 [info ]: Started analyzing (7 nodes)
+11:10:32.318341 [debug]: Started analyzing model ANALYTICS.stg_events
+11:10:32.318504 [debug]: Finished rendering [  0.02s] model ANALYTICS.stg_songs [success]
+11:10:32.320346 [debug]: Started analyzing model ANALYTICS.stg_songs
+11:10:32.409984 [debug]: Finished analyzing [  0.09s] model ANALYTICS.stg_songs [success]
+11:10:32.412115 [info ]: Started running (7 nodes)
+11:10:32.412855 [info ]: Started running model ANALYTICS.stg_songs
+11:10:32.412974 [debug]: Finished analyzing [  0.09s] model ANALYTICS.stg_events [success]
+11:10:32.415254 [info ]: Started running model ANALYTICS.stg_events
+11:10:32.422741 [debug]: create_debug_span(...).entered() took 105.9µs
+11:10:32.720390 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 297.3823ms
+11:10:32.720473 [debug]: reader.schema() took 1.4µs
+11:10:32.724974 [debug]: batch-consume loop (for res in reader) took 4.4473ms
+11:10:32.729525 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 306.685ms
+11:10:32.732780 [debug]: concat_batches + normalize_result_column_names took 3.0697ms
+11:10:32.732869 [debug]: record_current_span_status_from_attrs took 11µs
+11:10:32.732904 [debug]: Query executed on node model.sparkify_dw.stg_songs:
+SHOW OBJECTS IN SCHEMA "SPARKIFY_DB"."ANALYTICS" LIMIT 10000
+11:10:32.732983 [debug]: drop(query_span_guard) (span exit/export) took 90.2µs
+11:10:32.748808 [debug]: Writing runtime sql for node "model.sparkify_dw.stg_songs"
+11:10:32.764165 [debug]: create_debug_span(...).entered() took 66.6µs
+11:10:34.151560 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 1.3869543s
+11:10:34.151655 [debug]: reader.schema() took 1.3µs
+11:10:34.158968 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 1.3946775s
+11:10:34.159192 [debug]: concat_batches + normalize_result_column_names took 126.5µs
+11:10:34.159271 [debug]: record_current_span_status_from_attrs took 13.6µs
+11:10:34.159383 [debug]: Query executed on node model.sparkify_dw.stg_songs:
+create or replace   view SPARKIFY_DB.ANALYTICS.stg_songs
+  
+  
+  
+  
+  as (
+    -- =============================================================================
+-- stg_songs.sql
+-- Parses the raw VARIANT song-metadata payloads into typed columns.
+-- One row per song/artist combination, later split into dim_songs and
+-- dim_artists in the marts layer.
+-- =============================================================================
+
+-- source() resolves to SPARKIFY_DB.RAW.RAW_SONGS via _staging__sources.yml.
+with source as (
+
+    select * from SPARKIFY_DB.RAW.raw_songs
+
+),
+
+-- Extract and cast each field from the VARIANT payload.
+parsed as (
+
+    select
+        -- Song attributes.
+        raw_payload:song_id::string          as song_id,
+        raw_payload:title::string             as title,
+        raw_payload:duration::float           as duration_seconds,
+        -- year is stored as 0 for unknown release years in the source data;
+        -- normalize 0 to NULL so downstream aggregations aren't skewed.
+        nullif(raw_payload:year::int, 0)      as release_year,
+
+        -- Artist attributes, kept alongside song attributes in this staging
+        -- model since they arrive in the same JSON payload; dim_artists
+        -- deduplicates them at the marts layer.
+        raw_payload:artist_id::string         as artist_id,
+        raw_payload:artist_name::string        as artist_name,
+        raw_payload:artist_location::string    as artist_location,
+        raw_payload:artist_latitude::float     as artist_latitude,
+        raw_payload:artist_longitude::float    as artist_longitude,
+
+        -- Lineage columns carried through from the RAW table.
+        source_file_name,
+        loaded_at
+
+    from source
+
+)
+
+select * from parsed
+  )
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.sparkify_dw.stg_songs", "profile_name": "sparkify_dw", "target_name": "dev"} */
+11:10:34.159531 [debug]: drop(query_span_guard) (span exit/export) took 168.2µs
+11:10:34.186072 [info ]: Finished running [  1.77s] model ANALYTICS.stg_songs [success]
+11:10:34.189708 [info ]:  Succeeded [  1.89s] model ANALYTICS.stg_songs (view)
+11:10:34.194216 [info ]: Started model ANALYTICS.dim_songs
+11:10:34.194303 [debug]: Started rendering model ANALYTICS.dim_songs
+11:10:34.194441 [info ]: Started model ANALYTICS.dim_artists
+11:10:34.194491 [debug]: Started rendering model ANALYTICS.dim_artists
+11:10:34.209686 [debug]: Compiled SQL for node model.sparkify_dw.dim_songs at target\compiled\sparkify_dw\models\marts\dim_songs.sql
+11:10:34.211183 [debug]: Compiled SQL for node model.sparkify_dw.dim_artists at target\compiled\sparkify_dw\models\marts\dim_artists.sql
+11:10:34.212122 [debug]: Finished rendering [  0.02s] model ANALYTICS.dim_songs [success]
+11:10:34.214537 [debug]: Started analyzing model ANALYTICS.dim_songs
+11:10:34.214774 [debug]: Finished rendering [  0.02s] model ANALYTICS.dim_artists [success]
+11:10:34.215765 [debug]: Started analyzing model ANALYTICS.dim_artists
+11:10:34.240667 [debug]: Finished analyzing [  0.03s] model ANALYTICS.dim_songs [success]
+11:10:34.241802 [info ]: Started running model ANALYTICS.dim_songs
+11:10:34.242003 [debug]: Finished analyzing [  0.03s] model ANALYTICS.dim_artists [success]
+11:10:34.242582 [info ]: Started running model ANALYTICS.dim_artists
+11:10:34.271523 [debug]: Writing runtime sql for node "model.sparkify_dw.dim_songs"
+11:10:34.271653 [debug]: Writing runtime sql for node "model.sparkify_dw.dim_artists"
+11:10:34.283361 [debug]: create_debug_span(...).entered() took 122.7µs
+11:10:35.936421 [debug]: create_debug_span(...).entered() took 106.2µs
+11:10:35.962569 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 1.6787731s
+11:10:35.962719 [debug]: reader.schema() took 1.2µs
+11:10:35.975152 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 1.6916548s
+11:10:35.975521 [debug]: concat_batches + normalize_result_column_names took 135.4µs
+11:10:35.975666 [debug]: record_current_span_status_from_attrs took 26.2µs
+11:10:35.975774 [debug]: Query executed on node model.sparkify_dw.dim_artists:
+create or replace transient  table SPARKIFY_DB.ANALYTICS.dim_artists
+    
+    
+    
+    
+    as (-- =============================================================================
+-- dim_artists.sql
+-- Artist dimension: one row per unique artist_id with name and location
+-- metadata. Split out from stg_songs since one artist can have many songs.
+-- =============================================================================
+
+with songs as (
+
+    select * from SPARKIFY_DB.ANALYTICS.stg_songs
+
+),
+
+-- Deduplicate to one row per artist_id, in case the same artist appears
+-- across multiple song files with (rarely) slightly different metadata.
+deduped as (
+
+    select
+        artist_id,
+        artist_name,
+        artist_location,
+        artist_latitude,
+        artist_longitude,
+        row_number() over (
+            partition by artist_id
+            order by loaded_at desc
+        ) as recency_rank
+
+    from songs
+    where artist_id is not null
+
+)
+
+select
+    artist_id,
+    artist_name,
+    artist_location,
+    artist_latitude,
+    artist_longitude
+
+from deduped
+where recency_rank = 1
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.sparkify_dw.dim_artists", "profile_name": "sparkify_dw", "target_name": "dev"} */
+11:10:35.976033 [debug]: drop(query_span_guard) (span exit/export) took 285.6µs
+11:10:35.986215 [info ]: Finished running [  1.74s] model ANALYTICS.dim_artists [success]
+11:10:35.989369 [info ]:  Succeeded [  1.79s] model ANALYTICS.dim_artists (table)
+11:10:36.283664 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 346.9528ms
+11:10:36.283737 [debug]: reader.schema() took 1.1µs
+11:10:36.287586 [debug]: batch-consume loop (for res in reader) took 3.8027ms
+11:10:36.291326 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 354.7991ms
+11:10:36.292697 [debug]: concat_batches + normalize_result_column_names took 1.2638ms
+11:10:36.292792 [debug]: record_current_span_status_from_attrs took 12.2µs
+11:10:36.293045 [debug]: Query executed on node model.sparkify_dw.stg_events:
+SHOW OBJECTS IN SCHEMA "SPARKIFY_DB"."ANALYTICS" LIMIT 10000
+11:10:36.293187 [debug]: drop(query_span_guard) (span exit/export) took 156.9µs
+11:10:36.301776 [debug]: Writing runtime sql for node "model.sparkify_dw.stg_events"
+11:10:36.310172 [debug]: create_debug_span(...).entered() took 66µs
+11:10:36.566116 [debug]: create_debug_span(...).entered() took 68.2µs
+11:10:36.958355 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 647.836ms
+11:10:36.958455 [debug]: reader.schema() took 2µs
+11:10:36.966411 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 656.1339ms
+11:10:36.966735 [debug]: concat_batches + normalize_result_column_names took 226µs
+11:10:36.966911 [debug]: record_current_span_status_from_attrs took 28.2µs
+11:10:36.967117 [debug]: Query executed on node model.sparkify_dw.stg_events:
+create or replace   view SPARKIFY_DB.ANALYTICS.stg_events
+  
+  
+  
+  
+  as (
+    -- =============================================================================
+-- stg_events.sql
+-- Parses the raw VARIANT event payloads into typed columns and filters down
+-- to only "NextSong" events, since those are the only rows that represent
+-- an actual song play (other page values are things like "Login", "Home").
+-- Materialized as a VIEW (see dbt_project.yml) - cheap re-computation over
+-- the RAW table, no duplicated storage.
+-- =============================================================================
+
+-- source() resolves to SPARKIFY_DB.RAW.RAW_EVENTS via _staging__sources.yml,
+-- so this model never needs to hardcode the physical table location.
+with source as (
+
+    select * from SPARKIFY_DB.RAW.raw_events
+
+),
+
+-- Pull each field out of the VARIANT payload with the ':' path operator and
+-- cast it to its proper type, since VARIANT fields are untyped by default.
+parsed as (
+
+    select
+        -- User identifiers and profile attributes.
+        raw_payload:userId::int                        as user_id,
+        raw_payload:firstName::string                   as first_name,
+        raw_payload:lastName::string                     as last_name,
+        raw_payload:gender::string                       as gender,
+        raw_payload:level::string                        as level,
+
+        -- Session / event context.
+        raw_payload:sessionId::int                       as session_id,
+        raw_payload:itemInSession::int                    as item_in_session,
+        raw_payload:page::string                          as page,
+        raw_payload:auth::string                          as auth,
+        raw_payload:method::string                        as method,
+        raw_payload:status::int                           as status_code,
+        raw_payload:location::string                      as location,
+        raw_payload:userAgent::string                     as user_agent,
+
+        -- Song-play specific attributes.
+        raw_payload:song::string                          as song_title,
+        raw_payload:artist::string                        as artist_name,
+        raw_payload:length::float                         as duration_seconds,
+
+        -- Timestamps arrive as epoch milliseconds; convert to a proper
+        -- TIMESTAMP_NTZ so dbt_time / date functions work downstream.
+        raw_payload:ts::bigint                            as event_ts_epoch_ms,
+        to_timestamp_ntz(raw_payload:ts::bigint / 1000)   as event_timestamp,
+        raw_payload:registration::bigint                  as registration_epoch_ms,
+
+        -- Lineage columns carried through from the RAW table.
+        source_file_name,
+        loaded_at
+
+    from source
+
+)
+
+-- Keep only actual song-play events. Every other `page` value (e.g.
+-- "Home", "Login", "Logout", "Help") is navigation, not a play, and would
+-- pollute fct_songplays if left in.
+select *
+from parsed
+where page = 'NextSong'
+  )
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.sparkify_dw.stg_events", "profile_name": "sparkify_dw", "target_name": "dev"} */
+11:10:36.967487 [debug]: drop(query_span_guard) (span exit/export) took 396.7µs
+11:10:36.975795 [info ]: Finished running [  4.56s] model ANALYTICS.stg_events [success]
+11:10:36.978910 [info ]:  Succeeded [  4.67s] model ANALYTICS.stg_events (view)
+11:10:36.983536 [info ]: Started model ANALYTICS.dim_users
+11:10:36.983621 [debug]: Started rendering model ANALYTICS.dim_users
+11:10:36.983746 [info ]: Started model ANALYTICS.dim_time
+11:10:36.983801 [debug]: Started rendering model ANALYTICS.dim_time
+11:10:36.995301 [debug]: Compiled SQL for node model.sparkify_dw.dim_users at target\compiled\sparkify_dw\models\marts\dim_users.sql
+11:10:36.996137 [debug]: Finished rendering [  0.01s] model ANALYTICS.dim_users [success]
+11:10:36.997015 [debug]: Started analyzing model ANALYTICS.dim_users
+11:10:36.998702 [debug]: Compiled SQL for node model.sparkify_dw.dim_time at target\compiled\sparkify_dw\models\marts\dim_time.sql
+11:10:36.999931 [debug]: Finished rendering [  0.02s] model ANALYTICS.dim_time [success]
+11:10:37.000734 [debug]: Started analyzing model ANALYTICS.dim_time
+11:10:37.003502 [debug]: Finished analyzing [  0.01s] model ANALYTICS.dim_users [success]
+11:10:37.007246 [info ]: Started running model ANALYTICS.dim_users
+11:10:37.036148 [debug]: Writing runtime sql for node "model.sparkify_dw.dim_users"
+11:10:37.035842 [debug]: Finished analyzing [  0.04s] model ANALYTICS.dim_time [success]
+11:10:37.041972 [info ]: Started running model ANALYTICS.dim_time
+11:10:37.047155 [debug]: create_debug_span(...).entered() took 260.6µs
+11:10:37.065066 [debug]: Writing runtime sql for node "model.sparkify_dw.dim_time"
+11:10:37.078020 [debug]: create_debug_span(...).entered() took 111.4µs
+11:10:37.472666 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 905.9958ms
+11:10:37.472794 [debug]: reader.schema() took 1.3µs
+11:10:37.480604 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 914.3181ms
+11:10:37.480765 [debug]: concat_batches + normalize_result_column_names took 62.5µs
+11:10:37.480814 [debug]: record_current_span_status_from_attrs took 10µs
+11:10:37.480847 [debug]: Query executed on node model.sparkify_dw.dim_songs:
+create or replace transient  table SPARKIFY_DB.ANALYTICS.dim_songs
+    
+    
+    
+    
+    as (-- =============================================================================
+-- dim_songs.sql
+-- Song dimension: one row per unique song_id with its title, duration,
+-- release year, and a foreign key back to dim_artists.
+-- =============================================================================
+
+with songs as (
+
+    select * from SPARKIFY_DB.ANALYTICS.stg_songs
+
+),
+
+-- Deduplicate defensively in case the same song_id appears in more than one
+-- source file (e.g. re-processed/overlapping song_data exports).
+deduped as (
+
+    select
+        song_id,
+        title,
+        artist_id,
+        duration_seconds,
+        release_year,
+        row_number() over (
+            partition by song_id
+            order by loaded_at desc
+        ) as recency_rank
+
+    from songs
+    where song_id is not null
+
+)
+
+select
+    song_id,
+    title,
+    -- Foreign key to dim_artists.artist_id.
+    artist_id,
+    duration_seconds,
+    release_year
+
+from deduped
+where recency_rank = 1
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.sparkify_dw.dim_songs", "profile_name": "sparkify_dw", "target_name": "dev"} */
+11:10:37.481048 [debug]: drop(query_span_guard) (span exit/export) took 174.9µs
+11:10:37.490480 [info ]: Finished running [  3.25s] model ANALYTICS.dim_songs [success]
+11:10:37.494079 [info ]:  Succeeded [  3.29s] model ANALYTICS.dim_songs (table)
+11:10:37.499333 [info ]: Started model ANALYTICS.fct_songplays
+11:10:37.499412 [debug]: Started rendering model ANALYTICS.fct_songplays
+11:10:37.509291 [debug]: Compiled SQL for node model.sparkify_dw.fct_songplays at target\compiled\sparkify_dw\models\marts\fct_songplays.sql
+11:10:37.510164 [debug]: Finished rendering [  0.01s] model ANALYTICS.fct_songplays [success]
+11:10:37.512690 [info ]: Finished rendering [  5.22s] (7 nodes, 0 skipped, 0 errors)
+11:10:37.517214 [debug]: Started analyzing model ANALYTICS.fct_songplays
+11:10:37.661875 [debug]: Finished analyzing [  0.14s] model ANALYTICS.fct_songplays [success]
+11:10:37.664596 [info ]: Finished analyzing [  5.35s] (7 nodes, 0 skipped, 0 errors)
+11:10:37.668617 [info ]: Started running model ANALYTICS.fct_songplays
+11:10:37.685980 [debug]: Writing runtime sql for node "model.sparkify_dw.fct_songplays"
+11:10:37.693716 [debug]: create_debug_span(...).entered() took 65.2µs
+11:10:38.187278 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 1.1086639s
+11:10:38.187400 [debug]: reader.schema() took 2.5µs
+11:10:38.195783 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 1.1176095s
+11:10:38.196030 [debug]: concat_batches + normalize_result_column_names took 112.3µs
+11:10:38.196159 [debug]: record_current_span_status_from_attrs took 62.6µs
+11:10:38.196230 [debug]: Query executed on node model.sparkify_dw.dim_time:
+create or replace transient  table SPARKIFY_DB.ANALYTICS.dim_time
+    
+    
+    
+    
+    as (-- =============================================================================
+-- dim_time.sql
+-- Time dimension: one row per distinct songplay timestamp, broken into
+-- calendar parts (hour/day/week/month/year/weekday) so analysts can group
+-- fct_songplays by any time grain without repeating date-math in every query.
+-- =============================================================================
+
+with events as (
+
+    select distinct event_timestamp from SPARKIFY_DB.ANALYTICS.stg_events
+    -- A NULL timestamp would produce a garbage row of all-NULL parts below.
+    where event_timestamp is not null
+
+)
+
+select
+    -- The full timestamp acts as this dimension's natural/primary key and
+    -- is what fct_songplays.start_time joins against.
+    event_timestamp                          as start_time,
+    extract(hour from event_timestamp)       as hour,
+    extract(day from event_timestamp)        as day,
+    extract(week from event_timestamp)       as week,
+    extract(month from event_timestamp)      as month,
+    extract(year from event_timestamp)       as year,
+    -- dayname() returns Mon/Tue/... which is friendlier in BI tools than
+    -- the raw 0-6 integer from dayofweek().
+    dayname(event_timestamp)                 as weekday
+
+from events
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.sparkify_dw.dim_time", "profile_name": "sparkify_dw", "target_name": "dev"} */
+11:10:38.196592 [debug]: drop(query_span_guard) (span exit/export) took 344.5µs
+11:10:38.205444 [info ]: Finished running [  1.16s] model ANALYTICS.dim_time [success]
+11:10:38.206275 [info ]:  Succeeded [  1.21s] model ANALYTICS.dim_time (table)
+11:10:38.391540 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 1.3434458s
+11:10:38.391633 [debug]: reader.schema() took 1.4µs
+11:10:38.399422 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 1.3520771s
+11:10:38.399611 [debug]: concat_batches + normalize_result_column_names took 98µs
+11:10:38.399678 [debug]: record_current_span_status_from_attrs took 15.1µs
+11:10:38.399733 [debug]: Query executed on node model.sparkify_dw.dim_users:
+create or replace transient  table SPARKIFY_DB.ANALYTICS.dim_users
+    
+    
+    
+    
+    as (-- =============================================================================
+-- dim_users.sql
+-- User dimension: one row per userId, capturing their most recent known
+-- name/gender/subscription level. A user can appear many times in the event
+-- log (once per action), and their `level` can change over time (free ->
+-- paid), so we deduplicate down to their latest event.
+-- =============================================================================
+
+with events as (
+
+    select * from SPARKIFY_DB.ANALYTICS.stg_events
+
+),
+
+-- Rank each user's events newest-first so row_number = 1 is their most
+-- recent known state (name, gender, and subscription level).
+ranked as (
+
+    select
+        user_id,
+        first_name,
+        last_name,
+        gender,
+        level,
+        event_timestamp,
+        row_number() over (
+            partition by user_id
+            order by event_timestamp desc
+        ) as recency_rank
+
+    from events
+    -- Guard against events with a null/blank user_id (e.g. logged-out
+    -- pageviews that still slipped through the page = 'NextSong' filter).
+    where user_id is not null
+
+)
+
+select
+    user_id,
+    first_name,
+    last_name,
+    gender,
+    -- Most recent subscription level - this is what current-state reporting
+    -- (e.g. "how many paid users do we have today") should use.
+    level as current_level
+
+from ranked
+-- Only keep each user's single most recent row.
+where recency_rank = 1
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.sparkify_dw.dim_users", "profile_name": "sparkify_dw", "target_name": "dev"} */
+11:10:38.399885 [debug]: drop(query_span_guard) (span exit/export) took 179.8µs
+11:10:38.407156 [info ]: Finished running [  1.40s] model ANALYTICS.dim_users [success]
+11:10:38.409255 [info ]:  Succeeded [  1.42s] model ANALYTICS.dim_users (table)
+11:10:39.929827 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 2.2356773s
+11:10:39.929908 [debug]: reader.schema() took 1.2µs
+11:10:39.936679 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 2.2428434s
+11:10:39.936859 [debug]: concat_batches + normalize_result_column_names took 105.9µs
+11:10:39.936893 [debug]: record_current_span_status_from_attrs took 9.9µs
+11:10:39.936929 [debug]: Query executed on node model.sparkify_dw.fct_songplays:
+create or replace transient  table SPARKIFY_DB.ANALYTICS.fct_songplays
+    
+    
+    
+    
+    as (-- =============================================================================
+-- fct_songplays.sql
+-- Songplays fact table: one row per NextSong event, enriched with the
+-- matching song_id/artist_id looked up from the song catalog by matching
+-- on song title + artist name + duration (there is no shared numeric key
+-- between the log data and the song metadata, so a fuzzy-but-exact text/
+-- duration match is the standard approach for this dataset).
+-- =============================================================================
+
+with events as (
+
+    select * from SPARKIFY_DB.ANALYTICS.stg_events
+
+),
+
+songs as (
+
+    select * from SPARKIFY_DB.ANALYTICS.dim_songs
+
+),
+
+artists as (
+
+    select * from SPARKIFY_DB.ANALYTICS.dim_artists
+
+),
+
+-- Join the song catalog (songs + artists) into a single lookup table keyed
+-- by the same fields present in the event log: title, artist name, duration.
+song_catalog as (
+
+    select
+        songs.song_id,
+        songs.title,
+        songs.duration_seconds,
+        artists.artist_id,
+        artists.artist_name
+
+    from songs
+    inner join artists
+        on songs.artist_id = artists.artist_id
+
+),
+
+-- Left join events to the catalog so plays of songs NOT in our metadata
+-- catalog are still kept in the fact table (with NULL song_id/artist_id)
+-- rather than silently dropped.
+enriched as (
+
+    select
+        events.user_id,
+        events.session_id,
+        events.level,
+        events.location,
+        events.user_agent,
+        events.event_timestamp             as start_time,
+        song_catalog.song_id,
+        song_catalog.artist_id,
+        events.song_title,
+        events.artist_name
+
+    from events
+    left join song_catalog
+        on events.song_title = song_catalog.title
+        and events.artist_name = song_catalog.artist_name
+        -- Match duration to 2 decimal places to absorb tiny floating-point
+        -- differences between how the log and the song catalog store it.
+        and round(events.duration_seconds, 2) = round(song_catalog.duration_seconds, 2)
+
+)
+
+select
+    -- Deterministic surrogate key: hash of the natural grain of a songplay
+    -- (who played what, in which session, at what exact time) so re-runs of
+    -- this model are idempotent and don't mint new IDs for the same event.
+    md5(
+        coalesce(cast(user_id as string), '')       || '|' ||
+        coalesce(cast(session_id as string), '')    || '|' ||
+        coalesce(cast(start_time as string), '')
+    )                                                as songplay_id,
+
+    start_time,
+    user_id,
+    level,
+    -- Foreign keys into dim_songs / dim_artists (NULL when no catalog match).
+    song_id,
+    artist_id,
+    session_id,
+    location,
+    user_agent
+
+from enriched
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.sparkify_dw.fct_songplays", "profile_name": "sparkify_dw", "target_name": "dev"} */
+11:10:39.937032 [debug]: drop(query_span_guard) (span exit/export) took 118.4µs
+11:10:39.945321 [info ]: Finished running [  2.28s] model ANALYTICS.fct_songplays [success]
+11:10:39.946008 [info ]: Finished running [  7.53s] (7 nodes, 0 skipped, 0 errors)
+11:10:39.949334 [info ]:  Succeeded [  2.43s] model ANALYTICS.fct_songplays (table)
+11:10:40.439491 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' successfully for target 'dev' [11.9s]
+Processed: 7 models
+Summary: 7 total | 7 success
+==================== 2026-09-07T11:11:21.527892Z | 01a07b90-c9a6-7450-8659-7e79e73b04a6 ====================
+11:11:21.529752 [info ]: dbt-fusion 2.0.0-preview.218
+11:11:21.532707 [info ]: Started loading project
+11:11:21.552288 [info ]: Loading profiles.yml
+11:11:21.595114 [debug]:    Started loading packages
+11:11:21.612725 [debug]:     Loaded [  0.02s] packages
+11:11:21.617577 [info ]: Finished loading project [  0.08s]
+11:11:21.619826 [info ]: Started parsing
+11:11:21.733762 [debug]: Finished parsing models/staging/_staging__sources.yml [  0.00s]
+11:11:21.740351 [debug]: Finished parsing models/marts/dim_artists.sql [  0.00s]
+11:11:21.741759 [debug]: Finished parsing models/marts/dim_songs.sql [  0.00s]
+11:11:21.743203 [debug]: Finished parsing models/marts/dim_time.sql [  0.00s]
+11:11:21.744779 [debug]: Finished parsing models/marts/dim_users.sql [  0.00s]
+11:11:21.746492 [debug]: Finished parsing models/marts/fct_songplays.sql [  0.00s]
+11:11:21.748149 [debug]: Finished parsing models/staging/stg_events.sql [  0.00s]
+11:11:21.749687 [debug]: Finished parsing models/staging/stg_songs.sql [  0.00s]
+11:11:22.253043 [info ]: Finished parsing [  0.63s]
+11:11:22.255739 [info ]: Started scheduling
+11:11:22.256511 [info ]: Finished scheduling [  0.00s]
+11:11:22.260374 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+11:11:23.896486 [info ]: 
+==================== Execution Summary =====================
+Finished 'test' with 1 warning for target 'dev' [2.4s]
+==================== 2026-09-07T11:17:14.447095Z | 01a07b96-2c41-7aa2-b80f-048b146611f8 ====================
+11:17:14.448342 [info ]: dbt-fusion 2.0.0-preview.218
+11:17:14.451567 [info ]: Started loading project
+11:17:14.468434 [info ]: Loading profiles.yml
+11:17:14.505533 [debug]:    Started loading packages
+11:17:14.520233 [debug]:     Loaded [  0.01s] packages
+11:17:14.526018 [info ]: Finished loading project [  0.07s]
+11:17:14.530838 [info ]: Started parsing
+11:17:14.726057 [debug]: Finished parsing models/staging/_staging__models.yml [  0.00s]
+11:17:14.727782 [debug]: Finished parsing models/staging/_staging__sources.yml [  0.00s]
+11:17:14.751061 [debug]: Finished parsing models/marts/dim_artists.sql [  0.00s]
+11:17:14.753157 [debug]: Finished parsing models/marts/dim_songs.sql [  0.00s]
+11:17:14.755224 [debug]: Finished parsing models/marts/dim_time.sql [  0.00s]
+11:17:14.757225 [debug]: Finished parsing models/marts/dim_users.sql [  0.00s]
+11:17:14.759846 [debug]: Finished parsing models/marts/fct_songplays.sql [  0.00s]
+11:17:14.762387 [debug]: Finished parsing models/staging/stg_events.sql [  0.00s]
+11:17:14.764597 [debug]: Finished parsing models/staging/stg_songs.sql [  0.00s]
+11:17:14.842751 [debug]: Finished parsing target\generic_tests\not_null_stg_events_ts.sql [  0.02s]
+11:17:14.846063 [debug]: Finished parsing target\generic_tests\not_null_stg_events_user_id.sql [  0.00s]
+11:17:14.849084 [debug]: Finished parsing target\generic_tests\not_null_stg_songs_song_id.sql [  0.00s]
+11:17:15.273665 [info ]: Finished parsing [  0.74s]
+11:17:15.276443 [info ]: Started scheduling
+11:17:15.280570 [info ]: Finished scheduling [  0.00s]
+11:17:15.287287 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SPARKIFY_DB", schema: "ANALYTICS", table: "STG_EVENTS" }) and interval: None
+11:17:15.287339 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SPARKIFY_DB", schema: "ANALYTICS", table: "STG_SONGS" }) and interval: None
+11:17:15.295676 [info ]: Started building task graph
+11:17:15.296939 [info ]: Finished building task graph [  0.00s]
+11:17:15.305794 [info ]: Started rendering (3 nodes)
+11:17:15.306254 [info ]: Started test ANALYTICS_dbt_test__audit.not_null_stg_songs_song_id
+11:17:15.306307 [debug]: Started rendering test ANALYTICS_dbt_test__audit.not_null_stg_songs_song_id
+11:17:15.306433 [info ]: Started test ANALYTICS_dbt_test__audit.not_null_stg_events_user_id
+11:17:15.306467 [debug]: Started rendering test ANALYTICS_dbt_test__audit.not_null_stg_events_user_id
+11:17:15.306524 [info ]: Started test ANALYTICS_dbt_test__audit.not_null_stg_events_ts
+11:17:15.306606 [debug]: Started rendering test ANALYTICS_dbt_test__audit.not_null_stg_events_ts
+11:17:15.354795 [debug]: Compiled SQL for node test.sparkify_dw.not_null_stg_events_user_id.63ec98fbc4 at target\compiled\sparkify_dw\target\generic_tests\not_null_stg_events_user_id.sql
+11:17:15.355611 [debug]: Compiled SQL for node test.sparkify_dw.not_null_stg_songs_song_id.edd64eba6e at target\compiled\sparkify_dw\target\generic_tests\not_null_stg_songs_song_id.sql
+11:17:15.356008 [debug]: Compiled SQL for node test.sparkify_dw.not_null_stg_events_ts.6a813a6499 at target\compiled\sparkify_dw\target\generic_tests\not_null_stg_events_ts.sql
+11:17:15.355454 [debug]: Finished rendering [  0.05s] test ANALYTICS_dbt_test__audit.not_null_stg_events_user_id [success]
+11:17:15.358117 [info ]: Started analyzing (3 nodes)
+11:17:15.358787 [debug]: Started analyzing test ANALYTICS_dbt_test__audit.not_null_stg_events_user_id
+11:17:15.358932 [debug]: Finished rendering [  0.05s] test ANALYTICS_dbt_test__audit.not_null_stg_songs_song_id [success]
+11:17:15.360378 [debug]: Started analyzing test ANALYTICS_dbt_test__audit.not_null_stg_songs_song_id
+11:17:15.360549 [debug]: Finished rendering [  0.05s] test ANALYTICS_dbt_test__audit.not_null_stg_events_ts [success]
+11:17:15.361427 [info ]: Finished rendering [  0.06s] (3 nodes, 0 skipped, 0 errors)
+11:17:15.362116 [debug]: Started analyzing test ANALYTICS_dbt_test__audit.not_null_stg_events_ts
+11:17:15.392901 [debug]: Finished analyzing [  0.03s] test ANALYTICS_dbt_test__audit.not_null_stg_songs_song_id [success]
+11:17:15.394203 [info ]: Started running (3 nodes)
+11:17:15.394639 [info ]: Started running test ANALYTICS_dbt_test__audit.not_null_stg_songs_song_id
+11:17:15.394808 [debug]: Finished analyzing [  0.03s] test ANALYTICS_dbt_test__audit.not_null_stg_events_ts [success]
+11:17:15.395838 [info ]: Started running test ANALYTICS_dbt_test__audit.not_null_stg_events_ts
+11:17:15.395967 [debug]: Finished analyzing [  0.04s] test ANALYTICS_dbt_test__audit.not_null_stg_events_user_id [success]
+11:17:15.397225 [info ]: Finished analyzing [  0.04s] (3 nodes, 0 skipped, 0 errors)
+11:17:15.398818 [info ]: Started running test ANALYTICS_dbt_test__audit.not_null_stg_events_user_id
+11:17:15.405967 [debug]: Writing runtime sql for node "test.sparkify_dw.not_null_stg_songs_song_id.edd64eba6e"
+11:17:15.407746 [debug]: Writing runtime sql for node "test.sparkify_dw.not_null_stg_events_ts.6a813a6499"
+11:17:15.408093 [debug]: Writing runtime sql for node "test.sparkify_dw.not_null_stg_events_user_id.63ec98fbc4"
+11:17:15.419595 [debug]: Snowflake driver resolved: snowflake 0.21.0.dev+dbt0.21.17
+11:17:19.087095 [debug]: create_debug_span(...).entered() took 133.2µs
+11:17:19.087118 [debug]: create_debug_span(...).entered() took 170.4µs
+11:17:19.427623 [debug]: Query executed on node test.sparkify_dw.not_null_stg_events_ts.6a813a6499:
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select ts
+from SPARKIFY_DB.ANALYTICS.stg_events
+where ts is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "test.sparkify_dw.not_null_stg_events_ts.6a813a6499", "profile_name": "sparkify_dw", "target_name": "dev"} */
+11:17:19.697435 [debug]: create_debug_span(...).entered() took 87.4µs
+11:17:20.429430 [error]: [DbSyntaxInvalid (dbt1302)]: Error materializing test test.sparkify_dw.not_null_stg_events_ts.6a813a6499 (target\run\sparkify_dw\target\generic_tests\not_null_stg_events_ts.sql)
+  [Snowflake] 000904 (42000): SQL compilation error: error line 14 at position 7
+  invalid identifier 'TS'
+  (in run\sparkify_dw\target/generic_tests\not_null_stg_events_ts.sql:1:1)
+11:17:20.432171 [info ]: Finished running [  5.04s] test ANALYTICS_dbt_test__audit.not_null_stg_events_ts [error]
+11:17:20.434624 [info ]:     Failed [  5.12s] test  not_null_stg_events_ts (models/staging/_staging__models.yml:12:13)
+11:17:21.190240 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 2.1026802s
+11:17:21.190361 [debug]: reader.schema() took 15.7µs
+11:17:21.201921 [debug]: batch-consume loop (for res in reader) took 11.4939ms
+11:17:21.207020 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 2.1196995s
+11:17:21.207434 [debug]: concat_batches + normalize_result_column_names took 236.3µs
+11:17:21.207482 [debug]: record_current_span_status_from_attrs took 11.2µs
+11:17:21.207515 [debug]: Query executed on node test.sparkify_dw.not_null_stg_songs_song_id.edd64eba6e:
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select song_id
+from SPARKIFY_DB.ANALYTICS.stg_songs
+where song_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "test.sparkify_dw.not_null_stg_songs_song_id.edd64eba6e", "profile_name": "sparkify_dw", "target_name": "dev"} */
+11:17:21.207633 [debug]: drop(query_span_guard) (span exit/export) took 129.8µs
+11:17:21.221314 [info ]: Finished running [  5.83s] test ANALYTICS_dbt_test__audit.not_null_stg_songs_song_id [pass]
+11:17:21.222992 [info ]:     Passed [  5.91s] test  not_null_stg_songs_song_id
+11:17:21.245565 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 1.5479031s
+11:17:21.245653 [debug]: reader.schema() took 900ns
+11:17:21.250130 [debug]: batch-consume loop (for res in reader) took 4.4291ms
+11:17:21.253916 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 1.5563806s
+11:17:21.254023 [debug]: concat_batches + normalize_result_column_names took 33.1µs
+11:17:21.254061 [debug]: record_current_span_status_from_attrs took 11.5µs
+11:17:21.254107 [debug]: Query executed on node test.sparkify_dw.not_null_stg_events_user_id.63ec98fbc4:
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select user_id
+from SPARKIFY_DB.ANALYTICS.stg_events
+where user_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "test.sparkify_dw.not_null_stg_events_user_id.63ec98fbc4", "profile_name": "sparkify_dw", "target_name": "dev"} */
+11:17:21.254242 [debug]: drop(query_span_guard) (span exit/export) took 145.9µs
+11:17:21.259434 [info ]: Finished running [  5.86s] test ANALYTICS_dbt_test__audit.not_null_stg_events_user_id [pass]
+11:17:21.261613 [info ]: Finished running [  5.87s] (3 nodes, 0 skipped, 1 errors)
+11:17:21.264036 [info ]:     Passed [  5.95s] test  not_null_stg_events_user_id
+11:17:21.644073 [info ]: 
+==================== Execution Summary =====================
+Finished 'test' with 1 error for target 'dev' [7.2s]
+Processed: 3 tests
+Summary: 3 total | 2 success | 1 error
+==================== 2026-09-07T11:20:58.786535Z | 01a07b99-9897-7ec1-af85-a9005b5b3163 ====================
+11:20:58.787517 [info ]: dbt-fusion 2.0.0-preview.218
+11:20:58.790126 [info ]: Started loading project
+11:20:58.802677 [info ]: Loading profiles.yml
+11:20:58.836756 [debug]:    Started loading packages
+11:20:58.848276 [debug]:     Loaded [  0.01s] packages
+11:20:58.852827 [info ]: Finished loading project [  0.06s]
+11:20:58.855499 [info ]: Started parsing
+11:20:58.984923 [debug]: Finished parsing models/staging/_staging__models.yml [  0.00s]
+11:20:58.985707 [debug]: Finished parsing models/staging/_staging__sources.yml [  0.00s]
+11:20:58.991234 [debug]: Finished parsing models/marts/dim_artists.sql [  0.00s]
+11:20:58.992673 [debug]: Finished parsing models/marts/dim_songs.sql [  0.00s]
+11:20:58.993994 [debug]: Finished parsing models/marts/dim_time.sql [  0.00s]
+11:20:58.995215 [debug]: Finished parsing models/marts/dim_users.sql [  0.00s]
+11:20:58.996667 [debug]: Finished parsing models/marts/fct_songplays.sql [  0.00s]
+11:20:58.997966 [debug]: Finished parsing models/staging/stg_events.sql [  0.00s]
+11:20:58.999084 [debug]: Finished parsing models/staging/stg_songs.sql [  0.00s]
+11:20:59.034350 [debug]: Finished parsing target\generic_tests\not_null_stg_events_event_timestamp.sql [  0.01s]
+11:20:59.036106 [debug]: Finished parsing target\generic_tests\not_null_stg_events_user_id.sql [  0.00s]
+11:20:59.037995 [debug]: Finished parsing target\generic_tests\not_null_stg_songs_song_id.sql [  0.00s]
+11:20:59.479412 [info ]: Finished parsing [  0.62s]
+11:20:59.482071 [info ]: Started scheduling
+11:20:59.482949 [info ]: Finished scheduling [  0.00s]
+11:20:59.490708 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SPARKIFY_DB", schema: "ANALYTICS", table: "STG_SONGS" }) and interval: None
+11:20:59.490761 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SPARKIFY_DB", schema: "ANALYTICS", table: "STG_EVENTS" }) and interval: None
+11:20:59.495767 [info ]: Started building task graph
+11:20:59.496707 [info ]: Finished building task graph [  0.00s]
+11:20:59.504479 [info ]: Started rendering (3 nodes)
+11:20:59.505017 [info ]: Started test ANALYTICS_dbt_test__audit.not_null_stg_songs_song_id
+11:20:59.505064 [debug]: Started rendering test ANALYTICS_dbt_test__audit.not_null_stg_songs_song_id
+11:20:59.505177 [info ]: Started test ANALYTICS_dbt_test__audit.not_null_stg_events_user_id
+11:20:59.505204 [debug]: Started rendering test ANALYTICS_dbt_test__audit.not_null_stg_events_user_id
+11:20:59.505246 [info ]: Started test ANALYTICS_dbt_test__audit.not_null_stg_events_event_timestamp
+11:20:59.505397 [debug]: Started rendering test ANALYTICS_dbt_test__audit.not_null_stg_events_event_timestamp
+11:20:59.516737 [debug]: Compiled SQL for node test.sparkify_dw.not_null_stg_events_user_id.63ec98fbc4 at target\compiled\sparkify_dw\target\generic_tests\not_null_stg_events_user_id.sql
+11:20:59.518326 [debug]: Compiled SQL for node test.sparkify_dw.not_null_stg_events_event_timestamp.3bec892b8a at target\compiled\sparkify_dw\target\generic_tests\not_null_stg_events_event_timestamp.sql
+11:20:59.517559 [debug]: Finished rendering [  0.01s] test ANALYTICS_dbt_test__audit.not_null_stg_events_user_id [success]
+11:20:59.518966 [debug]: Compiled SQL for node test.sparkify_dw.not_null_stg_songs_song_id.edd64eba6e at target\compiled\sparkify_dw\target\generic_tests\not_null_stg_songs_song_id.sql
+11:20:59.519175 [info ]: Started analyzing (3 nodes)
+11:20:59.519562 [debug]: Started analyzing test ANALYTICS_dbt_test__audit.not_null_stg_events_user_id
+11:20:59.519672 [debug]: Finished rendering [  0.01s] test ANALYTICS_dbt_test__audit.not_null_stg_events_event_timestamp [success]
+11:20:59.520798 [debug]: Started analyzing test ANALYTICS_dbt_test__audit.not_null_stg_events_event_timestamp
+11:20:59.520949 [debug]: Finished rendering [  0.02s] test ANALYTICS_dbt_test__audit.not_null_stg_songs_song_id [success]
+11:20:59.521867 [info ]: Finished rendering [  0.02s] (3 nodes, 0 skipped, 0 errors)
+11:20:59.523081 [debug]: Started analyzing test ANALYTICS_dbt_test__audit.not_null_stg_songs_song_id
+11:20:59.544591 [debug]: Finished analyzing [  0.02s] test ANALYTICS_dbt_test__audit.not_null_stg_events_event_timestamp [success]
+11:20:59.546252 [info ]: Started running (3 nodes)
+11:20:59.546839 [info ]: Started running test ANALYTICS_dbt_test__audit.not_null_stg_events_event_timestamp
+11:20:59.546895 [debug]: Finished analyzing [  0.03s] test ANALYTICS_dbt_test__audit.not_null_stg_events_user_id [success]
+11:20:59.548179 [info ]: Started running test ANALYTICS_dbt_test__audit.not_null_stg_events_user_id
+11:20:59.548249 [debug]: Finished analyzing [  0.03s] test ANALYTICS_dbt_test__audit.not_null_stg_songs_song_id [success]
+11:20:59.549061 [info ]: Finished analyzing [  0.03s] (3 nodes, 0 skipped, 0 errors)
+11:20:59.550434 [info ]: Started running test ANALYTICS_dbt_test__audit.not_null_stg_songs_song_id
+11:20:59.556147 [debug]: Writing runtime sql for node "test.sparkify_dw.not_null_stg_events_event_timestamp.3bec892b8a"
+11:20:59.558854 [debug]: Writing runtime sql for node "test.sparkify_dw.not_null_stg_events_user_id.63ec98fbc4"
+11:20:59.558854 [debug]: Writing runtime sql for node "test.sparkify_dw.not_null_stg_songs_song_id.edd64eba6e"
+11:20:59.560864 [debug]: Snowflake driver resolved: snowflake 0.21.0.dev+dbt0.21.17
+11:21:02.011258 [debug]: create_debug_span(...).entered() took 169.5µs
+11:21:02.011258 [debug]: create_debug_span(...).entered() took 171.3µs
+11:21:02.316883 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 305.0619ms
+11:21:02.317002 [debug]: reader.schema() took 16µs
+11:21:02.329272 [debug]: batch-consume loop (for res in reader) took 12.206ms
+11:21:02.329261 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 317.5104ms
+11:21:02.329414 [debug]: reader.schema() took 1.4µs
+11:21:02.333097 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 321.7387ms
+11:21:02.333334 [debug]: concat_batches + normalize_result_column_names took 167.5µs
+11:21:02.333414 [debug]: record_current_span_status_from_attrs took 33.8µs
+11:21:02.333526 [debug]: Query executed on node test.sparkify_dw.not_null_stg_songs_song_id.edd64eba6e:
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select song_id
+from SPARKIFY_DB.ANALYTICS.stg_songs
+where song_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "test.sparkify_dw.not_null_stg_songs_song_id.edd64eba6e", "profile_name": "sparkify_dw", "target_name": "dev"} */
+11:21:02.333700 [debug]: drop(query_span_guard) (span exit/export) took 241µs
+11:21:02.336963 [debug]: batch-consume loop (for res in reader) took 7.4603ms
+11:21:02.341288 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 329.8925ms
+11:21:02.341426 [debug]: concat_batches + normalize_result_column_names took 44.4µs
+11:21:02.341467 [debug]: record_current_span_status_from_attrs took 9.4µs
+11:21:02.341502 [debug]: Query executed on node test.sparkify_dw.not_null_stg_events_user_id.63ec98fbc4:
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select user_id
+from SPARKIFY_DB.ANALYTICS.stg_events
+where user_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "test.sparkify_dw.not_null_stg_events_user_id.63ec98fbc4", "profile_name": "sparkify_dw", "target_name": "dev"} */
+11:21:02.341723 [debug]: drop(query_span_guard) (span exit/export) took 204.3µs
+11:21:02.341976 [info ]: Finished running [  2.79s] test ANALYTICS_dbt_test__audit.not_null_stg_songs_song_id [pass]
+11:21:02.344406 [info ]:     Passed [  2.83s] test  not_null_stg_songs_song_id
+11:21:02.348681 [info ]: Finished running [  2.80s] test ANALYTICS_dbt_test__audit.not_null_stg_events_user_id [pass]
+11:21:02.351053 [info ]:     Passed [  2.84s] test  not_null_stg_events_user_id
+11:21:02.551338 [debug]: create_debug_span(...).entered() took 90.9µs
+11:21:03.339231 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 787.6267ms
+11:21:03.339356 [debug]: reader.schema() took 2.3µs
+11:21:03.344525 [debug]: batch-consume loop (for res in reader) took 5.0823ms
+11:21:03.347754 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 796.2957ms
+11:21:03.347915 [debug]: concat_batches + normalize_result_column_names took 45.5µs
+11:21:03.348000 [debug]: record_current_span_status_from_attrs took 13.7µs
+11:21:03.348097 [debug]: Query executed on node test.sparkify_dw.not_null_stg_events_event_timestamp.3bec892b8a:
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select event_timestamp
+from SPARKIFY_DB.ANALYTICS.stg_events
+where event_timestamp is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "test.sparkify_dw.not_null_stg_events_event_timestamp.3bec892b8a", "profile_name": "sparkify_dw", "target_name": "dev"} */
+11:21:03.348198 [debug]: drop(query_span_guard) (span exit/export) took 134.4µs
+11:21:03.355069 [info ]: Finished running [  3.81s] test ANALYTICS_dbt_test__audit.not_null_stg_events_event_timestamp [pass]
+11:21:03.356905 [info ]: Finished running [  3.81s] (3 nodes, 0 skipped, 0 errors)
+11:21:03.359830 [info ]:     Passed [  3.84s] test  not_null_stg_events_event_timestamp
+11:21:03.752087 [info ]: 
+==================== Execution Summary =====================
+Finished 'test' successfully for target 'dev' [5.0s]
+Processed: 3 tests
+Summary: 3 total | 3 success
+==================== 2026-09-07T11:27:41.395402Z | 01a07b9f-bcb1-7c31-8329-2f4b2783853a ====================
+11:27:41.396445 [info ]: dbt-fusion 2.0.0-preview.218
+11:27:41.398915 [info ]: Started loading project
+11:27:41.412352 [info ]: Loading profiles.yml
+11:27:41.449170 [debug]:    Started loading packages
+11:27:41.467587 [debug]:     Loaded [  0.02s] packages
+11:27:41.472427 [info ]: Finished loading project [  0.07s]
+11:27:41.475843 [info ]: Started parsing
+11:27:41.664848 [debug]: Finished parsing models/staging/_staging__models.yml [  0.00s]
+11:27:41.666024 [debug]: Finished parsing models/staging/_staging__sources.yml [  0.00s]
+11:27:41.674682 [debug]: Finished parsing models/marts/dim_artists.sql [  0.00s]
+11:27:41.677492 [debug]: Finished parsing models/marts/dim_songs.sql [  0.00s]
+11:27:41.680679 [debug]: Finished parsing models/marts/dim_time.sql [  0.00s]
+11:27:41.683539 [debug]: Finished parsing models/marts/dim_users.sql [  0.00s]
+11:27:41.685946 [debug]: Finished parsing models/marts/fct_songplays.sql [  0.00s]
+11:27:41.688373 [debug]: Finished parsing models/staging/stg_events.sql [  0.00s]
+11:27:41.690859 [debug]: Finished parsing models/staging/stg_songs.sql [  0.00s]
+11:27:41.727105 [debug]: Finished parsing target\generic_tests\not_null_stg_events_event_timestamp.sql [  0.00s]
+11:27:41.729824 [debug]: Finished parsing target\generic_tests\not_null_stg_events_user_id.sql [  0.00s]
+11:27:41.732247 [debug]: Finished parsing target\generic_tests\not_null_stg_songs_song_id.sql [  0.00s]
+11:27:42.158127 [info ]: Finished parsing [  0.68s]
+11:27:42.249313 [info ]: Started scheduling
+11:27:42.250223 [info ]: Finished scheduling [  0.00s]
+11:27:42.258747 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SPARKIFY_DB", schema: "RAW", table: "RAW_EVENTS" }) and interval: None
+11:27:42.258805 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SPARKIFY_DB", schema: "RAW", table: "RAW_SONGS" }) and interval: None
+11:27:42.262847 [info ]: Started building task graph
+11:27:42.263781 [info ]: Finished building task graph [  0.00s]
+11:27:42.271202 [debug]: Snowflake driver resolved: snowflake 0.21.0.dev+dbt0.21.17
+11:27:47.307628 [debug]: create_debug_span(...).entered() took 46.9µs
+11:27:47.612354 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 304.4817ms
+11:27:47.612430 [debug]: reader.schema() took 9.1µs
+11:27:47.615411 [debug]: batch-consume loop (for res in reader) took 2.9467ms
+11:27:47.617965 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 310.2754ms
+11:27:47.618178 [debug]: concat_batches + normalize_result_column_names took 169.3µs
+11:27:47.618217 [debug]: record_current_span_status_from_attrs took 15.5µs
+11:27:47.618243 [debug]: Query executed on node unknown:
+show terse schemas in database SPARKIFY_DB
+    limit 10000
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "sparkify_dw", "target_name": "dev"} */
+11:27:47.618317 [debug]: drop(query_span_guard) (span exit/export) took 88.3µs
+11:27:47.619430 [info ]: Started rendering (7 nodes)
+11:27:47.620110 [info ]: Started model ANALYTICS.stg_events
+11:27:47.620210 [debug]: Started rendering model ANALYTICS.stg_events
+11:27:47.620437 [info ]: Started model ANALYTICS.stg_songs
+11:27:47.620526 [debug]: Started rendering model ANALYTICS.stg_songs
+11:27:47.626403 [debug]: Compiled SQL for node model.sparkify_dw.stg_events at target\compiled\sparkify_dw\models\staging\stg_events.sql
+11:27:47.627641 [debug]: Compiled SQL for node model.sparkify_dw.stg_songs at target\compiled\sparkify_dw\models\staging\stg_songs.sql
+11:27:47.628421 [debug]: Finished rendering [  0.01s] model ANALYTICS.stg_events [success]
+11:27:47.629682 [info ]: Started analyzing (7 nodes)
+11:27:47.630328 [debug]: Started analyzing model ANALYTICS.stg_events
+11:27:47.630527 [debug]: Finished rendering [  0.01s] model ANALYTICS.stg_songs [success]
+11:27:47.631445 [debug]: Started analyzing model ANALYTICS.stg_songs
+11:27:47.685431 [debug]: Finished analyzing [  0.05s] model ANALYTICS.stg_songs [success]
+11:27:47.688266 [info ]: Started running (7 nodes)
+11:27:47.691537 [info ]: Started running model ANALYTICS.stg_songs
+11:27:47.691666 [debug]: Finished analyzing [  0.06s] model ANALYTICS.stg_events [success]
+11:27:47.693367 [info ]: Started running model ANALYTICS.stg_events
+11:27:47.708541 [debug]: create_debug_span(...).entered() took 45.5µs
+11:27:48.124936 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 416.1682ms
+11:27:48.125021 [debug]: reader.schema() took 1.2µs
+11:27:48.128435 [debug]: batch-consume loop (for res in reader) took 3.3476ms
+11:27:48.132109 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 423.4753ms
+11:27:48.132524 [debug]: concat_batches + normalize_result_column_names took 268.6µs
+11:27:48.132602 [debug]: record_current_span_status_from_attrs took 11.2µs
+11:27:48.132642 [debug]: Query executed on node model.sparkify_dw.stg_events:
+SHOW OBJECTS IN SCHEMA "SPARKIFY_DB"."ANALYTICS" LIMIT 10000
+11:27:48.132759 [debug]: drop(query_span_guard) (span exit/export) took 127.9µs
+11:27:48.147089 [debug]: Writing runtime sql for node "model.sparkify_dw.stg_events"
+11:27:48.156677 [debug]: create_debug_span(...).entered() took 61.2µs
+11:27:48.635067 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 477.8835ms
+11:27:48.635141 [debug]: reader.schema() took 1µs
+11:27:48.644002 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 487.1826ms
+11:27:48.644461 [debug]: concat_batches + normalize_result_column_names took 288.5µs
+11:27:48.644532 [debug]: record_current_span_status_from_attrs took 12.8µs
+11:27:48.644633 [debug]: Query executed on node model.sparkify_dw.stg_events:
+create or replace   view SPARKIFY_DB.ANALYTICS.stg_events
+  
+  
+  
+  
+  as (
+    -- =============================================================================
+-- stg_events.sql
+-- Parses the raw VARIANT event payloads into typed columns and filters down
+-- to only "NextSong" events, since those are the only rows that represent
+-- an actual song play (other page values are things like "Login", "Home").
+-- Materialized as a VIEW (see dbt_project.yml) - cheap re-computation over
+-- the RAW table, no duplicated storage.
+-- =============================================================================
+
+-- source() resolves to SPARKIFY_DB.RAW.RAW_EVENTS via _staging__sources.yml,
+-- so this model never needs to hardcode the physical table location.
+with source as (
+
+    select * from SPARKIFY_DB.RAW.raw_events
+
+),
+
+-- Pull each field out of the VARIANT payload with the ':' path operator and
+-- cast it to its proper type, since VARIANT fields are untyped by default.
+parsed as (
+
+    select
+        -- User identifiers and profile attributes.
+        raw_payload:userId::int                        as user_id,
+        raw_payload:firstName::string                   as first_name,
+        raw_payload:lastName::string                     as last_name,
+        raw_payload:gender::string                       as gender,
+        raw_payload:level::string                        as level,
+
+        -- Session / event context.
+        raw_payload:sessionId::int                       as session_id,
+        raw_payload:itemInSession::int                    as item_in_session,
+        raw_payload:page::string                          as page,
+        raw_payload:auth::string                          as auth,
+        raw_payload:method::string                        as method,
+        raw_payload:status::int                           as status_code,
+        raw_payload:location::string                      as location,
+        raw_payload:userAgent::string                     as user_agent,
+
+        -- Song-play specific attributes.
+        raw_payload:song::string                          as song_title,
+        raw_payload:artist::string                        as artist_name,
+        raw_payload:length::float                         as duration_seconds,
+
+        -- Timestamps arrive as epoch milliseconds; convert to a proper
+        -- TIMESTAMP_NTZ so dbt_time / date functions work downstream.
+        raw_payload:ts::bigint                            as event_ts_epoch_ms,
+        to_timestamp_ntz(raw_payload:ts::bigint / 1000)   as event_timestamp,
+        raw_payload:registration::bigint                  as registration_epoch_ms,
+
+        -- Lineage columns carried through from the RAW table.
+        source_file_name,
+        loaded_at
+
+    from source
+
+)
+
+-- Keep only actual song-play events. Every other `page` value (e.g.
+-- "Home", "Login", "Logout", "Help") is navigation, not a play, and would
+-- pollute fct_songplays if left in.
+select *
+from parsed
+where page = 'NextSong'
+  )
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.sparkify_dw.stg_events", "profile_name": "sparkify_dw", "target_name": "dev"} */
+11:27:48.644785 [debug]: drop(query_span_guard) (span exit/export) took 207.5µs
+11:27:48.658024 [info ]: Finished running [  0.96s] model ANALYTICS.stg_events [success]
+11:27:48.660798 [info ]:  Succeeded [  1.03s] model ANALYTICS.stg_events (view)
+11:27:48.664404 [info ]: Started model ANALYTICS.dim_time
+11:27:48.664519 [debug]: Started rendering model ANALYTICS.dim_time
+11:27:48.664686 [info ]: Started model ANALYTICS.dim_users
+11:27:48.664785 [debug]: Started rendering model ANALYTICS.dim_users
+11:27:48.674199 [debug]: Compiled SQL for node model.sparkify_dw.dim_users at target\compiled\sparkify_dw\models\marts\dim_users.sql
+11:27:48.674909 [debug]: Compiled SQL for node model.sparkify_dw.dim_time at target\compiled\sparkify_dw\models\marts\dim_time.sql
+11:27:48.674818 [debug]: Finished rendering [  0.01s] model ANALYTICS.dim_users [success]
+11:27:48.675602 [debug]: Started analyzing model ANALYTICS.dim_users
+11:27:48.676103 [debug]: Finished rendering [  0.01s] model ANALYTICS.dim_time [success]
+11:27:48.677514 [debug]: Started analyzing model ANALYTICS.dim_time
+11:27:48.702416 [debug]: Finished analyzing [  0.03s] model ANALYTICS.dim_users [success]
+11:27:48.706895 [info ]: Started running model ANALYTICS.dim_users
+11:27:48.707995 [debug]: Finished analyzing [  0.03s] model ANALYTICS.dim_time [success]
+11:27:48.708545 [info ]: Started running model ANALYTICS.dim_time
+11:27:48.730620 [debug]: Writing runtime sql for node "model.sparkify_dw.dim_users"
+11:27:48.731324 [debug]: Writing runtime sql for node "model.sparkify_dw.dim_time"
+11:27:48.738943 [debug]: create_debug_span(...).entered() took 169.4µs
+11:27:49.264672 [debug]: create_debug_span(...).entered() took 90.1µs
+11:27:49.573645 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 308.7415ms
+11:27:49.573744 [debug]: reader.schema() took 900ns
+11:27:49.577625 [debug]: batch-consume loop (for res in reader) took 3.8275ms
+11:27:49.581546 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 316.7724ms
+11:27:49.581855 [debug]: concat_batches + normalize_result_column_names took 208.7µs
+11:27:49.581911 [debug]: record_current_span_status_from_attrs took 12.3µs
+11:27:49.581979 [debug]: Query executed on node model.sparkify_dw.stg_songs:
+SHOW OBJECTS IN SCHEMA "SPARKIFY_DB"."ANALYTICS" LIMIT 10000
+11:27:49.582226 [debug]: drop(query_span_guard) (span exit/export) took 252.9µs
+11:27:49.590690 [debug]: Writing runtime sql for node "model.sparkify_dw.stg_songs"
+11:27:49.598700 [debug]: create_debug_span(...).entered() took 83.6µs
+11:27:50.378337 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 1.6390722s
+11:27:50.378440 [debug]: reader.schema() took 1.3µs
+11:27:50.378917 [debug]: create_debug_span(...).entered() took 93.6µs
+11:27:50.387408 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 1.6483405s
+11:27:50.387592 [debug]: concat_batches + normalize_result_column_names took 89.5µs
+11:27:50.387638 [debug]: record_current_span_status_from_attrs took 11.5µs
+11:27:50.387704 [debug]: Query executed on node model.sparkify_dw.dim_users:
+create or replace transient  table SPARKIFY_DB.ANALYTICS.dim_users
+    
+    
+    
+    
+    as (-- =============================================================================
+-- dim_users.sql
+-- User dimension: one row per userId, capturing their most recent known
+-- name/gender/subscription level. A user can appear many times in the event
+-- log (once per action), and their `level` can change over time (free ->
+-- paid), so we deduplicate down to their latest event.
+-- =============================================================================
+
+with events as (
+
+    select * from SPARKIFY_DB.ANALYTICS.stg_events
+
+),
+
+-- Rank each user's events newest-first so row_number = 1 is their most
+-- recent known state (name, gender, and subscription level).
+ranked as (
+
+    select
+        user_id,
+        first_name,
+        last_name,
+        gender,
+        level,
+        event_timestamp,
+        row_number() over (
+            partition by user_id
+            order by event_timestamp desc
+        ) as recency_rank
+
+    from events
+    -- Guard against events with a null/blank user_id (e.g. logged-out
+    -- pageviews that still slipped through the page = 'NextSong' filter).
+    where user_id is not null
+
+)
+
+select
+    user_id,
+    first_name,
+    last_name,
+    gender,
+    -- Most recent subscription level - this is what current-state reporting
+    -- (e.g. "how many paid users do we have today") should use.
+    level as current_level
+
+from ranked
+-- Only keep each user's single most recent row.
+where recency_rank = 1
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.sparkify_dw.dim_users", "profile_name": "sparkify_dw", "target_name": "dev"} */
+11:27:50.387836 [debug]: drop(query_span_guard) (span exit/export) took 166.4µs
+11:27:50.396245 [info ]: Finished running [  1.69s] model ANALYTICS.dim_users [success]
+11:27:50.400073 [info ]:  Succeeded [  1.72s] model ANALYTICS.dim_users (table)
+11:27:50.889753 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 1.2903596s
+11:27:50.889807 [debug]: reader.schema() took 600ns
+11:27:50.894566 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 1.2957449s
+11:27:50.894663 [debug]: concat_batches + normalize_result_column_names took 49.4µs
+11:27:50.894694 [debug]: record_current_span_status_from_attrs took 7.1µs
+11:27:50.894721 [debug]: Query executed on node model.sparkify_dw.stg_songs:
+create or replace   view SPARKIFY_DB.ANALYTICS.stg_songs
+  
+  
+  
+  
+  as (
+    -- =============================================================================
+-- stg_songs.sql
+-- Parses the raw VARIANT song-metadata payloads into typed columns.
+-- One row per song/artist combination, later split into dim_songs and
+-- dim_artists in the marts layer.
+-- =============================================================================
+
+-- source() resolves to SPARKIFY_DB.RAW.RAW_SONGS via _staging__sources.yml.
+with source as (
+
+    select * from SPARKIFY_DB.RAW.raw_songs
+
+),
+
+-- Extract and cast each field from the VARIANT payload.
+parsed as (
+
+    select
+        -- Song attributes.
+        raw_payload:song_id::string          as song_id,
+        raw_payload:title::string             as title,
+        raw_payload:duration::float           as duration_seconds,
+        -- year is stored as 0 for unknown release years in the source data;
+        -- normalize 0 to NULL so downstream aggregations aren't skewed.
+        nullif(raw_payload:year::int, 0)      as release_year,
+
+        -- Artist attributes, kept alongside song attributes in this staging
+        -- model since they arrive in the same JSON payload; dim_artists
+        -- deduplicates them at the marts layer.
+        raw_payload:artist_id::string         as artist_id,
+        raw_payload:artist_name::string        as artist_name,
+        raw_payload:artist_location::string    as artist_location,
+        raw_payload:artist_latitude::float     as artist_latitude,
+        raw_payload:artist_longitude::float    as artist_longitude,
+
+        -- Lineage columns carried through from the RAW table.
+        source_file_name,
+        loaded_at
+
+    from source
+
+)
+
+select * from parsed
+  )
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.sparkify_dw.stg_songs", "profile_name": "sparkify_dw", "target_name": "dev"} */
+11:27:50.894787 [debug]: drop(query_span_guard) (span exit/export) took 77.8µs
+11:27:50.899839 [info ]: Finished running [  3.21s] model ANALYTICS.stg_songs [success]
+11:27:50.901095 [info ]:  Succeeded [  3.27s] model ANALYTICS.stg_songs (view)
+11:27:50.927332 [info ]: Started model ANALYTICS.dim_artists
+11:27:50.927369 [debug]: Started rendering model ANALYTICS.dim_artists
+11:27:50.927441 [info ]: Started model ANALYTICS.dim_songs
+11:27:50.927497 [debug]: Started rendering model ANALYTICS.dim_songs
+11:27:50.932971 [debug]: Compiled SQL for node model.sparkify_dw.dim_artists at target\compiled\sparkify_dw\models\marts\dim_artists.sql
+11:27:50.933556 [debug]: Compiled SQL for node model.sparkify_dw.dim_songs at target\compiled\sparkify_dw\models\marts\dim_songs.sql
+11:27:50.933236 [debug]: Finished rendering [  0.01s] model ANALYTICS.dim_artists [success]
+11:27:50.938631 [debug]: Started analyzing model ANALYTICS.dim_artists
+11:27:50.938747 [debug]: Finished rendering [  0.01s] model ANALYTICS.dim_songs [success]
+11:27:50.939518 [debug]: Started analyzing model ANALYTICS.dim_songs
+11:27:50.939767 [debug]: Finished analyzing [  0.00s] model ANALYTICS.dim_artists [success]
+11:27:50.941454 [info ]: Started running model ANALYTICS.dim_artists
+11:27:50.941652 [debug]: Finished analyzing [  0.00s] model ANALYTICS.dim_songs [success]
+11:27:50.942085 [info ]: Started running model ANALYTICS.dim_songs
+11:27:50.950305 [debug]: Writing runtime sql for node "model.sparkify_dw.dim_artists"
+11:27:50.950662 [debug]: Writing runtime sql for node "model.sparkify_dw.dim_songs"
+11:27:50.954848 [debug]: create_debug_span(...).entered() took 39.8µs
+11:27:50.956396 [debug]: create_debug_span(...).entered() took 43.6µs
+11:27:51.231393 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 851.9831ms
+11:27:51.231443 [debug]: reader.schema() took 600ns
+11:27:51.234821 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 855.8155ms
+11:27:51.234912 [debug]: concat_batches + normalize_result_column_names took 42.1µs
+11:27:51.234946 [debug]: record_current_span_status_from_attrs took 7µs
+11:27:51.234987 [debug]: Query executed on node model.sparkify_dw.dim_time:
+create or replace transient  table SPARKIFY_DB.ANALYTICS.dim_time
+    
+    
+    
+    
+    as (-- =============================================================================
+-- dim_time.sql
+-- Time dimension: one row per distinct songplay timestamp, broken into
+-- calendar parts (hour/day/week/month/year/weekday) so analysts can group
+-- fct_songplays by any time grain without repeating date-math in every query.
+-- =============================================================================
+
+with events as (
+
+    select distinct event_timestamp from SPARKIFY_DB.ANALYTICS.stg_events
+    -- A NULL timestamp would produce a garbage row of all-NULL parts below.
+    where event_timestamp is not null
+
+)
+
+select
+    -- The full timestamp acts as this dimension's natural/primary key and
+    -- is what fct_songplays.start_time joins against.
+    event_timestamp                          as start_time,
+    extract(hour from event_timestamp)       as hour,
+    extract(day from event_timestamp)        as day,
+    extract(week from event_timestamp)       as week,
+    extract(month from event_timestamp)      as month,
+    extract(year from event_timestamp)       as year,
+    -- dayname() returns Mon/Tue/... which is friendlier in BI tools than
+    -- the raw 0-6 integer from dayofweek().
+    dayname(event_timestamp)                 as weekday
+
+from events
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.sparkify_dw.dim_time", "profile_name": "sparkify_dw", "target_name": "dev"} */
+11:27:51.235057 [debug]: drop(query_span_guard) (span exit/export) took 89µs
+11:27:51.239220 [info ]: Finished running [  2.53s] model ANALYTICS.dim_time [success]
+11:27:51.240652 [info ]:  Succeeded [  2.57s] model ANALYTICS.dim_time (table)
+11:27:51.957420 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 1.0023137s
+11:27:51.957530 [debug]: reader.schema() took 1.6µs
+11:27:51.964795 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 1.009859s
+11:27:51.964957 [debug]: concat_batches + normalize_result_column_names took 66µs
+11:27:51.965003 [debug]: record_current_span_status_from_attrs took 12.4µs
+11:27:51.965050 [debug]: Query executed on node model.sparkify_dw.dim_songs:
+create or replace transient  table SPARKIFY_DB.ANALYTICS.dim_songs
+    
+    
+    
+    
+    as (-- =============================================================================
+-- dim_songs.sql
+-- Song dimension: one row per unique song_id with its title, duration,
+-- release year, and a foreign key back to dim_artists.
+-- =============================================================================
+
+with songs as (
+
+    select * from SPARKIFY_DB.ANALYTICS.stg_songs
+
+),
+
+-- Deduplicate defensively in case the same song_id appears in more than one
+-- source file (e.g. re-processed/overlapping song_data exports).
+deduped as (
+
+    select
+        song_id,
+        title,
+        artist_id,
+        duration_seconds,
+        release_year,
+        row_number() over (
+            partition by song_id
+            order by loaded_at desc
+        ) as recency_rank
+
+    from songs
+    where song_id is not null
+
+)
+
+select
+    song_id,
+    title,
+    -- Foreign key to dim_artists.artist_id.
+    artist_id,
+    duration_seconds,
+    release_year
+
+from deduped
+where recency_rank = 1
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.sparkify_dw.dim_songs", "profile_name": "sparkify_dw", "target_name": "dev"} */
+11:27:51.965178 [debug]: drop(query_span_guard) (span exit/export) took 145.5µs
+11:27:51.973575 [info ]: Finished running [  1.03s] model ANALYTICS.dim_songs [success]
+11:27:51.977141 [info ]:  Succeeded [  1.04s] model ANALYTICS.dim_songs (table)
+11:27:52.144367 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 1.1877818s
+11:27:52.144456 [debug]: reader.schema() took 1.4µs
+11:27:52.151866 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 1.1953713s
+11:27:52.152074 [debug]: concat_batches + normalize_result_column_names took 102.2µs
+11:27:52.152127 [debug]: record_current_span_status_from_attrs took 14µs
+11:27:52.152177 [debug]: Query executed on node model.sparkify_dw.dim_artists:
+create or replace transient  table SPARKIFY_DB.ANALYTICS.dim_artists
+    
+    
+    
+    
+    as (-- =============================================================================
+-- dim_artists.sql
+-- Artist dimension: one row per unique artist_id with name and location
+-- metadata. Split out from stg_songs since one artist can have many songs.
+-- =============================================================================
+
+with songs as (
+
+    select * from SPARKIFY_DB.ANALYTICS.stg_songs
+
+),
+
+-- Deduplicate to one row per artist_id, in case the same artist appears
+-- across multiple song files with (rarely) slightly different metadata.
+deduped as (
+
+    select
+        artist_id,
+        artist_name,
+        artist_location,
+        artist_latitude,
+        artist_longitude,
+        row_number() over (
+            partition by artist_id
+            order by loaded_at desc
+        ) as recency_rank
+
+    from songs
+    where artist_id is not null
+
+)
+
+select
+    artist_id,
+    artist_name,
+    artist_location,
+    artist_latitude,
+    artist_longitude
+
+from deduped
+where recency_rank = 1
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.sparkify_dw.dim_artists", "profile_name": "sparkify_dw", "target_name": "dev"} */
+11:27:52.152405 [debug]: drop(query_span_guard) (span exit/export) took 243.3µs
+11:27:52.164474 [info ]: Finished running [  1.22s] model ANALYTICS.dim_artists [success]
+11:27:52.167797 [info ]:  Succeeded [  1.23s] model ANALYTICS.dim_artists (table)
+11:27:52.172548 [info ]: Started model ANALYTICS.fct_songplays
+11:27:52.172608 [debug]: Started rendering model ANALYTICS.fct_songplays
+11:27:52.180544 [debug]: Compiled SQL for node model.sparkify_dw.fct_songplays at target\compiled\sparkify_dw\models\marts\fct_songplays.sql
+11:27:52.181378 [debug]: Finished rendering [  0.01s] model ANALYTICS.fct_songplays [success]
+11:27:52.184533 [info ]: Finished rendering [  4.57s] (7 nodes, 0 skipped, 0 errors)
+11:27:52.188850 [debug]: Started analyzing model ANALYTICS.fct_songplays
+11:27:52.326390 [debug]: Finished analyzing [  0.14s] model ANALYTICS.fct_songplays [success]
+11:27:52.329557 [info ]: Finished analyzing [  4.70s] (7 nodes, 0 skipped, 0 errors)
+11:27:52.334187 [info ]: Started running model ANALYTICS.fct_songplays
+11:27:52.349462 [debug]: Writing runtime sql for node "model.sparkify_dw.fct_songplays"
+11:27:52.357080 [debug]: create_debug_span(...).entered() took 77.2µs
+11:27:54.063809 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 1.7062761s
+11:27:54.063910 [debug]: reader.schema() took 1.3µs
+11:27:54.073013 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 1.715679s
+11:27:54.073542 [debug]: concat_batches + normalize_result_column_names took 352µs
+11:27:54.073627 [debug]: record_current_span_status_from_attrs took 13.4µs
+11:27:54.073678 [debug]: Query executed on node model.sparkify_dw.fct_songplays:
+create or replace transient  table SPARKIFY_DB.ANALYTICS.fct_songplays
+    
+    
+    
+    
+    as (-- =============================================================================
+-- fct_songplays.sql
+-- Songplays fact table: one row per NextSong event, enriched with the
+-- matching song_id/artist_id looked up from the song catalog by matching
+-- on song title + artist name + duration (there is no shared numeric key
+-- between the log data and the song metadata, so a fuzzy-but-exact text/
+-- duration match is the standard approach for this dataset).
+-- =============================================================================
+
+with events as (
+
+    select * from SPARKIFY_DB.ANALYTICS.stg_events
+
+),
+
+songs as (
+
+    select * from SPARKIFY_DB.ANALYTICS.dim_songs
+
+),
+
+artists as (
+
+    select * from SPARKIFY_DB.ANALYTICS.dim_artists
+
+),
+
+-- Join the song catalog (songs + artists) into a single lookup table keyed
+-- by the same fields present in the event log: title, artist name, duration.
+song_catalog as (
+
+    select
+        songs.song_id,
+        songs.title,
+        songs.duration_seconds,
+        artists.artist_id,
+        artists.artist_name
+
+    from songs
+    inner join artists
+        on songs.artist_id = artists.artist_id
+
+),
+
+-- Left join events to the catalog so plays of songs NOT in our metadata
+-- catalog are still kept in the fact table (with NULL song_id/artist_id)
+-- rather than silently dropped.
+enriched as (
+
+    select
+        events.user_id,
+        events.session_id,
+        events.level,
+        events.location,
+        events.user_agent,
+        events.event_timestamp             as start_time,
+        song_catalog.song_id,
+        song_catalog.artist_id,
+        events.song_title,
+        events.artist_name
+
+    from events
+    left join song_catalog
+        on events.song_title = song_catalog.title
+        and events.artist_name = song_catalog.artist_name
+        -- Match duration to 2 decimal places to absorb tiny floating-point
+        -- differences between how the log and the song catalog store it.
+        and round(events.duration_seconds, 2) = round(song_catalog.duration_seconds, 2)
+
+)
+
+select
+    -- Deterministic surrogate key: hash of the natural grain of a songplay
+    -- (who played what, in which session, at what exact time) so re-runs of
+    -- this model are idempotent and don't mint new IDs for the same event.
+    md5(
+        coalesce(cast(user_id as string), '')       || '|' ||
+        coalesce(cast(session_id as string), '')    || '|' ||
+        coalesce(cast(start_time as string), '')
+    )                                                as songplay_id,
+
+    start_time,
+    user_id,
+    level,
+    -- Foreign keys into dim_songs / dim_artists (NULL when no catalog match).
+    song_id,
+    artist_id,
+    session_id,
+    location,
+    user_agent
+
+from enriched
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.sparkify_dw.fct_songplays", "profile_name": "sparkify_dw", "target_name": "dev"} */
+11:27:54.073837 [debug]: drop(query_span_guard) (span exit/export) took 173.7µs
+11:27:54.084504 [info ]: Finished running [  1.75s] model ANALYTICS.fct_songplays [success]
+11:27:54.085356 [info ]: Finished running [  6.40s] (7 nodes, 0 skipped, 0 errors)
+11:27:54.088487 [info ]:  Succeeded [  1.90s] model ANALYTICS.fct_songplays (table)
+11:27:54.987690 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' successfully for target 'dev' [13.6s]
+Processed: 7 models
+Summary: 7 total | 7 success
+==================== 2026-09-07T11:35:22.954199Z | 01a07ba6-c7e7-7cf1-b43c-27edfb786ca8 ====================
+11:35:22.954916 [info ]: dbt-fusion 2.0.0-preview.218
+11:35:22.956992 [info ]: Started loading project
+11:35:22.966247 [info ]: Loading profiles.yml
+11:35:22.987898 [debug]:    Started loading packages
+11:35:22.996105 [debug]:     Loaded [  0.01s] packages
+11:35:22.999372 [info ]: Finished loading project [  0.04s]
+11:35:23.001269 [info ]: Started parsing
+11:35:23.118205 [debug]: Finished parsing models/staging/_staging__models.yml [  0.00s]
+11:35:23.119067 [debug]: Finished parsing models/staging/_staging__sources.yml [  0.00s]
+11:35:23.124164 [debug]: Finished parsing models/marts/dim_artists.sql [  0.00s]
+11:35:23.125518 [debug]: Finished parsing models/marts/dim_songs.sql [  0.00s]
+11:35:23.127044 [debug]: Finished parsing models/marts/dim_time.sql [  0.00s]
+11:35:23.129026 [debug]: Finished parsing models/marts/dim_users.sql [  0.00s]
+11:35:23.130515 [debug]: Finished parsing models/marts/fct_songplays.sql [  0.00s]
+11:35:23.132042 [debug]: Finished parsing models/staging/stg_events.sql [  0.00s]
+11:35:23.133385 [debug]: Finished parsing models/staging/stg_songs.sql [  0.00s]
+11:35:23.155526 [debug]: Finished parsing target\generic_tests\not_null_stg_events_event_timestamp.sql [  0.00s]
+11:35:23.157483 [debug]: Finished parsing target\generic_tests\not_null_stg_events_user_id.sql [  0.00s]
+11:35:23.159678 [debug]: Finished parsing target\generic_tests\not_null_stg_songs_song_id.sql [  0.00s]
+11:35:23.518397 [info ]: Finished parsing [  0.52s]
+11:35:23.598856 [info ]: Started scheduling
+11:35:23.599732 [info ]: Finished scheduling [  0.00s]
+11:35:23.608642 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SPARKIFY_DB", schema: "RAW", table: "RAW_EVENTS" }) and interval: None
+11:35:23.608707 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "SPARKIFY_DB", schema: "RAW", table: "RAW_SONGS" }) and interval: None
+11:35:23.614405 [info ]: Started building task graph
+11:35:23.615417 [info ]: Finished building task graph [  0.00s]
+11:35:23.622616 [debug]: Snowflake driver resolved: snowflake 0.21.0.dev+dbt0.21.17
+11:35:26.814058 [debug]: create_debug_span(...).entered() took 108.8µs
+11:35:27.185687 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 370.7871ms
+11:35:27.185797 [debug]: reader.schema() took 9.8µs
+11:35:27.191093 [debug]: batch-consume loop (for res in reader) took 5.2281ms
+11:35:27.196795 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 382.5486ms
+11:35:27.197421 [debug]: concat_batches + normalize_result_column_names took 382µs
+11:35:27.197517 [debug]: record_current_span_status_from_attrs took 31.2µs
+11:35:27.197578 [debug]: Query executed on node unknown:
+show terse schemas in database SPARKIFY_DB
+    limit 10000
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "sparkify_dw", "target_name": "dev"} */
+11:35:27.197717 [debug]: drop(query_span_guard) (span exit/export) took 166.4µs
+11:35:27.199642 [info ]: Started rendering (7 nodes)
+11:35:27.200695 [info ]: Started model ANALYTICS.stg_events
+11:35:27.200796 [debug]: Started rendering model ANALYTICS.stg_events
+11:35:27.201061 [info ]: Started model ANALYTICS.stg_songs
+11:35:27.201131 [debug]: Started rendering model ANALYTICS.stg_songs
+11:35:27.221031 [debug]: Compiled SQL for node model.sparkify_dw.stg_events at target\compiled\sparkify_dw\models\staging\stg_events.sql
+11:35:27.221615 [debug]: Compiled SQL for node model.sparkify_dw.stg_songs at target\compiled\sparkify_dw\models\staging\stg_songs.sql
+11:35:27.223880 [debug]: Finished rendering [  0.02s] model ANALYTICS.stg_events [success]
+11:35:27.230315 [info ]: Started analyzing (7 nodes)
+11:35:27.232007 [debug]: Started analyzing model ANALYTICS.stg_events
+11:35:27.232292 [debug]: Finished rendering [  0.03s] model ANALYTICS.stg_songs [success]
+11:35:27.233813 [debug]: Started analyzing model ANALYTICS.stg_songs
+11:35:27.326555 [debug]: Finished analyzing [  0.09s] model ANALYTICS.stg_songs [success]
+11:35:27.327946 [info ]: Started running (7 nodes)
+11:35:27.328535 [info ]: Started running model ANALYTICS.stg_songs
+11:35:27.328980 [debug]: Finished analyzing [  0.10s] model ANALYTICS.stg_events [success]
+11:35:27.330501 [info ]: Started running model ANALYTICS.stg_events
+11:35:27.338222 [debug]: create_debug_span(...).entered() took 48.7µs
+11:35:27.675014 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 336.5658ms
+11:35:27.675106 [debug]: reader.schema() took 1.4µs
+11:35:27.679978 [debug]: batch-consume loop (for res in reader) took 4.8146ms
+11:35:27.683363 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 345.0638ms
+11:35:27.683701 [debug]: concat_batches + normalize_result_column_names took 262.3µs
+11:35:27.683766 [debug]: record_current_span_status_from_attrs took 13.7µs
+11:35:27.683815 [debug]: Query executed on node model.sparkify_dw.stg_events:
+SHOW OBJECTS IN SCHEMA "SPARKIFY_DB"."ANALYTICS" LIMIT 10000
+11:35:27.683923 [debug]: drop(query_span_guard) (span exit/export) took 126.1µs
+11:35:27.693387 [debug]: Writing runtime sql for node "model.sparkify_dw.stg_events"
+11:35:27.700314 [debug]: create_debug_span(...).entered() took 54.9µs
+11:35:28.205408 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 504.6417ms
+11:35:28.205502 [debug]: reader.schema() took 1.7µs
+11:35:28.215318 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 514.8989ms
+11:35:28.215688 [debug]: concat_batches + normalize_result_column_names took 267.3µs
+11:35:28.215764 [debug]: record_current_span_status_from_attrs took 13.4µs
+11:35:28.215815 [debug]: Query executed on node model.sparkify_dw.stg_events:
+create or replace   view SPARKIFY_DB.ANALYTICS.stg_events
+  
+  
+  
+  
+  as (
+    -- =============================================================================
+-- stg_events.sql
+-- Parses the raw VARIANT event payloads into typed columns and filters down
+-- to only "NextSong" events, since those are the only rows that represent
+-- an actual song play (other page values are things like "Login", "Home").
+-- Materialized as a VIEW (see dbt_project.yml) - cheap re-computation over
+-- the RAW table, no duplicated storage.
+-- =============================================================================
+
+-- source() resolves to SPARKIFY_DB.RAW.RAW_EVENTS via _staging__sources.yml,
+-- so this model never needs to hardcode the physical table location.
+with source as (
+
+    select * from SPARKIFY_DB.RAW.raw_events
+
+),
+
+-- Pull each field out of the VARIANT payload with the ':' path operator and
+-- cast it to its proper type, since VARIANT fields are untyped by default.
+parsed as (
+
+    select
+        -- User identifiers and profile attributes.
+        raw_payload:userId::int                        as user_id,
+        raw_payload:firstName::string                   as first_name,
+        raw_payload:lastName::string                     as last_name,
+        raw_payload:gender::string                       as gender,
+        raw_payload:level::string                        as level,
+
+        -- Session / event context.
+        raw_payload:sessionId::int                       as session_id,
+        raw_payload:itemInSession::int                    as item_in_session,
+        raw_payload:page::string                          as page,
+        raw_payload:auth::string                          as auth,
+        raw_payload:method::string                        as method,
+        raw_payload:status::int                           as status_code,
+        raw_payload:location::string                      as location,
+        raw_payload:userAgent::string                     as user_agent,
+
+        -- Song-play specific attributes.
+        raw_payload:song::string                          as song_title,
+        raw_payload:artist::string                        as artist_name,
+        raw_payload:length::float                         as duration_seconds,
+
+        -- Timestamps arrive as epoch milliseconds; convert to a proper
+        -- TIMESTAMP_NTZ so dbt_time / date functions work downstream.
+        raw_payload:ts::bigint                            as event_ts_epoch_ms,
+        to_timestamp_ntz(raw_payload:ts::bigint / 1000)   as event_timestamp,
+        raw_payload:registration::bigint                  as registration_epoch_ms,
+
+        -- Lineage columns carried through from the RAW table.
+        source_file_name,
+        loaded_at
+
+    from source
+
+)
+
+-- Keep only actual song-play events. Every other `page` value (e.g.
+-- "Home", "Login", "Logout", "Help") is navigation, not a play, and would
+-- pollute fct_songplays if left in.
+select *
+from parsed
+where page = 'NextSong'
+  )
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.sparkify_dw.stg_events", "profile_name": "sparkify_dw", "target_name": "dev"} */
+11:35:28.215967 [debug]: drop(query_span_guard) (span exit/export) took 172.2µs
+11:35:28.229843 [info ]: Finished running [  0.90s] model ANALYTICS.stg_events [success]
+11:35:28.233717 [info ]:  Succeeded [  1.02s] model ANALYTICS.stg_events (view)
+11:35:28.237663 [info ]: Started model ANALYTICS.dim_users
+11:35:28.237736 [debug]: Started rendering model ANALYTICS.dim_users
+11:35:28.237898 [info ]: Started model ANALYTICS.dim_time
+11:35:28.237976 [debug]: Started rendering model ANALYTICS.dim_time
+11:35:28.244878 [debug]: Compiled SQL for node model.sparkify_dw.dim_users at target\compiled\sparkify_dw\models\marts\dim_users.sql
+11:35:28.245613 [debug]: Finished rendering [  0.01s] model ANALYTICS.dim_users [success]
+11:35:28.246091 [debug]: Compiled SQL for node model.sparkify_dw.dim_time at target\compiled\sparkify_dw\models\marts\dim_time.sql
+11:35:28.246125 [debug]: Started analyzing model ANALYTICS.dim_users
+11:35:28.246543 [debug]: Finished rendering [  0.01s] model ANALYTICS.dim_time [success]
+11:35:28.247045 [debug]: Started analyzing model ANALYTICS.dim_time
+11:35:28.267718 [debug]: Finished analyzing [  0.02s] model ANALYTICS.dim_users [success]
+11:35:28.270646 [info ]: Started running model ANALYTICS.dim_users
+11:35:28.274019 [debug]: Finished analyzing [  0.03s] model ANALYTICS.dim_time [success]
+11:35:28.274731 [info ]: Started running model ANALYTICS.dim_time
+11:35:28.292660 [debug]: Writing runtime sql for node "model.sparkify_dw.dim_users"
+11:35:28.297219 [debug]: Writing runtime sql for node "model.sparkify_dw.dim_time"
+11:35:28.300792 [debug]: create_debug_span(...).entered() took 76µs
+11:35:29.434523 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 1.1333215s
+11:35:29.434643 [debug]: reader.schema() took 2.1µs
+11:35:29.443692 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 1.1427535s
+11:35:29.443917 [debug]: concat_batches + normalize_result_column_names took 122.7µs
+11:35:29.443969 [debug]: record_current_span_status_from_attrs took 15.3µs
+11:35:29.444043 [debug]: Query executed on node model.sparkify_dw.dim_users:
+create or replace transient  table SPARKIFY_DB.ANALYTICS.dim_users
+    
+    
+    
+    
+    as (-- =============================================================================
+-- dim_users.sql
+-- User dimension: one row per userId, capturing their most recent known
+-- name/gender/subscription level. A user can appear many times in the event
+-- log (once per action), and their `level` can change over time (free ->
+-- paid), so we deduplicate down to their latest event.
+-- =============================================================================
+
+with events as (
+
+    select * from SPARKIFY_DB.ANALYTICS.stg_events
+
+),
+
+-- Rank each user's events newest-first so row_number = 1 is their most
+-- recent known state (name, gender, and subscription level).
+ranked as (
+
+    select
+        user_id,
+        first_name,
+        last_name,
+        gender,
+        level,
+        event_timestamp,
+        row_number() over (
+            partition by user_id
+            order by event_timestamp desc
+        ) as recency_rank
+
+    from events
+    -- Guard against events with a null/blank user_id (e.g. logged-out
+    -- pageviews that still slipped through the page = 'NextSong' filter).
+    where user_id is not null
+
+)
+
+select
+    user_id,
+    first_name,
+    last_name,
+    gender,
+    -- Most recent subscription level - this is what current-state reporting
+    -- (e.g. "how many paid users do we have today") should use.
+    level as current_level
+
+from ranked
+-- Only keep each user's single most recent row.
+where recency_rank = 1
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.sparkify_dw.dim_users", "profile_name": "sparkify_dw", "target_name": "dev"} */
+11:35:29.444182 [debug]: drop(query_span_guard) (span exit/export) took 179.8µs
+11:35:29.450197 [debug]: create_debug_span(...).entered() took 167.2µs
+11:35:29.460318 [info ]: Finished running [  1.19s] model ANALYTICS.dim_users [success]
+11:35:29.463041 [info ]:  Succeeded [  1.22s] model ANALYTICS.dim_users (table)
+11:35:29.664055 [debug]: create_debug_span(...).entered() took 104.1µs
+11:35:29.768766 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 317.779ms
+11:35:29.768854 [debug]: reader.schema() took 1.2µs
+11:35:29.773850 [debug]: batch-consume loop (for res in reader) took 4.9421ms
+11:35:29.778112 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 327.4181ms
+11:35:29.778557 [debug]: concat_batches + normalize_result_column_names took 315µs
+11:35:29.778627 [debug]: record_current_span_status_from_attrs took 13.1µs
+11:35:29.778680 [debug]: Query executed on node model.sparkify_dw.stg_songs:
+SHOW OBJECTS IN SCHEMA "SPARKIFY_DB"."ANALYTICS" LIMIT 10000
+11:35:29.778805 [debug]: drop(query_span_guard) (span exit/export) took 137.4µs
+11:35:29.788758 [debug]: Writing runtime sql for node "model.sparkify_dw.stg_songs"
+11:35:29.797871 [debug]: create_debug_span(...).entered() took 74.6µs
+11:35:30.254939 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 456.4402ms
+11:35:30.254988 [debug]: reader.schema() took 600ns
+11:35:30.257864 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 459.8778ms
+11:35:30.257960 [debug]: concat_batches + normalize_result_column_names took 48.1µs
+11:35:30.257988 [debug]: record_current_span_status_from_attrs took 5.4µs
+11:35:30.258006 [debug]: Query executed on node model.sparkify_dw.stg_songs:
+create or replace   view SPARKIFY_DB.ANALYTICS.stg_songs
+  
+  
+  
+  
+  as (
+    -- =============================================================================
+-- stg_songs.sql
+-- Parses the raw VARIANT song-metadata payloads into typed columns.
+-- One row per song/artist combination, later split into dim_songs and
+-- dim_artists in the marts layer.
+-- =============================================================================
+
+-- source() resolves to SPARKIFY_DB.RAW.RAW_SONGS via _staging__sources.yml.
+with source as (
+
+    select * from SPARKIFY_DB.RAW.raw_songs
+
+),
+
+-- Extract and cast each field from the VARIANT payload.
+parsed as (
+
+    select
+        -- Song attributes.
+        raw_payload:song_id::string          as song_id,
+        raw_payload:title::string             as title,
+        raw_payload:duration::float           as duration_seconds,
+        -- year is stored as 0 for unknown release years in the source data;
+        -- normalize 0 to NULL so downstream aggregations aren't skewed.
+        nullif(raw_payload:year::int, 0)      as release_year,
+
+        -- Artist attributes, kept alongside song attributes in this staging
+        -- model since they arrive in the same JSON payload; dim_artists
+        -- deduplicates them at the marts layer.
+        raw_payload:artist_id::string         as artist_id,
+        raw_payload:artist_name::string        as artist_name,
+        raw_payload:artist_location::string    as artist_location,
+        raw_payload:artist_latitude::float     as artist_latitude,
+        raw_payload:artist_longitude::float    as artist_longitude,
+
+        -- Lineage columns carried through from the RAW table.
+        source_file_name,
+        loaded_at
+
+    from source
+
+)
+
+select * from parsed
+  )
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.sparkify_dw.stg_songs", "profile_name": "sparkify_dw", "target_name": "dev"} */
+11:35:30.258052 [debug]: drop(query_span_guard) (span exit/export) took 48.3µs
+11:35:30.263415 [info ]: Finished running [  2.93s] model ANALYTICS.stg_songs [success]
+11:35:30.264718 [info ]:  Succeeded [  3.06s] model ANALYTICS.stg_songs (view)
+11:35:30.266276 [info ]: Started model ANALYTICS.dim_artists
+11:35:30.266341 [debug]: Started rendering model ANALYTICS.dim_artists
+11:35:30.266453 [info ]: Started model ANALYTICS.dim_songs
+11:35:30.266503 [debug]: Started rendering model ANALYTICS.dim_songs
+11:35:30.269930 [debug]: Compiled SQL for node model.sparkify_dw.dim_songs at target\compiled\sparkify_dw\models\marts\dim_songs.sql
+11:35:30.270018 [debug]: Compiled SQL for node model.sparkify_dw.dim_artists at target\compiled\sparkify_dw\models\marts\dim_artists.sql
+11:35:30.270314 [debug]: Finished rendering [  0.00s] model ANALYTICS.dim_songs [success]
+11:35:30.270693 [debug]: Started analyzing model ANALYTICS.dim_songs
+11:35:30.270770 [debug]: Finished rendering [  0.00s] model ANALYTICS.dim_artists [success]
+11:35:30.270995 [debug]: Started analyzing model ANALYTICS.dim_artists
+11:35:30.272037 [debug]: Finished analyzing [  0.00s] model ANALYTICS.dim_artists [success]
+11:35:30.272341 [info ]: Started running model ANALYTICS.dim_artists
+11:35:30.272415 [debug]: Finished analyzing [  0.00s] model ANALYTICS.dim_songs [success]
+11:35:30.272680 [info ]: Started running model ANALYTICS.dim_songs
+11:35:30.279685 [debug]: Writing runtime sql for node "model.sparkify_dw.dim_artists"
+11:35:30.281265 [debug]: Writing runtime sql for node "model.sparkify_dw.dim_songs"
+11:35:30.285233 [debug]: create_debug_span(...).entered() took 36.3µs
+11:35:30.285226 [debug]: create_debug_span(...).entered() took 40.4µs
+11:35:30.662472 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 998.1592ms
+11:35:30.662523 [debug]: reader.schema() took 800ns
+11:35:30.666650 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 1.0025005s
+11:35:30.666730 [debug]: concat_batches + normalize_result_column_names took 36.3µs
+11:35:30.666747 [debug]: record_current_span_status_from_attrs took 5.7µs
+11:35:30.666764 [debug]: Query executed on node model.sparkify_dw.dim_time:
+create or replace transient  table SPARKIFY_DB.ANALYTICS.dim_time
+    
+    
+    
+    
+    as (-- =============================================================================
+-- dim_time.sql
+-- Time dimension: one row per distinct songplay timestamp, broken into
+-- calendar parts (hour/day/week/month/year/weekday) so analysts can group
+-- fct_songplays by any time grain without repeating date-math in every query.
+-- =============================================================================
+
+with events as (
+
+    select distinct event_timestamp from SPARKIFY_DB.ANALYTICS.stg_events
+    -- A NULL timestamp would produce a garbage row of all-NULL parts below.
+    where event_timestamp is not null
+
+)
+
+select
+    -- The full timestamp acts as this dimension's natural/primary key and
+    -- is what fct_songplays.start_time joins against.
+    event_timestamp                          as start_time,
+    extract(hour from event_timestamp)       as hour,
+    extract(day from event_timestamp)        as day,
+    extract(week from event_timestamp)       as week,
+    extract(month from event_timestamp)      as month,
+    extract(year from event_timestamp)       as year,
+    -- dayname() returns Mon/Tue/... which is friendlier in BI tools than
+    -- the raw 0-6 integer from dayofweek().
+    dayname(event_timestamp)                 as weekday
+
+from events
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.sparkify_dw.dim_time", "profile_name": "sparkify_dw", "target_name": "dev"} */
+11:35:30.666826 [debug]: drop(query_span_guard) (span exit/export) took 66.4µs
+11:35:30.673059 [info ]: Finished running [  2.40s] model ANALYTICS.dim_time [success]
+11:35:30.674500 [info ]:  Succeeded [  2.43s] model ANALYTICS.dim_time (table)
+11:35:31.174620 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 889.0502ms
+11:35:31.174713 [debug]: reader.schema() took 1.1µs
+11:35:31.182524 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 897.1934ms
+11:35:31.182730 [debug]: concat_batches + normalize_result_column_names took 86.7µs
+11:35:31.182815 [debug]: record_current_span_status_from_attrs took 12.6µs
+11:35:31.182865 [debug]: Query executed on node model.sparkify_dw.dim_artists:
+create or replace transient  table SPARKIFY_DB.ANALYTICS.dim_artists
+    
+    
+    
+    
+    as (-- =============================================================================
+-- dim_artists.sql
+-- Artist dimension: one row per unique artist_id with name and location
+-- metadata. Split out from stg_songs since one artist can have many songs.
+-- =============================================================================
+
+with songs as (
+
+    select * from SPARKIFY_DB.ANALYTICS.stg_songs
+
+),
+
+-- Deduplicate to one row per artist_id, in case the same artist appears
+-- across multiple song files with (rarely) slightly different metadata.
+deduped as (
+
+    select
+        artist_id,
+        artist_name,
+        artist_location,
+        artist_latitude,
+        artist_longitude,
+        row_number() over (
+            partition by artist_id
+            order by loaded_at desc
+        ) as recency_rank
+
+    from songs
+    where artist_id is not null
+
+)
+
+select
+    artist_id,
+    artist_name,
+    artist_location,
+    artist_latitude,
+    artist_longitude
+
+from deduped
+where recency_rank = 1
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.sparkify_dw.dim_artists", "profile_name": "sparkify_dw", "target_name": "dev"} */
+11:35:31.183018 [debug]: drop(query_span_guard) (span exit/export) took 156.6µs
+11:35:31.191543 [info ]: Finished running [  0.92s] model ANALYTICS.dim_artists [success]
+11:35:31.192256 [info ]:  Succeeded [  0.92s] model ANALYTICS.dim_artists (table)
+11:35:31.257320 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 971.7749ms
+11:35:31.257405 [debug]: reader.schema() took 1.2µs
+11:35:31.264796 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 979.4844ms
+11:35:31.264975 [debug]: concat_batches + normalize_result_column_names took 87.4µs
+11:35:31.265046 [debug]: record_current_span_status_from_attrs took 12.8µs
+11:35:31.265083 [debug]: Query executed on node model.sparkify_dw.dim_songs:
+create or replace transient  table SPARKIFY_DB.ANALYTICS.dim_songs
+    
+    
+    
+    
+    as (-- =============================================================================
+-- dim_songs.sql
+-- Song dimension: one row per unique song_id with its title, duration,
+-- release year, and a foreign key back to dim_artists.
+-- =============================================================================
+
+with songs as (
+
+    select * from SPARKIFY_DB.ANALYTICS.stg_songs
+
+),
+
+-- Deduplicate defensively in case the same song_id appears in more than one
+-- source file (e.g. re-processed/overlapping song_data exports).
+deduped as (
+
+    select
+        song_id,
+        title,
+        artist_id,
+        duration_seconds,
+        release_year,
+        row_number() over (
+            partition by song_id
+            order by loaded_at desc
+        ) as recency_rank
+
+    from songs
+    where song_id is not null
+
+)
+
+select
+    song_id,
+    title,
+    -- Foreign key to dim_artists.artist_id.
+    artist_id,
+    duration_seconds,
+    release_year
+
+from deduped
+where recency_rank = 1
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.sparkify_dw.dim_songs", "profile_name": "sparkify_dw", "target_name": "dev"} */
+11:35:31.265221 [debug]: drop(query_span_guard) (span exit/export) took 147.6µs
+11:35:31.273531 [info ]: Finished running [  1.00s] model ANALYTICS.dim_songs [success]
+11:35:31.274169 [info ]:  Succeeded [  1.00s] model ANALYTICS.dim_songs (table)
+11:35:31.278615 [info ]: Started model ANALYTICS.fct_songplays
+11:35:31.278735 [debug]: Started rendering model ANALYTICS.fct_songplays
+11:35:31.286264 [debug]: Compiled SQL for node model.sparkify_dw.fct_songplays at target\compiled\sparkify_dw\models\marts\fct_songplays.sql
+11:35:31.287125 [debug]: Finished rendering [  0.01s] model ANALYTICS.fct_songplays [success]
+11:35:31.287834 [info ]: Finished rendering [  4.09s] (7 nodes, 0 skipped, 0 errors)
+11:35:31.293139 [debug]: Started analyzing model ANALYTICS.fct_songplays
+11:35:31.428009 [debug]: Finished analyzing [  0.13s] model ANALYTICS.fct_songplays [success]
+11:35:31.430940 [info ]: Finished analyzing [  4.20s] (7 nodes, 0 skipped, 0 errors)
+11:35:31.434852 [info ]: Started running model ANALYTICS.fct_songplays
+11:35:31.448110 [debug]: Writing runtime sql for node "model.sparkify_dw.fct_songplays"
+11:35:31.454826 [debug]: create_debug_span(...).entered() took 57.9µs
+11:35:32.915668 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 1.460273s
+11:35:32.915777 [debug]: reader.schema() took 1.6µs
+11:35:32.922638 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 1.4676922s
+11:35:32.922944 [debug]: concat_batches + normalize_result_column_names took 174µs
+11:35:32.923018 [debug]: record_current_span_status_from_attrs took 11.1µs
+11:35:32.923071 [debug]: Query executed on node model.sparkify_dw.fct_songplays:
+create or replace transient  table SPARKIFY_DB.ANALYTICS.fct_songplays
+    
+    
+    
+    
+    as (-- =============================================================================
+-- fct_songplays.sql
+-- Songplays fact table: one row per NextSong event, enriched with the
+-- matching song_id/artist_id looked up from the song catalog by matching
+-- on song title + artist name + duration (there is no shared numeric key
+-- between the log data and the song metadata, so a fuzzy-but-exact text/
+-- duration match is the standard approach for this dataset).
+-- =============================================================================
+
+with events as (
+
+    select * from SPARKIFY_DB.ANALYTICS.stg_events
+
+),
+
+songs as (
+
+    select * from SPARKIFY_DB.ANALYTICS.dim_songs
+
+),
+
+artists as (
+
+    select * from SPARKIFY_DB.ANALYTICS.dim_artists
+
+),
+
+-- Join the song catalog (songs + artists) into a single lookup table keyed
+-- by the same fields present in the event log: title, artist name, duration.
+song_catalog as (
+
+    select
+        songs.song_id,
+        songs.title,
+        songs.duration_seconds,
+        artists.artist_id,
+        artists.artist_name
+
+    from songs
+    inner join artists
+        on songs.artist_id = artists.artist_id
+
+),
+
+-- Left join events to the catalog so plays of songs NOT in our metadata
+-- catalog are still kept in the fact table (with NULL song_id/artist_id)
+-- rather than silently dropped.
+enriched as (
+
+    select
+        events.user_id,
+        events.session_id,
+        events.level,
+        events.location,
+        events.user_agent,
+        events.event_timestamp             as start_time,
+        song_catalog.song_id,
+        song_catalog.artist_id,
+        events.song_title,
+        events.artist_name
+
+    from events
+    left join song_catalog
+        on events.song_title = song_catalog.title
+        and events.artist_name = song_catalog.artist_name
+        -- Match duration to 2 decimal places to absorb tiny floating-point
+        -- differences between how the log and the song catalog store it.
+        and round(events.duration_seconds, 2) = round(song_catalog.duration_seconds, 2)
+
+)
+
+select
+    -- Deterministic surrogate key: hash of the natural grain of a songplay
+    -- (who played what, in which session, at what exact time) so re-runs of
+    -- this model are idempotent and don't mint new IDs for the same event.
+    md5(
+        coalesce(cast(user_id as string), '')       || '|' ||
+        coalesce(cast(session_id as string), '')    || '|' ||
+        coalesce(cast(start_time as string), '')
+    )                                                as songplay_id,
+
+    start_time,
+    user_id,
+    level,
+    -- Foreign keys into dim_songs / dim_artists (NULL when no catalog match).
+    song_id,
+    artist_id,
+    session_id,
+    location,
+    user_agent
+
+from enriched
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.sparkify_dw.fct_songplays", "profile_name": "sparkify_dw", "target_name": "dev"} */
+11:35:32.923222 [debug]: drop(query_span_guard) (span exit/export) took 155.1µs
+11:35:32.933409 [info ]: Finished running [  1.50s] model ANALYTICS.fct_songplays [success]
+11:35:32.935772 [info ]: Finished running [  5.61s] (7 nodes, 0 skipped, 0 errors)
+11:35:32.938874 [info ]:  Succeeded [  1.64s] model ANALYTICS.fct_songplays (table)
+11:35:33.531496 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' successfully for target 'dev' [10.6s]
+Processed: 7 models
+Summary: 7 total | 7 success

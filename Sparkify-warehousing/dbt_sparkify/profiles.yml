@@ -1,0 +1,41 @@
+# =============================================================================
+# profiles.yml.template
+# Template for dbt's Snowflake connection profile.
+# COPY this file to ~/.dbt/profiles.yml (do NOT commit real credentials to
+# version control) and fill in the placeholder values below.
+# =============================================================================
+
+# Profile name must match `profile:` in dbt_project.yml ("sparkify_dw").
+sparkify_dw:
+  target: dev
+
+  outputs:
+    dev:
+      type: snowflake
+
+      # Snowflake account identifier
+      account: "JUMPDED-DTC83219"
+
+      # Snowflake username
+      user: "TOMMASSHELBY"
+
+      # Your Snowflake password
+      password: "mGKJBkvEJdq7XMe"
+
+      # Snowflake role
+      role: "SPARKIFY_ROLE"
+
+      # Database
+      database: "SPARKIFY_DB"
+
+      # Warehouse
+      warehouse: "SPARKIFY_WH"
+
+      # Default schema for dbt
+      schema: "ANALYTICS"
+
+      # Number of concurrent dbt threads
+      threads: 4
+
+      # Keep Snowflake session alive
+      client_session_keep_alive: false

@@ -1,0 +1,20 @@
+{
+  "target_dir": "C:\\Users\\Noman Traders\\Documents\\Sparkify-data-warehousing\\Sparkify-warehousing\\dbt_sparkify\\target",
+  "fingerprints": {
+    "manifest.json": {
+      "size": 604850,
+      "modified_secs": 1788780933
+    },
+    "run_results.json": {
+      "size": 17363,
+      "modified_secs": 1788780932
+    },
+    "semantic_manifest.json": {
+      "size": 234,
+      "modified_secs": 1788780923
+    }
+  },
+  "write_source": "DirectWrite",
+  "context_dir": null,
+  "context_fingerprints": {}
+}
