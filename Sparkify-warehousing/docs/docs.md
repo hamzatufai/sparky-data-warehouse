@@ -2,7 +2,7 @@
 
 This guide walks through running the entire pipeline end-to-end: local JSON
 
-data → S3 → Snowflake RAW (VARIANT) → dbt star schema in ANALYTICS.
+data → S3 → Snowflake RAW (VARIANT) → dbt star schema in STAGING → MARTS.
 
 Existing project files (**`README.md`**, **`images/`**, **`data/`**) are untouched — this
 
@@ -49,7 +49,7 @@ C:\Users\Noman Traders\Documents\Sparkify-data-warehousing\data
 ## 1. Provision AWS resources (S3 bucket + IAM role)
 
 ```bash
-cd Sparkify-data-warehousing/aws
+cd Sparkify-warehousing/aws
 
 chmod +x setup_aws_resources.sh
 
@@ -58,7 +58,7 @@ chmod +x setup_aws_resources.sh
 
 This creates:
 
-* S3 bucket **`sparkify-dw-bucket`** with **`log_data/`** and **`song_data/`** prefixes.
+* S3 bucket **`sparkify-dw-bucket-hamza`** with **`log_data/`** and **`song_data/`** prefixes.
 * IAM role **`sparkify_snowflake_s3_role`** with the **`iam_policy.json`** permissions attached.
 
 **Copy the Role ARN printed at the end of the script** — you'll paste it into
@@ -80,13 +80,13 @@ Open a Snowflake worksheet (or use **`snow sql`**) as a user with **`SECURITYADM
 **`SYSADMIN`** privileges, and run:
 
 ```bash
-snow sql -f ../snowflake/01_roles_and_permissions.sql --connection <your_admin_connection>
+snow sql -f ../snowflake/02_storage_integration.sql --connection <your_admin_connection>
 ```
 
 This creates:
 
 * Warehouse **`SPARKIFY_WH`**
-* Database **`SPARKIFY_DB`** with schemas **`RAW`** and **`ANALYTICS`**
+* Database **`SPARKIFY_DB`** with schemas **`RAW`**, **`STAGING`**, and **`MARTS`**
 * Role **`SPARKIFY_ROLE`** with least-privilege grants
 
 ---
@@ -150,12 +150,12 @@ First, register a SnowCLI connection (one-time):
 
 ```bash
 snow connection add --connection-name sparkify_conn \
-  --account <your_account> \
-  --user <your_user> \
-  --role SPARKIFY_ROLE \
-  --warehouse SPARKIFY_WH \
-  --database SPARKIFY_DB \
-  --schema RAW
+  --account YOUR_ACCOUNT \
+  --user YOUR_USERNAME \
+  --role YOUR_ROLE \
+  --warehouse YOUR_WAREHOUSE \
+  --database YOUR_DATABASE \
+  --schema YOUR_SCHEMA
 ```
 
 Then run the ingestion script:
@@ -213,17 +213,25 @@ dbt debug          # confirms Snowflake connectivity
 
 dbt run            # builds staging views + mart tables
 
-dbt test           # (optional) runs any schema/data tests you add later
+dbt test           # runs the 17 schema tests (unique / not_null / relationships)
 ```
 
 Expected build order (dbt resolves this automatically via **`ref()`**/**`source()`**):
 
 ```text
-stg_events, stg_songs
+staging_events, staging_songs
 
-   → dim_users, dim_songs, dim_artists, dim_time
+   → users, songs, artists, time
 
-      → fct_songplays
+      → songplays
+```
+
+Layer → schema mapping is set by **`+schema:`** in **`dbt_project.yml`** and resolved
+verbatim by **`macros/generate_schema_name.sql`**:
+
+```text
+models/staging/*  → SPARKIFY_DB.STAGING   (views)
+models/marts/*    → SPARKIFY_DB.MARTS     (tables)
 ```
 
 ---
@@ -239,38 +247,38 @@ USE ROLE SPARKIFY_ROLE;
 
 USE WAREHOUSE SPARKIFY_WH;
 
-USE SCHEMA SPARKIFY_DB.ANALYTICS;
+USE SCHEMA SPARKIFY_DB.MARTS;
 
 -- Row counts across the star schema.
 
-SELECT 'dim_users' AS tbl, COUNT(*) FROM DIM_USERS
-UNION ALL SELECT 'dim_songs', COUNT(*) FROM DIM_SONGS
-UNION ALL SELECT 'dim_artists', COUNT(*) FROM DIM_ARTISTS
-UNION ALL SELECT 'dim_time', COUNT(*) FROM DIM_TIME
-UNION ALL SELECT 'fct_songplays', COUNT(*) FROM FCT_SONGPLAYS;
+SELECT 'users' AS tbl, COUNT(*) FROM USERS
+UNION ALL SELECT 'songs', COUNT(*) FROM SONGS
+UNION ALL SELECT 'artists', COUNT(*) FROM ARTISTS
+UNION ALL SELECT 'time', COUNT(*) FROM "TIME"
+UNION ALL SELECT 'songplays', COUNT(*) FROM SONGPLAYS;
 
 -- Top 10 most-played songs (matched against the song catalog).
 
-SELECT s.title, a.artist_name, COUNT(*) AS play_count
-FROM FCT_SONGPLAYS f
-JOIN DIM_SONGS s ON f.song_id = s.song_id
-JOIN DIM_ARTISTS a ON f.artist_id = a.artist_id
+SELECT s.title, a.name AS artist_name, COUNT(*) AS play_count
+FROM SONGPLAYS f
+JOIN SONGS s ON f.song_id = s.song_id
+JOIN ARTISTS a ON f.artist_id = a.artist_id
 GROUP BY 1, 2
 ORDER BY play_count DESC
 LIMIT 10;
 
--- Songplays by hour of day, using dim_time.
+-- Songplays by hour of day, using the time dimension.
 
 SELECT t.hour, COUNT(*) AS plays
-FROM FCT_SONGPLAYS f
-JOIN DIM_TIME t ON f.start_time = t.start_time
+FROM SONGPLAYS f
+JOIN "TIME" t ON f.start_time = t.start_time
 GROUP BY 1
 ORDER BY 1;
 
 -- Paid vs. free plays.
 
 SELECT level, COUNT(*) AS plays
-FROM FCT_SONGPLAYS
+FROM SONGPLAYS
 GROUP BY level;
 ```
 
@@ -288,11 +296,11 @@ cd ../dbt_sparkify && dbt run               # rebuild the star schema
 
 **`aws s3 sync`** only uploads changed files, Snowflake's load history prevents
 
-duplicate **`COPY INTO`** loads of the same file, and **`fct_songplays`**'s surrogate
+duplicate **`COPY INTO`** loads of the same file, and **`songplays`**'s surrogate
 
-key (**`md5(...)`**) is deterministic, so re-running **`dbt run`** produces the same
+key is generated with a deterministic **`ROW_NUMBER()`** ordering, so re-running
 
-fact rows rather than duplicating them.
+**`dbt run`** produces the same fact rows rather than duplicating them.
 
 ---
 
@@ -303,7 +311,7 @@ fact rows rather than duplicating them.
 | **`LIST @stage`** returns nothing       | Storage integration trust policy not updated                                     | Redo Step 3.3–3.4                                                                                        |
 | **`COPY INTO`** loads 0 rows            | Files already loaded previously                                                  | Expected — Snowflake dedupes by file; check **`raw_events`**/**`raw_songs`** row counts instead          |
 | **`dbt debug`** fails to connect        | Wrong account identifier format                                                  | Use **`<orgname>-<accountname>`** or **`<locator>.<region>`** form from Snowflake's "Account" page       |
-| **`fct_songplays.song_id`** mostly NULL | Log data's song/artist titles don't match the (intentionally small) song catalog | Expected with the sample dataset — only a few songs in **`song_data`** match log events                  |
+| **`songplays.song_id`** mostly NULL     | Log data's song/artist titles don't match the (intentionally small) song catalog | Expected with the sample dataset — only a few songs in **`song_data`** match log events. Keep the **`LEFT JOIN`**; an **`INNER JOIN`** drops the fact table to ~30 rows |
 | AWS CLI **`AccessDenied`**              | IAM user running the script lacks S3/IAM admin permissions                       | Attach **`AmazonS3FullAccess`** + **`IAMFullAccess`** (or scoped equivalents) to your CLI user for setup |
 
 ---
@@ -418,7 +426,7 @@ grep -RIn "+schema:" .
 ## P. Check the staging events model
 
 ```bash
-cat models/staging/stg_events.sql
+cat models/staging/staging_events.sql
 ```
 
 ## Q. Check available dbt models
@@ -457,16 +465,16 @@ dbt run --select staging
 dbt run --select marts
 ```
 
-## W. Run only stg_events
+## W. Run only staging_events
 
 ```bash
-dbt run --select stg_events
+dbt run --select staging_events
 ```
 
-## X. Run only stg_songs
+## X. Run only staging_songs
 
 ```bash
-dbt run --select stg_songs
+dbt run --select staging_songs
 ```
 
 ## Y. Run the complete dbt project
@@ -485,23 +493,23 @@ dbt test
 
 # Final Verification Commands
 
-## Check all ANALYTICS views
+## Check all STAGING views
 
 ```sql
-SHOW VIEWS IN SCHEMA SPARKIFY_DB.ANALYTICS;
+SHOW VIEWS IN SCHEMA SPARKIFY_DB.STAGING;
 ```
 
-## Check all ANALYTICS tables
+## Check all MARTS tables
 
 ```sql
-SHOW TABLES IN SCHEMA SPARKIFY_DB.ANALYTICS;
+SHOW TABLES IN SCHEMA SPARKIFY_DB.MARTS;
 ```
 
 ## Check staging events
 
 ```sql
 SELECT *
-FROM SPARKIFY_DB.ANALYTICS.STG_EVENTS
+FROM SPARKIFY_DB.STAGING.STAGING_EVENTS
 LIMIT 10;
 ```
 
@@ -509,7 +517,7 @@ LIMIT 10;
 
 ```sql
 SELECT *
-FROM SPARKIFY_DB.ANALYTICS.STG_SONGS
+FROM SPARKIFY_DB.STAGING.STAGING_SONGS
 LIMIT 10;
 ```
 
@@ -517,35 +525,35 @@ LIMIT 10;
 
 ```sql
 SELECT *
-FROM SPARKIFY_DB.ANALYTICS.FCT_SONGPLAYS
+FROM SPARKIFY_DB.MARTS.SONGPLAYS
 LIMIT 10;
 ```
 
 ## Check all star-schema row counts
 
 ```sql
-SELECT 'dim_users' AS tbl, COUNT(*) AS row_count
-FROM SPARKIFY_DB.ANALYTICS.DIM_USERS
+SELECT 'users' AS tbl, COUNT(*) AS row_count
+FROM SPARKIFY_DB.MARTS.USERS
 
 UNION ALL
 
-SELECT 'dim_songs', COUNT(*)
-FROM SPARKIFY_DB.ANALYTICS.DIM_SONGS
+SELECT 'songs', COUNT(*)
+FROM SPARKIFY_DB.MARTS.SONGS
 
 UNION ALL
 
-SELECT 'dim_artists', COUNT(*)
-FROM SPARKIFY_DB.ANALYTICS.DIM_ARTISTS
+SELECT 'artists', COUNT(*)
+FROM SPARKIFY_DB.MARTS.ARTISTS
 
 UNION ALL
 
-SELECT 'dim_time', COUNT(*)
-FROM SPARKIFY_DB.ANALYTICS.DIM_TIME
+SELECT 'time', COUNT(*)
+FROM SPARKIFY_DB.MARTS."TIME"
 
 UNION ALL
 
-SELECT 'fct_songplays', COUNT(*)
-FROM SPARKIFY_DB.ANALYTICS.FCT_SONGPLAYS;
+SELECT 'songplays', COUNT(*)
+FROM SPARKIFY_DB.MARTS.SONGPLAYS;
 ```
 
 ---
@@ -582,8 +590,11 @@ SPARKIFY_DB
 RAW Schema:
 RAW
 
-Analytics Schema:
-ANALYTICS
+Staging Schema:
+STAGING
+
+Marts Schema:
+MARTS
 
 Snowflake Warehouse:
 SPARKIFY_WH
@@ -654,15 +665,18 @@ dbt ls --resource-type model
 SPARKIFY_DB
 │
 ├── RAW
-│   ├── RAW_EVENTS
-│   └── RAW_SONGS
+│   ├── RAW_EVENTS       (VARIANT landing table)
+│   └── RAW_SONGS        (VARIANT landing table)
 │
-└── ANALYTICS
-    ├── STG_EVENTS       (VIEW)
-    ├── STG_SONGS        (VIEW)
-    ├── DIM_USERS        (TABLE)
-    ├── DIM_SONGS        (TABLE)
-    ├── DIM_ARTISTS      (TABLE)
-    ├── DIM_TIME         (TABLE)
-    └── FCT_SONGPLAYS    (TABLE)
+├── STAGING
+│   ├── STAGING_EVENTS   (VIEW)
+│   └── STAGING_SONGS    (VIEW)
+│
+└── MARTS
+    ├── USERS            (TABLE)  user_id, first_name, last_name, gender, level
+    ├── SONGS            (TABLE)  song_id, title, artist_id, year, duration
+    ├── ARTISTS          (TABLE)  artist_id, name, location, latitude, longitude
+    ├── TIME             (TABLE)  start_time, hour, day, week, month, year, weekday
+    └── SONGPLAYS        (TABLE)  songplay_id, start_time, user_id, level,
+                                  song_id, artist_id, session_id, location, user_agent
 ```

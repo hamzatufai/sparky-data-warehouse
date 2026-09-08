@@ -24,9 +24,10 @@ sparkify_dw:
       # Compute + storage targets created in snowflake/01_roles_and_permissions.sql.
       database: "SPARKIFY_DB"
       warehouse: "SPARKIFY_WH"
-      # dbt writes marts here by default; staging models land in a
-      # "staging" suffixed schema per the +schema config in dbt_project.yml.
-      schema: "ANALYTICS"
+      # Fallback schema only. Every model sets its own schema via +schema in
+      # dbt_project.yml (STAGING / MARTS), resolved verbatim by
+      # macros/generate_schema_name.sql.
+      schema: "MARTS"
 
       # Connection tuning - safe defaults for a small teaching project.
       threads: 4

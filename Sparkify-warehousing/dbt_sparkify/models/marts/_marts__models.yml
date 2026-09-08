@@ -1,0 +1,155 @@
+# =============================================================================
+# _marts__models.yml
+# Documentation + tests for the MARTS star schema.
+# Tests here: 13  (4 in the staging layer -> 17 total)
+# =============================================================================
+
+version: 2
+
+models:
+  # ---------------------------------------------------------------------------
+  # Dimensions
+  # ---------------------------------------------------------------------------
+  - name: users
+    description: "User dimension - one row per user with their latest known profile and subscription level."
+    columns:
+      - name: user_id
+        description: "Primary key. Id of the Sparkify user."
+        data_tests:
+          - unique
+          - not_null
+
+      - name: first_name
+        description: "User's first name."
+
+      - name: last_name
+        description: "User's last name."
+
+      - name: gender
+        description: "User's gender (M/F)."
+
+      - name: level
+        description: "Most recent subscription level (free/paid)."
+
+  - name: songs
+    description: "Song dimension - one row per song in the catalog."
+    columns:
+      - name: song_id
+        description: "Primary key. Natural key of the song."
+        data_tests:
+          - unique
+          - not_null
+
+      - name: title
+        description: "Song title."
+
+      - name: artist_id
+        description: "Foreign key to artists.artist_id."
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('artists')
+                field: artist_id
+
+      - name: year
+        description: "Release year (0 when unknown in the source data)."
+
+      - name: duration
+        description: "Song length in seconds."
+
+  - name: artists
+    description: "Artist dimension - one row per artist with location metadata."
+    columns:
+      - name: artist_id
+        description: "Primary key. Natural key of the artist."
+        data_tests:
+          - unique
+          - not_null
+
+      - name: name
+        description: "Artist name."
+
+      - name: location
+        description: "Artist's reported location."
+
+      - name: latitude
+        description: "Latitude of the artist's location."
+
+      - name: longitude
+        description: "Longitude of the artist's location."
+
+  - name: time
+    description: "Time dimension - one row per distinct songplay timestamp, split into calendar parts."
+    columns:
+      - name: start_time
+        description: "Primary key. Songplay timestamp as epoch milliseconds."
+        data_tests:
+          - unique
+          - not_null
+
+      - name: hour
+        description: "Hour of day (0-23)."
+
+      - name: day
+        description: "Day of month."
+
+      - name: week
+        description: "ISO week of year."
+
+      - name: month
+        description: "Month of year (1-12)."
+
+      - name: year
+        description: "Calendar year."
+
+      - name: weekday
+        description: "Day of week as an integer (Sunday = 0)."
+
+  # ---------------------------------------------------------------------------
+  # Fact
+  # ---------------------------------------------------------------------------
+  - name: songplays
+    description: >
+      Songplays fact - one row per NextSong event, enriched with song_id and
+      artist_id where the event matches the song catalog on
+      title + artist + duration (LEFT JOIN, so unmatched plays are kept).
+    columns:
+      - name: songplay_id
+        description: "Primary key. Integer surrogate key for the songplay."
+        data_tests:
+          - unique
+          - not_null
+
+      - name: start_time
+        description: "Foreign key to time.start_time (epoch milliseconds)."
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('time')
+                field: start_time
+
+      - name: user_id
+        description: "Foreign key to users.user_id."
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('users')
+                field: user_id
+
+      - name: level
+        description: "Subscription level at the moment of the play."
+
+      - name: song_id
+        description: "Foreign key to songs.song_id. Null when the play has no catalog match."
+
+      - name: artist_id
+        description: "Foreign key to artists.artist_id. Null when the play has no catalog match."
+
+      - name: session_id
+        description: "Listening session the play belongs to."
+
+      - name: location
+        description: "Location the play came from."
+
+      - name: user_agent
+        description: "Client user agent string."

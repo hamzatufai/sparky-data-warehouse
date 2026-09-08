@@ -16,7 +16,7 @@
       "Action": [
         "s3:ListBucket"
       ],
-      "Resource": "arn:aws:s3:::sparkify-dw-bucket",
+      "Resource": "arn:aws:s3:::sparkify-dw-bucket-hamza/*",
       "Condition": {
         "StringLike": {
           "s3:prefix": [

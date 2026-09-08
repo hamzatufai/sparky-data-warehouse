@@ -34,10 +34,14 @@ models:
   sparkify_dw:
     # Staging models: lightweight VARIANT-parsing views, cheap to keep
     # as VIEWs since they just re-expose RAW data with typed columns.
+    # Land in SPARKIFY_DB.STAGING (see macros/generate_schema_name.sql).
     staging:
       +materialized: view
+      +schema: STAGING
 
     # Marts (the star schema): materialize as TABLEs for query performance
     # since these are what BI tools and analysts will query directly.
+    # Land in SPARKIFY_DB.MARTS.
     marts:
       +materialized: table
+      +schema: MARTS

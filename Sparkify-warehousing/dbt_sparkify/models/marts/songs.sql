@@ -1,25 +1,28 @@
 -- =============================================================================
--- dim_songs.sql
--- Song dimension: one row per unique song_id with its title, duration,
--- release year, and a foreign key back to dim_artists.
+-- songs.sql
+-- Song dimension: one row per song_id with its title, release year,
+-- duration, and a foreign key to the artists dimension.
+--
+-- Columns (per the ERD):
+--   song_id varchar | title varchar | artist_id varchar
+--   year int | duration float
 -- =============================================================================
 
 with songs as (
 
-    select * from {{ ref('stg_songs') }}
+    select * from {{ ref('staging_songs') }}
 
 ),
 
--- Deduplicate defensively in case the same song_id appears in more than one
--- source file (e.g. re-processed/overlapping song_data exports).
+-- Deduplicate in case the same song_id arrives in more than one source file.
 deduped as (
 
     select
         song_id,
         title,
         artist_id,
-        duration_seconds,
-        release_year,
+        year,
+        duration,
         row_number() over (
             partition by song_id
             order by loaded_at desc
@@ -33,10 +36,10 @@ deduped as (
 select
     song_id,
     title,
-    -- Foreign key to dim_artists.artist_id.
+    -- Foreign key to artists.artist_id.
     artist_id,
-    duration_seconds,
-    release_year
+    year,
+    duration
 
 from deduped
 where recency_rank = 1

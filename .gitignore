@@ -1,0 +1,27 @@
+# dbt artifacts
+target/
+dbt_packages/
+logs/
+*.dbt.log
+
+# Credentials and secrets - never commit these
+profiles.yml
+.user.yml
+.profiles.yml
+.env
+.env.local
+*.pem
+*.key
+*.csv
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/

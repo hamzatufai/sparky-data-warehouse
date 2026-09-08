@@ -1,18 +1,38 @@
+# =============================================================================
+# _staging__models.yml
+# Documentation + tests for the STAGING layer views.
+# Tests here: 4
+# =============================================================================
+
 version: 2
 
 models:
-  - name: stg_events
+  - name: staging_events
+    description: >
+      Typed view over RAW.RAW_EVENTS, filtered to page = 'NextSong' so every
+      row is an actual song play. Source of the users, time, and songplays models.
     columns:
       - name: user_id
+        description: "Id of the user who triggered the event."
         data_tests:
           - not_null
 
-      - name: event_timestamp
+      - name: start_time
+        description: "Event timestamp as epoch milliseconds (bigint)."
         data_tests:
           - not_null
 
-  - name: stg_songs
+      - name: session_id
+        description: "Listening session the event belongs to."
+        data_tests:
+          - not_null
+
+  - name: staging_songs
+    description: >
+      Typed view over RAW.RAW_SONGS. One row per song/artist payload, split
+      into the songs and artists dimensions downstream.
     columns:
       - name: song_id
+        description: "Natural key of the song in the source metadata."
         data_tests:
           - not_null

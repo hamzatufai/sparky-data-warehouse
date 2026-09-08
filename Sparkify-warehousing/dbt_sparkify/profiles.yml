@@ -31,8 +31,8 @@ sparkify_dw:
       # Warehouse
       warehouse: "SPARKIFY_WH"
 
-      # Default schema for dbt
-      schema: "ANALYTICS"
+      # Fallback schema only - models set STAGING / MARTS via dbt_project.yml
+      schema: "MARTS"
 
       # Number of concurrent dbt threads
       threads: 4

@@ -19,7 +19,7 @@ CREATE STORAGE INTEGRATION IF NOT EXISTS SPARKIFY_S3_INTEGRATION
   STORAGE_PROVIDER = 'S3'
   ENABLED = TRUE
   -- Replace with the ARN output by setup_aws_resources.sh Step 5.
-  STORAGE_AWS_ROLE_ARN = 'arn:aws:iam::260898618942:role/sparkify_snowflake_s3_role'
+  STORAGE_AWS_ROLE_ARN = ''
   -- Restrict this integration to only the Sparkify bucket/prefixes.
   STORAGE_ALLOWED_LOCATIONS = (
     's3://sparkify-dw-bucket-hamza/data/log_data/',
