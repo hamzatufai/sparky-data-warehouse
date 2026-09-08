@@ -14,13 +14,13 @@ sparkify_dw:
       type: snowflake
 
       # Snowflake account identifier
-      account: "JUMPDED-DTC83219"
+      account: ""
 
       # Snowflake username
-      user: "TOMMASSHELBY"
+      user: ""
 
       # Your Snowflake password
-      password: "mGKJBkvEJdq7XMe"
+      password: ""
 
       # Snowflake role
       role: "SPARKIFY_ROLE"
